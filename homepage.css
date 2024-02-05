@@ -1,0 +1,120 @@
+.first-color { 
+	background: #fbf9fa; 
+}
+	
+.second-color { 
+	background: #fd0054; 
+}
+
+.third-color { 
+	background: #a80038; 
+}
+
+.fourth-color { 
+	background: #2b2024; 
+}
+
+div{color: black;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+*{font-family:"Comic Sans MS", "Comic Sans", cursive;}
+
+body {
+  background-color: #fbf9fa ;
+}
+#duckjump {
+	color:#a80038;
+	font-size: 12px;
+}
+.linkstyle{
+  justify-content: center;
+  align-items: center;
+  background-color: #a80038;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.linkstyle:hover{
+	background-color: #fd0054
+}
+
+
+h1 {
+  border: 12px solid #fd0054;
+  color: #fbf9fa;
+  background-color: #a80038;
+  text-align: center;
+  font-size: 42px;
+  padding: 30px;
+  margin: 50px;
+  
+  
+}
+h2 {
+  font-size: 32px;
+  color: #a80038;
+  /* background-color: #D62839;
+  text-align: center; */
+  
+  
+}
+p {
+  color:  #fd0054;
+  font-size: 15px;
+  /* border: 12px solid #a80038;  */
+  padding: 30px;
+  margin: 50px;
+}
+
+   /* The sidebar menu */
+   .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #a80038; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #fd0054;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+  
+    /* todo: make transform happen immediately / loop / bounce */
