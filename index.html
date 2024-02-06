@@ -3,111 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hompeage</title> <!-- Check spelling -->
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <title>My Awesome 90s Website</title>
     <style>
         body {
-            background-color: #fbf9fa;
-            font-family: "Comic Sans MS", "Comic Sans", cursive;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            background-color: #000000;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            margin: 20px;
+            color: #00ff00;
         }
 
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #a80038;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #f1f1f1;
-            display: block;
-        }
-
-        .sidenav a:hover {
-            color: #fd0054;
-        }
-
-        .main {
-            margin-left: 160px;
-            padding: 0px 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #000000;
+            padding: 20px;
+            border: 5px solid #00ff00;
+            box-shadow: 10px 10px 10px #888888;
         }
 
         h1 {
-            border: 12px solid #fd0054;
-            color: #fbf9fa;
-            background-color: #a80038;
+            color: #FF0000;
             text-align: center;
-            font-size: 42px;
-            padding: 30px;
-            margin: 50px;
-        }
-
-        h2 {
-            font-size: 32px;
-            color: #a80038;
+            text-shadow: 3px 3px #00ff00;
         }
 
         p {
-            color: #fd0054;
-            font-size: 15px;
-            padding: 30px;
-            margin: 50px;
+            color: #00ff00;
+            font-size: 16px;
+            line-height: 1.6;
+            text-shadow: 1px 1px #ff6600;
         }
 
-        .linkstyle {
-            justify-content: center;
-            align-items: center;
-            background-color: #a80038;
-            color: white;
-            padding: 15px 25px;
+        .nav {
+            background-color: #ff00ff;
+            color: #00ff00;
+            padding: 10px;
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
+            margin-top: 20px;
+            border: 2px solid #00ff00;
         }
 
-        .linkstyle:hover {
-            background-color: #fd0054;
+        .nav a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px #ff00ff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ff00ff;
+            color: #00ff00;
+            border: 2px solid #00ff00;
         }
     </style>
 </head>
 <body>
-    <!-- Side navigation -->
-    <div class="sidenav">
-        <a href="#">About</a>
-        <a href="box.html">Box</a>
-        <a href="first_test2.html">Jravascrpt Skillz</a>
-        <a href="#">Contact</a>
+    <div id="container">
+        <h1>Welcome to My Awesome Website</h1>
+        <p>This is the best website on the World Wide Web.</p>
+
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <p>placeholder text</p>
     </div>
 
-    <!-- Page content -->
-    <div class="main">
-        <h1>Homepage Me Awesome Website</h1>
-        <h2>Weclom to My Awesome Webstie</h2>
-        <p>Yjod od yjr. This is the greatest website of all time. Click on the links on the left to see more things.</p>
-        <a class="linkstyle" href="first_test2.html" target="_self">Check out my javascrpt skillz here! Check out m</a>
-
-        <div>You are the</div>
-        <div class="website-counter"></div>
-        <div>Visitor</div>
-        <address>Created by Ben</address>
+    <div class="footer">
+        created by ben
     </div>
 </body>
 </html>
