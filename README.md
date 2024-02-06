@@ -1,4 +1,4 @@
-# bschelske.github.io
+# My github.io page
 
 Website made for fun and jokes. Still working on spelling
 
