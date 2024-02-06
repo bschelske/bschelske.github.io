@@ -1,32 +1,113 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> hompeage </title> <!-- check spelling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hompeage</title> <!-- Check spelling -->
     <script defer src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-color: #fbf9fa;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #a80038;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #fd0054;
+        }
+
+        .main {
+            margin-left: 160px;
+            padding: 0px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            border: 12px solid #fd0054;
+            color: #fbf9fa;
+            background-color: #a80038;
+            text-align: center;
+            font-size: 42px;
+            padding: 30px;
+            margin: 50px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #a80038;
+        }
+
+        p {
+            color: #fd0054;
+            font-size: 15px;
+            padding: 30px;
+            margin: 50px;
+        }
+
+        .linkstyle {
+            justify-content: center;
+            align-items: center;
+            background-color: #a80038;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .linkstyle:hover {
+            background-color: #fd0054;
+        }
+    </style>
 </head>
+<body>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#">About</a>
+        <a href="box.html">Box</a>
+        <a href="first_test2.html">Jravascrpt Skillz</a>
+        <a href="#">Contact</a>
+    </div>
 
-<!-- Side navigation -->
-<div class="sidenav">
-    <a href="#">About</a>
-    <a href="box.html">box</a>
-    <a href="first_test2.html">jravascrpt skillz</a>
-    <a href="#">Contact</a>
-</div>
+    <!-- Page content -->
+    <div class="main">
+        <h1>Homepage Me Awesome Website</h1>
+        <h2>Weclom to My Awesome Webstie</h2>
+        <p>Yjod od yjr. This is the greatest website of all time. Click on the links on the left to see more things.</p>
+        <a class="linkstyle" href="first_test2.html" target="_self">Check out my javascrpt skillz here! Check out m</a>
 
-<!-- Page content -->
-<div class="main">
-    <h1>homepage me asweome wbsite</h1>
-    <h2>weclom to my awesome webstie<h2>
-        <p> yjod od yjr this is the greatest website of all time click on the links on the left to seem ore things </p>
-        <a class="linkstyle"; href="first_test2.html" target="_self">checK out my javascrpt skillz here! check out m</a>
-
-<div>you are the </div>
-<div class="website-counter"></div>
-<div> visitor </div>
-	<address> created by ben </address>
-</div>
-
-
-
+        <div>You are the</div>
+        <div class="website-counter"></div>
+        <div>Visitor</div>
+        <address>Created by Ben</address>
+    </div>
 </body>
 </html>
