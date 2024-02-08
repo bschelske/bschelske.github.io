@@ -87,3 +87,20 @@ div {
     align-items: center;
     flex-direction: column;
 }
+
+        #enter-link {
+            display: inline-block;
+            background-color: #ff00ff;
+            color: #00ff00;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #00ff00;
+            margin-top: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #enter-link:hover {
+            background-color: #00ff00;
+            color: #ff00ff;
+        }
