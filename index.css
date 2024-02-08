@@ -1,120 +1,52 @@
-.first-color { 
-	background: #fbf9fa; 
-}
-	
-.second-color { 
-	background: #fd0054; 
-}
-
-.third-color { 
-	background: #a80038; 
-}
-
-.fourth-color { 
-	background: #2b2024; 
-}
-
-div{color: black;
-display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.website-counter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-*{font-family:"Comic Sans MS", "Comic Sans", cursive;}
-
 body {
-  background-color: #fbf9fa ;
-}
-#duckjump {
-	color:#a80038;
-	font-size: 12px;
-}
-.linkstyle{
-  justify-content: center;
-  align-items: center;
-  background-color: #a80038;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-.linkstyle:hover{
-	background-color: #fd0054
+    background-color: #000000;
+    font-family: 'Comic Sans MS', 'Comic Sans';
+    margin: 20px;
+    color: #00ff00;
+    text-align: center;
 }
 
+#entry-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 20px;
+    border: 5px solid #00ff00;
+    box-shadow: 10px 10px 10px #888888;
+    margin-bottom: 30px;
+}
 
 h1 {
-  border: 12px solid #fd0054;
-  color: #fbf9fa;
-  background-color: #a80038;
-  text-align: center;
-  font-size: 42px;
-  padding: 30px;
-  margin: 50px;
-  
-  
-}
-h2 {
-  font-size: 32px;
-  color: #a80038;
-  /* background-color: #D62839;
-  text-align: center; */
-  
-  
-}
-p {
-  color:  #fd0054;
-  font-size: 15px;
-  /* border: 12px solid #a80038;  */
-  padding: 30px;
-  margin: 50px;
+    color: #FF0000;
+    text-shadow: 3px 3px #00ff00;
 }
 
-   /* The sidebar menu */
-   .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #a80038; 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
+p {
+    color: #00ff00;
+    font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 1px 1px #ff6600;
+}
+
+/* Center the visitor tracker */
+div {
+    text-align: center;
+    color: #00ff00;
+}
+
+#enter-link {
+    display: inline-block;
+    background-color: #ff00ff;
+    color: #00ff00;
+    padding: 15px 30px;
     text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #fd0054;
-  }
-  
-  /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  } 
-  
-    /* todo: make transform happen immediately / loop / bounce */
+    font-weight: bold;
+    border: 2px solid #00ff00;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#enter-link:hover {
+    background-color: #00ff00;
+    color: #ff00ff;
+}
