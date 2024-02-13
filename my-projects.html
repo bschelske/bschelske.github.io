@@ -6,7 +6,10 @@
     <title>bschelske.io - My Projects</title>
     <link rel="stylesheet" href="index.css">
     <style>
-    /* Additional styles specific to the "About Me" page */
+
+    h2 {
+        color: #FF0000;
+    }
     body {
         text-align: center; /* Center text inside the body */
     }
@@ -36,20 +39,51 @@
     <header>
         <h1>My Programming Projects</h1>
     </header>
+      <p>
+          Organized in reverse chronological order.
+      </p>
 
     <section id="project-container">
         <article class="project">
-            <h2>Project 1</h2>
+            <h2>Object Tracking</h2>
             <p>
-                Description of Project 1. Provide details about what the project is, technologies used, and any notable features.
+                I like to look at cells under a microscope. I would like to count them, but they move, and there's
+                thousands of them... I wrote some code to track cells using OpenCV and Canny edge detection.
             </p>
             <a class="project-link" href="project1.html">Learn More</a>
         </article>
 
         <article class="project">
-            <h2>Project 2</h2>
+            <h2>"The Perfect Grift"</h2>
             <p>
-                Description of Project 2. Include information about the purpose of the project and your role in its development.
+                Short-form content is a digital gold rush. I've automated production of TikToks using OpenCV and moviepy.
+            </p>
+            <a class="project-link" href="project2.html">Learn More</a>
+        </article>
+
+        <article class="project">
+            <h2>MMP-9 Data Analysis</h2>
+            <p>
+                Gained experience extracting data from cancer cells. Learned pandas, numpy, matplotlib/seaborn, and a
+                lot of python.
+            </p>
+            <a class="project-link" href="project2.html">Learn More</a>
+        </article>
+
+        <article class="project">
+            <h2>ImageJ Macros</h2>
+            <p>
+                Some of the first code I've ever wrote was in the ImageJ text editor. I was interested in improving the
+                data analysis workflow for making measurements on fluorescence microscopy images.
+            </p>
+            <a class="project-link" href="project2.html">Learn More</a>
+        </article>
+
+        <article class="project">
+            <h2>Starbattles</h2>
+            <p>
+               Starbattles are a fun logic puzzle. I like solving these puzzles, so naturally (ambitiously/naively),
+                I thought I'd try to get a computer to solve them for me. This is the first project I've ever attempted.
             </p>
             <a class="project-link" href="project2.html">Learn More</a>
         </article>
@@ -57,7 +91,7 @@
         <!-- Add more project articles as needed -->
 
     </section>
-
+    <a class="enter-link" href="homepage.html">return to site</a>
     <footer>
         <p>&copy; 2024 bschelske.io</p>
     </footer>

@@ -1,6 +1,6 @@
 body {
-    background-color: #000000;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background: url('pattern.png') repeat;
+    font-family: 'Comic Sans MS', 'Comic Sans';
     margin: 20px;
     color: #00ff00;
     text.align: center;
