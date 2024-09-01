@@ -2,14 +2,14 @@ body {
     background: url('pattern.png') repeat;
     font-family: 'Comic Sans MS', 'Comic Sans';
     margin: 20px;
-    color: #00ff00;
+    color: #ffffff;
     text.align: center;
 }
 
 #container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #000000;
+    background-color: #1e004b;
     padding: 20px;
     border: 5px solid #00ff00;
     box-shadow: 10px 10px 10px #888888;
@@ -18,19 +18,12 @@ body {
 }
 
 h1 {
-    color: #FF0000;
-    text-shadow: 3px 3px #00ff00;
+    color: #00ff00;
+    text-shadow: 3px 3px #000010;
     display: flex;
     align-items: center;
     justify-content: center;
     text.align: center;
-}
-
-.left-baby,
-.right-baby {
-    width: 51px; /* Adjust the width as needed */
-    height: auto;
-    margin: 0 50px; /* Adjust the margin as needed */
 }
 
 .construction {
@@ -42,15 +35,14 @@ h1 {
 }
 
 p {
-    color: #00ff00;
+    color: #ffffff;
     font-size: 16px;
     line-height: 1.6;
-    text-shadow: 1px 1px #ff6600;
     text.align: center;
 }
 
 .nav {
-    background-color: #ff00ff;
+    background-color: #000010;
     color: #00ff00;
     padding: 10px;
     text-align: center;
@@ -63,44 +55,16 @@ p {
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
-    text-shadow: 2px 2px #ff00ff;
+    text-shadow: 2px 2px #000010;
 }
 
 .footer {
+    max-width: 222px;
+    margin: 0 auto;
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #ff00ff;
+    background-color: #000010;
     color: #00ff00;
     border: 2px solid #00ff00;
 }
-
-/* Center the visitor tracker */
-div {
-    text-align: center;
-    color: #00ff00;
-}
-
-.website-counter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-        #enter-link {
-            display: inline-block;
-            background-color: #ff00ff;
-            color: #00ff00;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border: 2px solid #00ff00;
-            margin-top: 20px;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        #enter-link:hover {
-            background-color: #00ff00;
-            color: #ff00ff;
-        }
