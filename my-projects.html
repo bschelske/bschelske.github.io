@@ -8,7 +8,7 @@
     <style>
 
     h2 {
-        color: #FF0000;
+        color: #00ff00;
     }
     body {
         text-align: center; /* Center text inside the body */
@@ -35,92 +35,113 @@
     }
 </style>
 </head>
-<body>
+<div id="container">
+    <body>
     <header>
-        <h1>My Programming Projects</h1>
-    </header>
-      <p>
-          Organized in reverse chronological order.
-      </p>
-<a class="enter-link" href="homepage.html">return home</a>
-    <section id="project-container">
-        <article class="project">
-            <h2>C.O.U.N.T.</h2>
-            <p>
-                I like to look at cells under a microscope. I would like to count them, but they move, and there's
-                thousands of them... I wrote some code to track and count cells using OpenCV. This project was intense.
-            </p>
-            <a class="project-link" href="project1.html">Learn More</a>
-        </article>
+            <h1>My Programming Projects</h1>
+        </header>
+        <p>
+              Somewhat organized in reverse chronological order.
+          </p>
+        <a class="enter-link" href="index.html">return home</a>
+        <section id="project-container">
+            <article class="project">
+                <h2>Get Pumped!</h2>
+                <p>
+                    This project was the automation of an experiment that involved lots of tedious pipeting. The control
+                    of a few syringe pumps can remove this repetitive task from the experiment workflow. In this project,
+                    I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
+                </p>
+                <a class="project-link" href="project2.html">Learn More</a>
+            </article>
+            <article class="project">
+                <h2>COUNT: Count objects until no tomorrow</h2>
+                <p>
+                    I like to look at cells under a microscope. I would like to count them, but they move, and there's
+                    thousands of them... I wrote some code to track and count cells using OpenCV. This project is my first
+                    foray into computer vision, and also includes a gui for increased accessibility. I learned a lot about
+                    different image processing techniques and object detection algorithms. Building this was intense.
+                </p>
+                <a class="project-link" href="https://github.com/bschelske/COUNT">Learn more on GitHub</a>
+            </article>
 
-        <article class="project">
-            <h2>This website</h2>
-            <p>
-                I want to revive the style of personal sites from the good old days. This project is helping me learn
-                html, css, and javascript, and bad website design practices.
-            </p>
-            <a class="project-link" href="project2.html">Learn More</a>
-        </article>
+            <article class="project">
+                <h2>This website</h2>
+                <p>
+                    I want to revive the style of personal sites from the good old days. This project is helping me learn
+                    html, css, and javascript, and bad website design practices. I'm inspired by the aesthetic of the "old"
+                    internet, and I try to emulate that here. This is an ongoing project, and in the future I plan on adding
+                    some fun elements or easter eggs.
+                </p>
+            </article>
 
- <article class="project">
-            <h2>"The Perfect Grift"</h2>
-            <p>
-                Short-form content is a digital gold rush. I've automated production of TikToks using OpenCV and moviepy.
-            </p>
-            <a class="project-link" href="project2.html">Learn More</a>
-        </article>
+            <article class="project">
+                <h2>The Perfect Grift</h2>
+                <p>
+                    Short-form content is a digital gold rush. I've automated production of TikToks using OpenCV and moviepy.
+                    Originally, I wanted to make videos that seem like they would be a part of an <a class="project-link" href="https://en.wikipedia.org/wiki/Alternate_reality_game">ARG</a> campaign- but these videos
+                    performed extremely poorly. Since then, I've tried to optimize the videos to retain viewer impression,
+                    but this also ends poorly.
+                </p>
 
-        <article class="project">
-            <h2>MMP-9 Data Analysis</h2>
-            <p>
-                Gained experience extracting data from cancer cells. Learned pandas, numpy, matplotlib/seaborn, and a
-                lot of python.
-            </p>
-            <a class="project-link" href="project2.html">Learn More</a>
-        </article>
+                <p>People don't want to watch 'ai-generated' or code generated slop. I can't remember my account credentials,
+                but the accounts I made netted just around 100k impressions. Maybe someday I will return to this project to
+                utilize API calls and modern AI image creation.</p>
+                <a class="project-link" href="https://youtube.com/shorts/UF9rJEwxMlk?si=YfsJEQDfqnn6M2Ld">Example brain-rot video</a>
+            </article>
 
- <article class="project">
-            <h2>"Intruder Detection System"</h2>
+
+            <article class="project">
+         <h2>Intruder Detection System</h2>
             <p>
-                Someone broke into my home and moved my vacuum. I used a Raspberry Pi and IR sensor to send alerts to my phone to stop the next intruder.
+                Someone broke into my apartment and moved my vacuum. I used a Raspberry Pi and IR sensor to send alerts to my phone to stop the next intruder.
                 I learned about working with APIs, software, and hardware.
             </p>
-            <a class="project-link" href="project2.html">Learn More</a>
-        </article>
+            <p>No, the intruder didn't vacuum my floors.</p>
+     </article>
 
-        <article class="project">
-            <h2>MMP-9 Data Analysis</h2>
-            <p>
-                Gained experience extracting data from cancer cells. Learned pandas, numpy, matplotlib/seaborn, and a
-                lot of python.
-            </p>
-            <a class="project-link" href="project2.html">Learn More</a>
-        </article>
+            <article class="project">
+                <h2>MMP9 Data Analysis</h2>
+                <p>
+                    One of my graduate projects involved making measurements on individual cancer cells. This gave me an
+                    opportunity to learn about data analysis and transcend from excel. I learned pandas, numpy,
+                    matplotlib/seaborn, and a lot of python.
+                </p>
+<!--                <a class="project-link" href="project2.html">Learn More</a>-->
+            </article>
 
 
-        <article class="project">
-            <h2>ImageJ Macros</h2>
-            <p>
-                Some of the first code I've ever wrote was in the ImageJ text editor. I was interested in improving the
-                data analysis workflow for making measurements on fluorescence microscopy images.
-            </p>
-            <a class="project-link" href="project2.html">Learn More</a>
-        </article>
+            <article class="project">
+                <h2>ImageJ Macros</h2>
+                <p>
+                    Some of the first code I've ever wrote was in the ImageJ macro language using notepad. I was interested in improving the
+                    data analysis workflow for making measurements on fluorescence microscopy images. I wrote a series of macros
+                    that automatically place regions of interest (ROIs) over regions of interest, identify the presence of cancer cells,
+                    and made data collection easier.
+                </p>
+                <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">Learn more on GitHub</a>
+            </article>
 
-        <article class="project">
-            <h2>Starbattles</h2>
-            <p>
-               Starbattles are a fun logic puzzle. I like solving these puzzles, so naturally (ambitiously/naively),
-                I thought I'd try to get a computer to solve them for me. This is the first project I've ever attempted.
-            </p>
-            <a class="project-link" href="project2.html">Learn More</a>
-        </article>
+            <article class="project">
+                <h2>Starbattles</h2>
+                <p>
+                   Starbattles are a fun logic puzzle. The objective is to fill a grid of shapes with stars,
+                    with a few simple limitations for how stars can be placed. I like <a class="project-link" href="https://www.puzzle-star-battle.com/stats.php?nick=starmonkey">solving these puzzles</a>,
+                    so naturally (ambitiously/naively), I thought I'd try to get a computer to solve them for me. This
+                    is the first project I've ever attempted.
+                </p>
+                <p>For some reason I used python's turtle graphics to create a game board that I could interact with. I
+                can encode different boards and display them using the turtle graphics. I never got around to the solving
+                heuristics, but having a program solve these puzzles is something I think about constantly. I'm very tempted to
+                try and use rust for this problem.</p>
+                <a class="project-link" href="project2.html">Learn More</a>
+            </article>
+        </section>
+</div>
 
-        <!-- Add more project articles as needed -->
-
-    </section>
-    <a class="enter-link" href="homepage.html">return home</a>
-    <footer>
-    </footer>
+<a class="enter-link" href="index.html">return home</a>
+    <div class="footer">
+        created by ben
+    </div>
 </body>
 </html>
