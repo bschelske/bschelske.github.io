@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <div id="container">
-    <body>
+<body>
     <header>
         <h1>My Programming Projects</h1>
     </header>
@@ -20,27 +20,36 @@
         </div>
         <p>Here is a list of programming projects I've worked on for fun or to solve problems in my graduate research.
         On this page, you can read more about each of the projects and what I've learned from working on them. </p>
-        <section id="project-container">
-            <article class="project">
-                <h2>Get Pumped!</h2>
-                <p>
-                    This project was the automation of an experiment that involved lots of tedious pipeting. The control
-                    of a few syringe pumps can remove this repetitive task from the experiment workflow. In this project,
-                    I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
-                </p>
-                <a class="project-link" href="project2.html">Learn More</a>
-            </article>
-            <article class="project">
-                <h2>COUNT: Count objects until no tomorrow</h2>
-                <p>
-                    I like to look at cells under a microscope. I would like to count them, but they move, and there's
-                    thousands of them... I wrote some code to track and count cells using OpenCV. This project is my first
-                    foray into computer vision, and also includes a gui for increased accessibility. I learned a lot about
-                    different image processing techniques and object detection algorithms. Building this was intense.
-                </p>
-                <a class="project-link" href="https://github.com/bschelske/COUNT">Learn more on GitHub</a>
-            </article>
 
+
+    <section id="project-container">
+<div class="card">
+    <article class="project">
+        <h2>Get Pumped!</h2>
+        <p>
+            This project was the automation of an experiment that involved lots of tedious pipeting. The control
+            of a few syringe pumps can remove this repetitive task from the experiment workflow. In this project,
+            I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
+        </p>
+        <a class="project-link" href="project2.html">Learn More</a>
+    </article>
+
+</div>
+
+<div class="card">
+    <article class="project">
+            <h2>COUNT: Count objects until no tomorrow</h2>
+            <p>
+                I like to look at cells under a microscope. I would like to count them, but they move, and there's
+                thousands of them... I wrote some code to track and count cells using OpenCV. This project is my first
+                foray into computer vision, and also includes a gui for increased accessibility. I learned a lot about
+                different image processing techniques and object detection algorithms. Building this was intense.
+            </p>
+            <a class="project-link" href="https://github.com/bschelske/COUNT">Learn more on GitHub</a>
+        </article>
+</div>
+
+<div class="card">
             <article class="project">
                 <h2>This website</h2>
                 <p>
@@ -50,7 +59,9 @@
                     some fun elements or easter eggs.
                 </p>
             </article>
+</div>
 
+<div class="card">
             <article class="project">
                 <h2>The Perfect Grift</h2>
                 <p>
@@ -65,8 +76,9 @@
                 utilize API calls and modern AI image creation.</p>
                 <a class="project-link" href="https://youtube.com/shorts/UF9rJEwxMlk?si=YfsJEQDfqnn6M2Ld">Example brain-rot video</a>
             </article>
+</div>
 
-
+<div class="card">
             <article class="project">
          <h2>Intruder Detection System</h2>
             <p>
@@ -75,7 +87,9 @@
             </p>
             <p>No, the intruder didn't vacuum my floors.</p>
      </article>
+</div>
 
+<div class="card">
             <article class="project">
                 <h2>MMP9 Data Analysis</h2>
                 <p>
@@ -85,41 +99,48 @@
                 </p>
 <!--                <a class="project-link" href="project2.html">Learn More</a>-->
             </article>
+</div>
 
+<div class="card">
+    <article class="project">
+        <h2>ImageJ Macros</h2>
+        <p>
+        Some of the first code I've ever wrote was in the ImageJ macro language using notepad. I was interested in improving the
+        data analysis workflow for making measurements on fluorescence microscopy images. I wrote a series of macros
+        that automatically place regions of interest (ROIs) over regions of interest, identify the presence of cancer cells,
+        and made data collection easier.
+        </p>
+        <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">Learn more on GitHub</a>
+    </article>
+</div>
 
-            <article class="project">
-                <h2>ImageJ Macros</h2>
-                <p>
-                    Some of the first code I've ever wrote was in the ImageJ macro language using notepad. I was interested in improving the
-                    data analysis workflow for making measurements on fluorescence microscopy images. I wrote a series of macros
-                    that automatically place regions of interest (ROIs) over regions of interest, identify the presence of cancer cells,
-                    and made data collection easier.
-                </p>
-                <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">Learn more on GitHub</a>
-            </article>
+<div class="card">
+    <article class="project">
+        <h2>Starbattles</h2>
+        <p>
+           Starbattles are a fun logic puzzle. The objective is to fill a grid of shapes with stars,
+            with a few simple limitations for how stars can be placed. I like <a class="project-link" href="https://www.puzzle-star-battle.com/stats.php?nick=starmonkey">solving these puzzles</a>,
+            so naturally (ambitiously/naively), I thought I'd try to get a computer to solve them for me. This
+            is the first project I've ever attempted.
+        </p>
+        <p>For some reason I used python's turtle graphics to create a game board that I could interact with. I
+        can encode different boards and display them using the turtle graphics. I never got around to the solving
+        heuristics, but having a program solve these puzzles is something I think about constantly. I'm very tempted to
+        try and use rust for this problem.</p>
+        <a class="project-link" href="project2.html">Learn More</a>
+    </article>
+</div>
 
-            <article class="project">
-                <h2>Starbattles</h2>
-                <p>
-                   Starbattles are a fun logic puzzle. The objective is to fill a grid of shapes with stars,
-                    with a few simple limitations for how stars can be placed. I like <a class="project-link" href="https://www.puzzle-star-battle.com/stats.php?nick=starmonkey">solving these puzzles</a>,
-                    so naturally (ambitiously/naively), I thought I'd try to get a computer to solve them for me. This
-                    is the first project I've ever attempted.
-                </p>
-                <p>For some reason I used python's turtle graphics to create a game board that I could interact with. I
-                can encode different boards and display them using the turtle graphics. I never got around to the solving
-                heuristics, but having a program solve these puzzles is something I think about constantly. I'm very tempted to
-                try and use rust for this problem.</p>
-                <a class="project-link" href="project2.html">Learn More</a>
-            </article>
-        </section>
+</section>
 </div>
 
 <div style="text-align:center">
 <a style="text-align:center" class="enter-link" href="index.html">return home</a>
 </div>
-    <div class="footer">
-        created by ben
-    </div>
+
+<div class="footer">
+    created by ben
+</div>
+
 </body>
 </html>

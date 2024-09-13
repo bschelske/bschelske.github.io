@@ -27,6 +27,16 @@ body {
     text-align: center;
 }
 
+.about_card {
+    background-color: #2d006b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #00ff00;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+}
+
 .date {
     color: #bbbbbb;
     font-size: 0.9em;
