@@ -50,10 +50,13 @@ table {
     border-collapse: collapse;
 }
 
-table th, table td {
+table th{padding: 8px;
+    text-align: center;}
+
+table td {
     padding: 8px;
-    text-align: left;
 }
+
 }
 /* ^^^ Set defaults for Desktop and mobile ^^^ */
 
@@ -139,21 +142,19 @@ hr {
     margin-bottom: 15px;
 }
 
-.teaching-table th,
-.teaching-table td {
-    border: 1px solid #00ff00;
-    padding: 8px;
-    text-align: left;
-}
-
 .teaching-table th {
     background-color: #1e004b;
     color: #ffcc00;
-}
+    border: 1px solid #00ff00;
+    padding: 8px;
+    text-align: center;}
 
 .teaching-table td {
     background-color: #2d006b;
     color: #ffffff;
+    border: 1px solid #00ff00;
+    padding: 8px;
+    text-align: left;
 }
 
 .presentation {
