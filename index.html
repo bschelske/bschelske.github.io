@@ -33,7 +33,7 @@
         <div class="about_card">
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
 
-        <img src="img/ben.jpg" width=305, style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;" alt="Benjamin T. Schelske">
+        <img src="img/ben.jpg" width=305, style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;" alt="A picture of what is probably Ben">
 
         <p>👋 <span style="color: #ffcc00;">Welcome</span> to Ben's personal home page!</p>
 
@@ -50,23 +50,35 @@
             I really enjoy <a href="my-projects.html">programming</a>, and you can learn more about me using the links above.
         </p>
 
-        <p>Feel free to write me an "E-Mail"!</p>
+            <p>Feel free to write me an <span style="color:#ffcc00;">"E-Mail"!</span></p>
 
-        <img style="text-align:center" src="img/under_construction.gif" alt="under construction">
-        <p style="text-align:center">UNDER CONSTRUCTION</p>
+        <img src="img/under_construction.gif" alt="Construction worker working on my website">
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
         </div>
 
-    <div id="hitCounter", style="text-align:center">You have visited this page: 0 times</div>
-    <script>
+<div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000014</span></div>
+<script>
+    function padWithZeros(number, width) {
+        number = number.toString();
+        return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
+    }
+
     if (localStorage.pagecount) {
         localStorage.pagecount = Number(localStorage.pagecount) + 1;
     } else {
-        localStorage.pagecount = 1;
+        localStorage.pagecount = 14;  // Starting visitor number
     }
-    document.getElementById("hitCounter").innerText = "You have visited this page: " + localStorage.pagecount + " times";
-    </script>
-    </div>
+
+    const paddedCount = padWithZeros(localStorage.pagecount, 7);
+
+    const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
+    const actualCount = paddedCount.slice(leadingZeros.length);
+
+    document.getElementById("hitCounter").innerHTML = `You are visitor:
+        ${leadingZeros}<span class="ticker">${actualCount}</span>`;
+</script>
+
+</div>
 
 <div class="footer">
     created by ben

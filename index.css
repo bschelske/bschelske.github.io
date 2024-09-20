@@ -42,6 +42,14 @@ p {
         text-align: left;    }
     }
 
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .table-container {
     overflow-x: auto;
 
@@ -59,6 +67,24 @@ table td {
 
 }
 /* ^^^ Set defaults for Desktop and mobile ^^^ */
+
+#hitCounter {
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@keyframes ticker {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.ticker {
+    display: inline-block;
+    animation: ticker 2s ease-in-out;
+    color: #ffcc00;
+}
 
 #container {
     max-width: 800px;
