@@ -5,6 +5,10 @@
     <meta name="author" content="Ben Schelske">
     <meta name="description" content="Ben Schelske's personal website. Wow!">
     <meta name="keywords" content="Ben Schelske, Benjamin Schelske, Benjamin T. Schelske, personal website, portfolio, homepage">
+    <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" sizes="48x48" href="img/favicon-48x48.png">
+    <link rel="icon" sizes="96x96" href="img/favicon-96x96.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin T. Schelske</title>
     <link rel="stylesheet" href="index.css">
@@ -22,7 +26,7 @@
 
 <body>
     <div id="container">
-        <h1>bschelsk@iastate.edu</h1>
+        <h1><img src="img/ufo.gif">bschelsk@iastate.edu<img src="img/ufo.gif"></h1>
         <div class="nav">
             <a href="index.html">About</a>
             <a href="my-projects.html">Programming</a>
@@ -56,7 +60,7 @@
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
         </div>
 
-<div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000014</span></div>
+<div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000015</span></div>
 <script>
     function padWithZeros(number, width) {
         number = number.toString();
@@ -66,7 +70,7 @@
     if (localStorage.pagecount) {
         localStorage.pagecount = Number(localStorage.pagecount) + 1;
     } else {
-        localStorage.pagecount = 14;  // Starting visitor number
+        localStorage.pagecount = 15;  // Starting visitor number
     }
 
     const paddedCount = padWithZeros(localStorage.pagecount, 7);
