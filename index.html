@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="author" content="Ben Schelske">
     <meta name="description" content="Ben Schelske's personal website. Wow!">
-    <meta name="keywords" content="Ben Schelske, Benjamin Schelske, Benjamin T. Schelske, personal website, portfolio, homepage">
+    <meta name="keywords"
+          content="Ben Schelske, Benjamin Schelske, Benjamin T. Schelske, personal website, portfolio, homepage">
     <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" sizes="48x48" href="img/favicon-48x48.png">
@@ -13,55 +14,87 @@
     <title>Benjamin T. Schelske</title>
     <link rel="stylesheet" href="index.css">
     <link rel="canonical" href="https://bschelske.github.io/">
-    <meta name="google-site-verification" content="jvhsBW-ZhI08rYTh-xzfpofcJo7TkJBk0TAF0UX0aNM" />
+    <meta name="google-site-verification" content="jvhsBW-ZhI08rYTh-xzfpofcJo7TkJBk0TAF0UX0aNM"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B3P7YVMXYJ');
-</script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B3P7YVMXYJ');
+    </script>
 </head>
 
 <body>
-    <div id="container">
-        <h1><img src="img/ufo.gif" alt="AHHH! A UFO on the left!">bschelsk@iastate.edu<img src="img/ufo.gif" alt="AHHH! A UFO on the right!"></h1>
-        <div class="nav">
-            <a href="index.html">About</a>
-            <a href="my-projects.html">Programming</a>
-            <a href="blog.html">Blog</a>
-            <a href="cv.html">CV</a>
-            <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
+
+<!--Navigation bar for mobile-->
+<div class="menu-bar">
+    <img src="img/ufo.gif" alt="AHHH! A UFO on the left!" class="ufo-icon">
+    <div class="menu-header"><h1>bschelsk@iastate.edu</h1></div>
+    <div class="hamburger" onclick="toggleMenu()"><img src="img/hamburger.svg" alt="Menu"/></div>
+</div>
+<div class="dropdown-menu" id="dropdownMenu">
+        <a href="index.html">About</a>
+        <a href="my-projects.html">Programming</a>
+        <a href="blog.html">Blog</a>
+        <a href="cv.html">CV</a>
+        <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
+</div>
+<!--Navigation bar for mobile-->
+
+<div class="container">
+    <!--Navigation bar for web-->
+    <div class="hide-on-mobile">
+        <div class="ufo-header">
+            <img src="img/ufo.gif" alt="AHHH! A UFO on the left!">
+            <h1>bschelsk@iastate.edu</h1>
+            <img src="img/ufo.gif" alt="AHHH! A UFO on the right!">
         </div>
-        <div class="about_card">
+        <nav>
+            <div class="nav" id="nav-links">
+                <a href="index.html">About</a>
+                <a href="my-projects.html">Programming</a>
+                <a href="blog.html">Blog</a>
+                <a href="cv.html">CV</a>
+                <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="about_card">
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
 
-        <img src="img/ben.jpg" width=305, style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;" alt="A picture of what is probably Ben">
+        <img src="img/ben.jpg" width=305, style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;"
+             alt="A picture of what is probably Ben">
 
         <p>👋 <span style="color: #ffcc00;">Welcome</span> to Ben's personal home page!</p>
 
         <p>
-            I am a graduate student at Iowa State University studying for a <span style="color: #ffcc00;">PhD in analytical chemistry</span>. My graduate research
+            I am a graduate student at Iowa State University studying for a <span style="color: #ffcc00;">PhD in analytical chemistry</span>.
+            My graduate research
             involves single-cell analysis and developing platforms for cancer detection. You can read more about
-            my research <a href="https://anand.chem.iastate.edu/">here</a>. My research enabled me to gain expertise in <span style="color: #ffcc00;">microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
-        </p> <p>In graduate school, I also taught myself <span style="color: #ffcc00;">Python, Blender, COMSOL,</span> and (a little) mandarin <span style="color: #ffcc00;">你好</span>. Most of all, I learned
-        how to become a <span style="color: #ffcc00;">professional problem solver</span> and that I can learn anything I put my mind to.</p>
+            my research <a href="https://anand.chem.iastate.edu/">here</a>. My research enabled me to gain expertise in
+            <span style="color: #ffcc00;">microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
+        </p>
+        <p>In graduate school, I also taught myself <span style="color: #ffcc00;">Python, Blender, COMSOL,</span> and (a
+            little) mandarin <span style="color: #ffcc00;">你好</span>. Most of all, I learned
+            how to become a <span style="color: #ffcc00;">professional problem solver</span> and that I can learn
+            anything I put my mind to.</p>
 
 
         <p>
             Outside of my graduate work, I am very interested in learning more about computer science and mathematics.
-            I really enjoy <a href="my-projects.html">programming</a>, and you can learn more about me using the links above.
+            I really enjoy <a href="my-projects.html">programming</a>, and you can learn more about me using the links
+            above.
         </p>
 
-            <p>Feel free to write me an <span style="color:#ffcc00;">"E-Mail"!</span></p>
+        <p>Feel free to write me an <span style="color:#ffcc00;">"E-Mail"!</span></p>
 
         <img src="img/under_construction.gif" alt="Construction worker working on my website">
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
-        </div>
+    </div>
 
-<div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000029</span></div>
-<script>
+    <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000029</span></div>
+    <script>
     function padWithZeros(number, width) {
         number = number.toString();
         return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
@@ -80,7 +113,9 @@
 
     document.getElementById("hitCounter").innerHTML = `You are visitor:
         ${leadingZeros}<span class="ticker">${actualCount}</span>`;
-</script>
+
+
+    </script>
 
 </div>
 
@@ -88,5 +123,6 @@
     created by ben
     <span style="color: #ffcc00;">bschelsk@iastate.edu</span>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
