@@ -4,6 +4,7 @@ body {
 	margin: 20px;
 	color: #ffffff;
 	text-align: center;
+	background-attachment: fixed;
 }
 
 /* Set defaults for Desktop and mobile */
