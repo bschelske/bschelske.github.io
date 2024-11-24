@@ -14,6 +14,23 @@ img {
 	display: block;
 }
 
+.badges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.badges img {
+   width: 88px;
+    height: 31px;
+  transition: transform .2s;
+}
+
+.badges img:hover {
+  transform: scale(1.1);
+}
+
 .ufo-header{
     display: flex;
     align-items: center;
@@ -97,23 +114,6 @@ p {
         display: none;
 }
 
-.badges{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.badges img {
-   width: 88px;
-    height: 31px;
-  transition: transform .2s;
-}
-
-.badges img:hover {
-  transform: scale(1.1);
-  cursor: url(/cursors/cursor_select.png), default
-}
 @media only screen and (max-width: 600px) {
 
     .hide-on-mobile {
