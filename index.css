@@ -20,6 +20,21 @@ img {
     justify-content: space-between;
 }
 
+.projects-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects-header img{
+  width: 100px;
+  height: auto;
+}
+
+.mirrored {
+  transform: scaleX(-1);
+}
+
 h1 {
 	font-size: 2rem;
 	margin-top: 0rem;
@@ -82,6 +97,23 @@ p {
         display: none;
 }
 
+.badges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.badges img {
+   width: 88px;
+    height: 31px;
+  transition: transform .2s;
+}
+
+.badges img:hover {
+  transform: scale(1.1);
+  cursor: url(/cursors/cursor_select.png), default
+}
 @media only screen and (max-width: 600px) {
 
     .hide-on-mobile {
@@ -125,9 +157,8 @@ p {
     }
 
     .ufo-icon {
-        width: 40px;
+        width: 50px;
         height: auto;
-        margin-right: 10px;
     }
 
     .hamburger {

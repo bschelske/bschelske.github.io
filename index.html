@@ -20,10 +20,10 @@
     <meta name="google-site-verification" content="jvhsBW-ZhI08rYTh-xzfpofcJo7TkJBk0TAF0UX0aNM"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-B3P7YVMXYJ');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B3P7YVMXYJ');
     </script>
 </head>
 
@@ -36,12 +36,12 @@
     <div class="hamburger" onclick="toggleMenu()"><img src="img/hamburger.svg" alt="Menu"/></div>
 </div>
 <div class="dropdown-menu" id="dropdownMenu">
-        <a href="index.html">About</a>
-        <a href="my-projects.html">Programming</a>
-        <a href="blog.html">Blog</a>
-        <a href="cv.html">CV</a>
-        <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a>
+    <a href="index.html">About</a>
+    <a href="my-projects.html">Programming</a>
+    <a href="blog.html">Blog</a>
+    <a href="cv.html">CV</a>
+    <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a>
 </div>
 <!--Navigation bar for mobile-->
 
@@ -78,7 +78,8 @@
             My graduate research
             involves single-cell analysis and developing platforms for cancer detection. You can read more about
             my research <a href="https://anand.chem.iastate.edu/">here</a> or check out my
-            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page (<span style="color: #ffcc00;">I have an h-index of 1! 😎</span>).
+            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page (<span
+                style="color: #ffcc00;">I have an h-index of 1! 😎</span>).
             My research enabled me to gain expertise in
             <span style="color: #ffcc00;">microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
         </p>
@@ -94,39 +95,45 @@
             above.
         </p>
 
-        <p>Please enjoy yourself on my retro-inspired webpage and feel free to write me an <span style="color:#ffcc00;">"E-Mail"</span> at <span style="color:#ffcc00;">bschelsk@iastate.edu</span></p>
+        <p>Please enjoy yourself on my retro-inspired webpage and feel free to write me an <span style="color:#ffcc00;">"E-Mail"</span>
+            at <span style="color:#ffcc00;">bschelsk@iastate.edu</span></p>
+        <div class="badges">
+            <img src="img/bschelsk.gif">
+            <img src="img/best viewed.jpg">
+            <img src="img/email-icon.gif">
+        </div>
 
         <img src="img/under_construction.gif" alt="Construction worker working on my website" style="margin: 0 auto;">
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
     </div>
 
-<!--Update visitor count here!-->
+    <!--Update visitor count here!-->
     <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000050</span></div>
     <script>
-    function padWithZeros(number, width) {
-        number = number.toString();
-        return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
-    }
+        function padWithZeros(number, width) {
+            number = number.toString();
+            return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
+        }
 
-    if (localStorage.pagecount) {
-        localStorage.pagecount = Number(localStorage.pagecount) + 1;
-    } else {
-        localStorage.pagecount = 50;  // VISITOR NUMBER
-    }
+        if (localStorage.pagecount) {
+            localStorage.pagecount = Number(localStorage.pagecount) + 1;
+        } else {
+            localStorage.pagecount = 50;  // VISITOR NUMBER
+        }
 
-    const paddedCount = padWithZeros(localStorage.pagecount, 7);
+        const paddedCount = padWithZeros(localStorage.pagecount, 7);
 
-    const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
-    const actualCount = paddedCount.slice(leadingZeros.length);
+        const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
+        const actualCount = paddedCount.slice(leadingZeros.length);
 
-    document.getElementById("hitCounter").innerHTML = `You are visitor:
-        ${leadingZeros}<span class="ticker">${actualCount}</span>`;
+        document.getElementById("hitCounter").innerHTML = `You are visitor:
+            ${leadingZeros}<span class="ticker">${actualCount}</span>`;
 
 
     </script>
-<div style="text-align: center">
-  <em>counting since September 17th, 2024!</em>
-</div>
+    <div style="text-align: center">
+        <em>counting since September 17th, 2024!</em>
+    </div>
 </div>
 
 <div class="footer">
