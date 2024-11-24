@@ -11,44 +11,46 @@
     <link rel="icon" sizes="96x96" href="img/favicon-96x96.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming | Benjmain T. Schelske</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-B3P7YVMXYJ');
-</script>
+        gtag('config', 'G-B3P7YVMXYJ');
+    </script>
 </head>
-
 <body>
+
 <!--Navigation bar for mobile-->
 <div class="menu-bar">
-    <img src="img/ufo.gif" alt="AHHH! A UFO on the left!" class="ufo-icon">
+    <img src="img/flip.gif" alt="Wow look at this cool guy!" class="ufo-icon mirrored">
     <div class="menu-header"><h1>bschelsk@iastate.edu</h1></div>
     <div class="hamburger" onclick="toggleMenu()"><img src="img/hamburger.svg" alt="Menu"/></div>
 </div>
 <div class="dropdown-menu" id="dropdownMenu">
-        <a href="index.html">About</a>
-        <a href="my-projects.html">Programming</a>
-        <a href="blog.html">Blog</a>
-        <a href="cv.html">CV</a>
-        <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a>
+    <a href="index.html">About</a>
+    <a href="my-projects.html">Programming</a>
+    <a href="blog.html">Blog</a>
+    <a href="cv.html">CV</a>
+    <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a>
 </div>
-<!--Navigation bar for mobile-->
+<!-- ^^^^^^^^^^Navigation bar for mobile^^^^^^^^^^^^^^-->
 
-<div class="container", id="container">
-                <marquee style="margin-bottom: 20px;" behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
+<div class="container">
+    <div class="hide-on-mobile">
+        <div class="projects-header">
+            <img src="img/flip.gif" alt="Wow look at this cool guy!" class="mirrored">
+            <h1>My Programming Projects</h1>
+            <img src="img/flip.gif" alt="Wow look at this cool guy!">
+        </div>
 
-    <header>
-        <h1>My Programming Projects</h1>
-    </header>
-            <div class="nav">
+        <div class="nav">
             <a href="index.html">About</a>
             <a href="my-projects.html">Programming</a>
             <a href="blog.html">Blog</a>
@@ -56,91 +58,115 @@
             <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a>
         </div>
-        <p>Here is a list of programming projects I've worked on for fun or to solve problems in my graduate research.
+    </div>
+
+
+    <marquee style="margin-bottom: 20px;" behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
+
+    <p>Here is a list of programming projects I've worked on for fun or to solve problems in my graduate research.
         On this page, you can read more about each of the projects and what I've learned from working on them. </p>
 
-
     <section id="project-container">
-<div class="card">
-    <article class="project">
-        <h2>ML + EIS</h2>
-        <p>
-            I have a lot of domain knowledge when it comes to machine learning principles, but not very much experience.
-            It's like <em>the difference between being a hardcore sports fan and actually playing professional sports.</em>
-            My personal goal for this project is to bridge that gap and get hands-on experience with machine learning.
+        <div class="card">
+            <article class="project">
+                <h2>ML + EIS</h2>
+                <p>
+                    I have a lot of domain knowledge when it comes to machine learning principles, but not very much
+                    experience.
+                    It's like <em>the difference between being a hardcore sports fan and actually playing professional
+                    sports.</em>
+                    My personal goal for this project is to bridge that gap and get hands-on experience with machine
+                    learning.
 
-            Here I'm using a random forest model to help interpret electrochemical impedance spectroscopy (EIS) data. So far, the results have been very interesting!
-        </p>
-        <p>Learn more soon!</p>
-    </article>
+                    Here I'm using a random forest model to help interpret electrochemical impedance spectroscopy (EIS)
+                    data. So far, the results have been very interesting!
+                </p>
+                <p>Learn more soon!</p>
+            </article>
 
-</div>
+        </div>
 
-<div class="card">
-    <article class="project">
-        <h2>Get Pumped!</h2>
-        <p>
-            This project was the automation of an experiment that involved lots of <em>tedious</em> pipeting. The control
-            of a few syringe pumps can remove this repetitive task from the experiment workflow. In this project,
-            I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
-        </p>
-        <a class="project-link" href="https://github.com/bschelske/get_pumped">Learn more on GitHub</a>
-    </article>
+        <div class="card">
+            <article class="project">
+                <h2>Get Pumped!</h2>
+                <p>
+                    This project was the automation of an experiment that involved lots of <em>tedious</em> pipeting.
+                    The control
+                    of a few syringe pumps can remove this repetitive task from the experiment workflow. In this
+                    project,
+                    I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
+                </p>
+                <a class="project-link" href="https://github.com/bschelske/get_pumped">Learn more on GitHub</a>
+            </article>
 
-</div>
+        </div>
 
-<div class="card">
-    <article class="project">
-            <h2>COUNT: Count objects until no tomorrow</h2>
-            <p>
-                I like to look at cells under a microscope. I would like to count them, but they move, and there's
-                <em>thousands</em> of them... I wrote some code to track and count cells using OpenCV. This project is my first
-                foray into computer vision, and also includes a gui for increased accessibility. I learned a lot about
-                different image processing techniques and object detection algorithms. Building this was <em>intense!</em>
-            </p>
-            <a class="project-link" href="https://github.com/bschelske/COUNT">Learn more on GitHub</a>
-        </article>
-</div>
+        <div class="card">
+            <article class="project">
+                <h2>COUNT: Count objects until no tomorrow</h2>
+                <p>
+                    I like to look at cells under a microscope. I would like to count them, but they move, and there's
+                    <em>thousands</em> of them... I wrote some code to track and count cells using OpenCV. This project
+                    is my first
+                    foray into computer vision, and also includes a gui for increased accessibility. I learned a lot
+                    about
+                    different image processing techniques and object detection algorithms. Building this was <em>intense!</em>
+                </p>
+                <a class="project-link" href="https://github.com/bschelske/COUNT">Learn more on GitHub</a>
+            </article>
+        </div>
 
-<div class="card">
+        <div class="card">
             <article class="project">
                 <h2>This website</h2>
                 <p>
-                    I want to revive the style of personal sites from the <em>good old days</em>. This project is helping me learn
-                    html, css, and javascript, and <em>bad website design practices</em>. I'm inspired by the aesthetic of the "old"
-                    internet, and I try to emulate that here. I recommend browsing the pages on <a class="project-link" href="https://neocities.org/browse">neocities.com</a> if you like this kind of thing.
-                    There are some <em>incredible</em> webpages over there. This is an ongoing project, and in the future I plan on adding
+                    I want to revive the style of personal sites from the <em>good old days</em>. This project is
+                    helping me learn
+                    html, css, and javascript, and <em>bad website design practices</em>. I'm inspired by the aesthetic
+                    of the "old"
+                    internet, and I try to emulate that here. I recommend browsing the pages on <a class="project-link"
+                                                                                                   href="https://neocities.org/browse">neocities.com</a>
+                    if you like this kind of thing.
+                    There are some <em>incredible</em> webpages over there. This is an ongoing project, and in the
+                    future I plan on adding
                     some fun elements or easter eggs.
                 </p>
                 <p>This website first launched on <em>February 5th 2024!</em></p>
             </article>
-</div>
+        </div>
 
-<div class="card">
+        <div class="card">
             <article class="project">
                 <h2>The Perfect Grift</h2>
                 <p>
-                    Short-form content is a digital gold rush. I've automated production of TikToks using OpenCV and moviepy.
-                    Originally, I wanted to make videos that seem like they would be a part of an <a class="project-link" href="https://en.wikipedia.org/wiki/Alternate_reality_game">ARG</a> campaign- but these videos
-                    performed extremely poorly. Since then, I've tried to optimize the videos to retain viewer impression,
+                    Short-form content is a digital gold rush. I've automated production of TikToks using OpenCV and
+                    moviepy.
+                    Originally, I wanted to make videos that seem like they would be a part of an <a
+                        class="project-link" href="https://en.wikipedia.org/wiki/Alternate_reality_game">ARG</a>
+                    campaign- but these videos
+                    performed extremely poorly. Since then, I've tried to optimize the videos to retain viewer
+                    impression,
                     but this also ends poorly.
                 </p>
-                <p>People don't want to watch 'ai-generated' or code generated slop. In general, retention is bad and <em>dislikes are high</em>, but this has been a fun project! Lately I've been trying to incorporate Blender and DaVinci Resolve to make the videos more appealing.</p>
+                <p>People don't want to watch 'ai-generated' or code generated slop. In general, retention is bad and
+                    <em>dislikes are high</em>, but this has been a fun project! Lately I've been trying to incorporate
+                    Blender and DaVinci Resolve to make the videos more appealing.</p>
             </article>
-</div>
+        </div>
 
-<div class="card">
+        <div class="card">
             <article class="project">
-         <h2>Intruder Detection System</h2>
-            <p>
-                <em>Someone broke into my apartment</em> and moved my <em>vacuum</em>. I used a Raspberry Pi and IR sensor to send alerts to my phone to stop the next intruder.
-                I learned about working with APIs, software, and hardware.
-            </p>
-            <p>No, the intruder <em>didn't</em> vacuum my floors.</p>
-     </article>
-</div>
+                <h2>Intruder Detection System</h2>
+                <p>
+                    <em>Someone broke into my apartment</em> and moved my <em>vacuum</em>. I used a Raspberry Pi and IR
+                    sensor to send alerts to my phone to stop the next intruder.
+                    I learned about working with APIs, software, and hardware.
+                </p>
+                <p>No, the intruder <em>didn't</em> vacuum my floors.</p>
+            </article>
+        </div>
 
-<div class="card">
+        <div class="card">
             <article class="project">
                 <h2>MMP9 Data Analysis</h2>
                 <p>
@@ -148,46 +174,56 @@
                     opportunity to learn about data analysis and <em>transcend</em> from excel. I learned pandas, numpy,
                     matplotlib/seaborn, and a lot of python.
                 </p>
-<!--                <a class="project-link" href="project2.html">Learn More</a>-->
+                <!--                <a class="project-link" href="project2.html">Learn More</a>-->
             </article>
-</div>
+        </div>
 
-<div class="card">
-    <article class="project">
-        <h2>ImageJ Macros</h2>
-        <p>
-        Some of the first code I've ever wrote was in the ImageJ macro language using <em>notepad</em>. I was interested in improving the
-        data analysis workflow for making measurements on fluorescence microscopy images. I wrote a series of macros
-        that automatically place regions of interest (ROIs) over regions of interest, identify the presence of cancer cells,
-        and made data collection easier. <em>ImageJ is awesome!</em>
-        </p>
-        <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">Learn more on GitHub</a>
-    </article>
-</div>
+        <div class="card">
+            <article class="project">
+                <h2>ImageJ Macros</h2>
+                <p>
+                    Some of the first code I've ever wrote was in the ImageJ macro language using <em>notepad</em>. I
+                    was interested in improving the
+                    data analysis workflow for making measurements on fluorescence microscopy images. I wrote a series
+                    of macros
+                    that automatically place regions of interest (ROIs) over regions of interest, identify the presence
+                    of cancer cells,
+                    and made data collection easier. <em>ImageJ is awesome!</em>
+                </p>
+                <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">Learn more on
+                    GitHub</a>
+            </article>
+        </div>
 
-<div class="card">
-    <article class="project">
-        <h2>Starbattles</h2>
-        <p>
-           <a class="project-link" href="https://www.puzzle-star-battle.com/">Starbattles</a> are a fun logic puzzle. The objective is to fill a grid of shapes with stars,
-            with a few simple limitations for how stars can be placed. I like solving these puzzles (<em>I'm ranked in the top 2% of puzzlers</em>),
-            so naturally (<em>ambitiously/naively</em>), I thought I'd try to get a computer to solve them for me. This
-            is the first project I've ever attempted.
-        </p>
-        <p>For some reason I used python's <em>turtle graphics</em> to create a game board that I could interact with. I
-        can encode different boards and display them using the turtle graphics. I never got around to the solving
-        heuristics, but having a program solve these puzzles is something I think about <em>constantly</em>. I'm very tempted to
-        try and use <em>Rust</em> for this problem.</p>
-        <a class="project-link" href="project2.html">Learn More</a>
-    </article>
-</div>
+        <div class="card">
+            <article class="project">
+                <h2>Starbattles</h2>
+                <p>
+                    <a class="project-link" href="https://www.puzzle-star-battle.com/">Starbattles</a> are a fun logic
+                    puzzle. The objective is to fill a grid of shapes with stars,
+                    with a few simple limitations for how stars can be placed. I like solving these puzzles (<em>I'm
+                    ranked in the top 2% of puzzlers</em>),
+                    so naturally (<em>ambitiously/naively</em>), I thought I'd try to get a computer to solve them for
+                    me. This
+                    is the first project I've ever attempted.
+                </p>
+                <p>For some reason I used python's <em>turtle graphics</em> to create a game board that I could interact
+                    with. I
+                    can encode different boards and display them using the turtle graphics. I never got around to the
+                    solving
+                    heuristics, but having a program solve these puzzles is something I think about <em>constantly</em>.
+                    I'm very tempted to
+                    try and use <em>Rust</em> for this problem.</p>
+                <a class="project-link" href="project2.html">Learn More</a>
+            </article>
+        </div>
 
-</section>
+    </section>
 </div>
 
 
 <div style="text-align:center">
-<a style="text-align:center" class="enter-link" href="index.html">return home</a>
+    <a style="text-align:center" class="enter-link" href="index.html">return home</a>
 </div>
 
 <div class="footer">
