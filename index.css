@@ -104,6 +104,7 @@ p {
   position: relative;
   width: 100%;
   height: 1vh;
+  z-index: 10;
 }
 
 .floating-image {
@@ -115,6 +116,7 @@ p {
   transform: translateY(-50%) rotate(40deg); /* Center the image vertically */
   animation: float-across 45s linear infinite; /* Apply the animation */
   z-index: -1;
+  pointer-events: auto;
 }
 
 /* Define the animation */
@@ -497,6 +499,8 @@ ul {
 	background-color: #000010;
 	color: #00ff00;
 	border: 2px solid #00ff00;
+	z-index: 11;
+	position: relative;
 }
 
 a:link {
