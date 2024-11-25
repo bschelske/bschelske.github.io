@@ -10,19 +10,49 @@ body {
 
 }
 
-/* Set defaults for Desktop and mobile */
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
 .friends{
     padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.floating-container {
+  position: relative;
+  width: 100%;
+  height: 1vh;
+  z-index: 10;
+}
+
+.floating-image {
+  position: absolute;
+  top: -30px;
+  left: -100px; /* Start slightly off-screen to the left */
+  width: 50px;
+  height: auto;
+  transform: translateY(-50%) rotate(40deg); /* Center the image vertically */
+  animation: float-across 45s linear infinite; /* Apply the animation */
+  z-index: -1;
+  pointer-events: auto;
+}
+
+/* Define the animation */
+@keyframes float-across {
+  from {
+    left: -100px; /* Start off-screen on the left */
+  }
+  to {
+    left: 100vw; /* Move across to off-screen on the right */
+  }
+}
+
+
+/* Set defaults for Desktop and mobile */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 .badges{
@@ -98,35 +128,6 @@ p {
 	text-align: justify;
 	position: relative;
 	z-index: 1;
-}
-
-.floating-container {
-  position: relative;
-  width: 100%;
-  height: 1vh;
-  z-index: 10;
-}
-
-.floating-image {
-  position: absolute;
-  top: -30px;
-  left: -100px; /* Start slightly off-screen to the left */
-  width: 50px;
-  height: auto;
-  transform: translateY(-50%) rotate(40deg); /* Center the image vertically */
-  animation: float-across 45s linear infinite; /* Apply the animation */
-  z-index: -1;
-  pointer-events: auto;
-}
-
-/* Define the animation */
-@keyframes float-across {
-  from {
-    left: -100px; /* Start off-screen on the left */
-  }
-  to {
-    left: 100vw; /* Move across to off-screen on the right */
-  }
 }
 
 .nav {
