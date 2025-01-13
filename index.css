@@ -111,6 +111,7 @@ h2 {
 
 h3 {
 	font-size: 1.17em;
+    margin-top: 0rem;
 }
 
 p {
@@ -403,7 +404,6 @@ hr {
 .teaching-table {
 	width: 100%;
 	border-collapse: collapse;
-	margin-bottom: 15px;
 }
 
 .teaching-table th {
@@ -467,6 +467,7 @@ h2,
 h3 {
 	color: #00ff00;
 	margin-bottom: 10px;
+	margin-top: 5px;
 	text-align: left;
 }
 
