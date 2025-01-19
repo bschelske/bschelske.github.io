@@ -505,6 +505,25 @@ ul {
 	position: relative;
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socials a {
+  font-size: 24px; /* Adjust icon size */
+  color: #00ff00; /* Default icon color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.socials a:hover {
+  color: #ffcc00; /* Change color on hover */
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
 a:link {
 	color: #00ff00;
 	background-color: transparent;
