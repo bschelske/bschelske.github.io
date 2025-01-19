@@ -14,9 +14,12 @@
     <title>Benjamin T. Schelske</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=VT323&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/d8b16c58d2.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lightmode.css">
+    <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
+    <link id="darkModeCSS" rel="stylesheet" href="darkmode.css" disabled>
     <link rel="canonical" href="https://bschelske.github.io/">
     <meta name="google-site-verification" content="jvhsBW-ZhI08rYTh-xzfpofcJo7TkJBk0TAF0UX0aNM"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
@@ -32,7 +35,7 @@
 
 <!--Navigation bar for mobile-->
 <div class="menu-bar">
-    <img src="img/ufo.gif" alt="AHHH! A UFO on the left!"  class="ufo-icon">
+    <img src="img/ufo.gif" alt="AHHH! A UFO on the left!" class="ufo-icon">
     <div class="menu-header"><h1>bschelsk@iastate.edu</h1></div>
     <div class="hamburger" onclick="toggleMenu()"><img src="img/hamburger.svg" alt="Menu"/></div>
 </div>
@@ -41,71 +44,84 @@
     <a href="my-projects.html">Programming</a>
     <a href="blog.html">Blog</a>
     <a href="cv.html">CV</a>
+    <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a>
+    <a href="https://github.com/bschelske">GitHub</a>
 </div>
 <!--^^^^^^^^^^^^^^^^^Navigation bar for mobile^^^^^^^^^-->
 
-<div class="container">
-    <!--Navigation bar for web-->
-    <div class="hide-on-mobile">
-        <div class="ufo-header">
-            <img src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
-            <h1>bschelsk@iastate.edu</h1>
-            <img src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
-        </div>
-        <nav>
-            <div class="nav" id="nav-links">
+<div class="hide-on-mobile">
+    <div class="header_fill">
+        <header class="header">
+            <div class="email"><h1>BEN<br>SCHELSKE</h1></div>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
+            <nav class="nav">
                 <a href="index.html">About</a>
                 <a href="my-projects.html">Programming</a>
                 <a href="blog.html">Blog</a>
                 <a href="cv.html">CV</a>
+            </nav>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
+
+            <div class="toggle-container">
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle" class="toggle-label">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span id="modeText">Light Mode</span>
             </div>
-        </nav>
+        </header>
     </div>
+</div>
 
+<div class="container">
     <div class="about_card">
-        <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
-
-        <img src="img/ben.jpg" width=305, style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;"
+        <img src="img/ben.jpg" width=305,
+             style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;"
              alt="A picture of what is probably Ben" title="ben">
 
-        <p>👋 <span style="color: #ffcc00;">Welcome</span> to Ben's personal home page!</p>
+        <p>👋 <span>Welcome</span> to Ben's personal home page!</p>
 
         <p>
-            I am a graduate student at Iowa State University studying for a <span style="color: #ffcc00;">PhD in analytical chemistry</span>.
+            I am a graduate student at Iowa State University studying for a <span>PhD in analytical chemistry</span>.
             My graduate research
             involves single-cell analysis and developing platforms for cancer detection. You can read more about
             my research <a href="https://anand.chem.iastate.edu/">here</a> or check out my
-            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page (<span
-                style="color: #ffcc00;">I have an h-index of 1! 😎</span>).
+            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page (<span>I have an h-index of 1! 😎</span>).
             My research enabled me to gain expertise in
-            <span style="color: #ffcc00;">microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
+            <span>microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
         </p>
-        <p>In graduate school, I also taught myself <span style="color: #ffcc00;">Python, Blender, COMSOL,</span> and (a
-            little) mandarin <span style="color: #ffcc00;">你好</span>. Most of all, I learned
-            how to become a <span style="color: #ffcc00;">professional problem solver</span> and that I can learn
+        <p>In graduate school, I also taught myself <span>Python, Blender, COMSOL,</span>
+            and (a
+            little) mandarin <span>你好</span>. Most of all, I learned
+            how to become a <span>professional problem solver</span> and that I can learn
             anything I put my mind to.</p>
 
 
         <p>
-            Outside of my graduate work, I am very interested in learning more about computer science and mathematics.
-            I really enjoy <a href="my-projects.html">programming</a>, and you can learn more about me using the links
+            Outside of my graduate work, I am very interested in learning more about computer science and
+            mathematics.
+            I really enjoy <a href="my-projects.html">programming</a>, and you can learn more about me using the
+            links
             above.
         </p>
 
-        <p>Please enjoy yourself on my retro-inspired webpage and feel free to write me an <span style="color:#ffcc00;">"E-Mail"</span>
-            at <span style="color:#ffcc00;">bschelsk@iastate.edu</span></p>
+        <p>Please enjoy yourself on my retro-inspired webpage and feel free to write me an <span>"E-Mail"</span>
+            at <span>bschelsk@iastate.edu</span></p>
         <div class="badges">
             <img src="img/bschelsk.gif">
             <img src="img/best viewed.jpg">
             <img src="img/email-icon.gif">
         </div>
 
-        <img src="img/under_construction.gif" alt="Construction worker working on my website" style="margin: 0 auto;">
+        <img src="img/under_construction.gif" alt="Construction worker working on my website"
+             style="margin: 0 auto;">
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
     </div>
 
     <!--Update visitor count here!-->
-    <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000063</span></div>
+    <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000063</span>
+    </div>
     <script>
         function padWithZeros(number, width) {
             number = number.toString();
@@ -132,20 +148,18 @@
 </div>
 
 <div class="footer">
-    created by ben
-    <span style="color: #ffcc00;">bschelsk@iastate.edu</span>
     <div class="socials">
-        <a href="www.linkedin.com/in/benjamin-schelske"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en"><i
                 class="fa-brands fa-google-scholar"></i></a>
         <a href="https://github.com/bschelske"><i class="fa-brands fa-github"></i></a>
     </div>
-</div>
-
-<div class="floating-container hide-on-mobile">
-    <a href="secret.html"><img src="img/panic_spin.gif" alt="a spinning alien floats by?" class="floating-image"></a>
+    created by ben
+    <span>bschelsk@iastate.edu</span>
 </div>
 
 <script src="script.js"></script>
+<script src="mode_switcher.js"></script>
+
 </body>
 </html>
