@@ -175,6 +175,19 @@ span {
     visibility: hidden;
 }
 
+.center-image {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.floating-container {
+  display: none;
+}
+
+.floating-image {
+    display: none;
+}
 @media only screen and (max-width: 600px) {
 
     .hide-on-mobile {
