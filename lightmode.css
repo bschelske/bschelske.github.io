@@ -322,3 +322,19 @@ span {
 		display: flex;
 	}
 }
+
+a:visited {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ffcc00;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	background-color: transparent;
+	text-decoration: underline;
+}
