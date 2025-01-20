@@ -35,6 +35,30 @@ span {
 	z-index: 1;
 }
 
+
+#hitCounter {
+	padding: 10px;
+	width: fit-content;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@keyframes ticker {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.ticker {
+	display: inline-block;
+	animation: ticker 2s ease-in-out;
+	color: #899878;
+}
+
 .header{
   display: flex;
   justify-content: center;
