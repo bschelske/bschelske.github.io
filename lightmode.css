@@ -23,7 +23,7 @@ body {
 }
 
 span {
-    color: #899878;
+    color: #2e754f;
     }
 
 .container {
@@ -56,7 +56,7 @@ span {
 .ticker {
 	display: inline-block;
 	animation: ticker 2s ease-in-out;
-	color: #899878;
+	color: #2e754f;
 }
 
 .header{
@@ -100,8 +100,28 @@ span {
 	text-decoration: none;
 	margin: 0 10px;
 	font-weight: bold;
+	font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
+.nav a.active {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2e754f;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.projects-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects-header img{
+  width: 100px;
+  height: auto;
+}
 /* Toggle Container */
 .toggle-container {
     display: flex;
@@ -360,4 +380,118 @@ a:hover {
 a:active {
 	background-color: transparent;
 	text-decoration: underline;
+}
+
+.card {
+}
+
+.cv-offset{
+margin-left: 1.25rem;
+}
+
+h2{
+margin-bottom: .75rem;
+color: #2e754f;
+}
+
+.date {
+	color: #000000;
+	font-size: 0.9em;
+	margin-top: 0px;
+}
+
+.degree {
+	margin-bottom: 15px;
+}
+
+.degree-title {
+	font-weight: bold;
+	color: #000000;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+.institution {
+	color: #000000;
+	font-style: italic;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+hr {
+	border: 0px solid #f7f7f2;
+}
+
+.skills ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+}
+
+.skills li {
+	margin-left: 1.25rem;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+	color: #000000;
+}
+
+.cv-em{
+    color: #000000;
+    font-weight: bold;
+}
+.teaching-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.teaching-table th {
+	color: #000000;
+	border: none;
+	text-align: left;
+}
+
+.teaching-table .number {
+text-align: right;
+}
+
+.teaching-table .semester {
+text-align: left;
+width: 190px;
+}
+
+.teaching-table td {
+    background-color: #f7f7f2;
+    color: #000000;
+    border: none;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+	text-align: left;
+}
+
+.teaching-table .total {
+    text-align: right;
+    border: none;
+    color: #2e754f;
+    font-weight: bold;
+}
+
+.presentation {
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.presentation p {
+	margin: 0rem 0rem;
+}
+
+em {
+	font-style: italic;
+	color: #2e754f;
+}
+
+article {
+	text-align: left;
 }

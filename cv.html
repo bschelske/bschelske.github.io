@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lightmode.css">
+    <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
+    <link id="darkModeCSS" rel="stylesheet" href="darkmode.css" disabled>
     <script src="https://kit.fontawesome.com/d8b16c58d2.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
     <script>
@@ -34,47 +36,70 @@
     <div class="hamburger" onclick="toggleMenu()"><img src="img/hamburger.svg" alt="Menu"/></div>
 </div>
 <div class="dropdown-menu" id="dropdownMenu">
-    <a href="index.html">About</a>
+    <a href="index.html">Home</a>
     <a href="my-projects.html">Programming</a>
     <a href="blog.html">Blog</a>
     <a href="cv.html">CV</a>
 </div>
 <!--Navigation bar for mobile-->
+<div class="hide-on-mobile">
+    <div class="header_fill">
+        <header class="header">
+            <div class="email"><h1>BEN<br>SCHELSKE</h1></div>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="my-projects.html">Programming</a>
+                <a href="blog.html">Blog</a>
+                <a href="cv.html" class="active">CV</a>
+            </nav>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
 
+            <div class="toggle-container">
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle" class="toggle-label">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span id="modeText">Light Mode</span>
+            </div>
+        </header>
+    </div>
+</div>
 
 <div class="container">
-    <header>
-        <h1>CV</h1>
-    </header>
-
-    <div class="nav" id="nav-links">
-        <a href="index.html">About</a>
-        <a href="my-projects.html">Programming</a>
-        <a href="blog.html">Blog</a>
-        <a href="cv.html">CV</a>
+    <div style="display:block; text-align: center;">
+        <h1 style="text-align: center;">Curriculum Vitae</h1>
     </div>
-<p style = "text-align:center">Updated 1/17/2025</p>
+
+    <p class="institution" style="text-align: center; margin-top: -1rem;">Updated 1/21/2025</p>
+
     <div class="card">
         <article class="General Information">
             <h2>General Information</h2>
-            <p class="degree-title">Benjamin T. Schelske</p>
-            <p>bschelsk@iastate.edu</p>
+            <div class="cv-offset">
+                <p class="degree-title">Benjamin T. Schelske</p>
+                <p class="institution">bschelsk@iastate.edu</p>
+            </div>
         </article>
     </div>
 
     <div class="card">
         <article class="Education">
             <h2>Education</h2>
-            <div class="degree">
-                <p class="degree-title">Ph.D. Analytical Chemistry</p>
-                <p class="institution">Iowa State University</p>
-                <p class="date">In progress</p>
-            </div>
-            <hr>
-            <div class="degree">
-                <p class="degree-title">B.A. in ACS Chemistry, minor in Mathematics</p>
-                <p class="institution">Concordia College Moorhead</p>
-                <p class="date">2021</p>
+            <div class="cv-offset">
+                <div class="degree">
+                    <p class="degree-title">Ph.D. Analytical Chemistry</p>
+                    <p class="institution">Iowa State University</p>
+                    <p class="institution">Advised by <a href="https://www.chem.iastate.edu/people/robbyn-anand">Robbyn
+                        K. Anand</a></p>
+                    <p class="date">In progress</p>
+                </div>
+                <hr>
+                <div class="degree">
+                    <p class="degree-title">B.A. in ACS Chemistry, minor in Mathematics</p>
+                    <p class="institution">Concordia College Moorhead</p>
+                    <p class="date">2021</p>
+                </div>
             </div>
         </article>
     </div>
@@ -83,18 +108,19 @@
         <article class="skills">
             <h2>Skills</h2>
             <ul>
-                <li><span style="color: #ffcc00;">Analytical Chemistry:</span> BSL2 training, Cell culture,
+                <li><span class="cv-em">Analytical Chemistry:</span> BSL2 training, Cell culture,
                     Spectroscopy, Microscopy, Electrochemistry, EIS, GC/MS, Experimental design
                 </li>
-                <li><span style="color: #ffcc00;">Microfabrication:</span> Cleanroom microfabrication, Photolithography,
+                <li><span class="cv-em">Microfabrication:</span> Cleanroom microfabrication, Photolithography,
                     Wet Etching, Wafer Development, Microfluidics
                 </li>
-                <li><span style="color: #ffcc00;">Programming:</span> Python, MATLAB, LabVIEW, SQL</li>
-                <li><span style="color: #ffcc00;">Data Analysis:</span> Computer vision, Pandas, NumPy, SciPy,
+                <li><span class="cv-em">Programming:</span> Python, MATLAB, LabVIEW, SQL</li>
+                <li><span class="cv-em">Data Analysis:</span> Computer vision, Pandas, NumPy, SciPy,
                     Statistical analysis, ImageJ, LabArchives, Machine learning
                 </li>
-                <li><span style="color: #ffcc00;">3D Modeling & Simulation:</span> AutoCAD, Blender, COMSOL, 3D Printing</li>
-                <li><span style="color: #ffcc00;">Communication & Teaching:</span> University teaching, Professional
+                <li><span class="cv-em">3D Modeling & Simulation:</span> AutoCAD, Blender, COMSOL, 3D Printing
+                </li>
+                <li><span class="cv-em">Communication & Teaching:</span> University teaching, Professional
                     presentations, Mentorship, Problem solving
                 </li>
             </ul>
@@ -106,16 +132,17 @@
         <article class="skills">
             <h2>Selected Projects</h2>
             <ul>
-                <li><span style="color: #ffcc00;">Development of Microfluidic Devices for Individual Cancer Cell Analysis (AutoCAD, Microfabrication, Microscopy, ImageJ, Pandas):</span>
+                <li><span class="cv-em">Development of Microfluidic Devices for Individual Cancer Cell Analysis (AutoCAD, Microfabrication, Microscopy, ImageJ, Pandas):</span>
                     Designed and fabricated a microfluidic device for label-free cancer cell analysis, designed
                     experiments and established a protocol for imaging and analysis. Performed simulations in COMSOL to
                     aid device design and guide experimental parameters.
                 </li>
-                <li><span style="color: #ffcc00;">Automated Image Processing Pipeline (Python, OpenCV):</span> Developed
+                <li><span class="cv-em">Automated Image Processing Pipeline (Python, OpenCV):</span> Developed
                     an automated image processing pipeline for cancer cell analysis using computer vision and particle
                     tracking, reducing manual data analysis time by 8x.
                 </li>
-                <li><span style="color: #ffcc00;">Automated Data Collection and Control of Microfluidic Devices (Python):</span>
+                <li><span
+                        class="cv-em">Automated Data Collection and Control of Microfluidic Devices (Python):</span>
                     Created an automated workflow for data collection and manipulation of a microfluidic platform. A
                     user interface and serial control of the microfluidic device improves experimental reproducibility
                     and user productivity.
@@ -128,106 +155,107 @@
     <div class="card">
         <article class="teaching-experience">
             <h2>Teaching Experience</h2>
-            <h3>Iowa State University Chemistry TA</h3>
-            <div class="table-container">
-                <table class="teaching-table">
-                    <thead>
-                    <tr>
-                        <th>Semester</th>
-                        <th>Course</th>
-                        <th>Students</th>
-                    </tr>
-                    </thead>
-                       <tr>
-                        <td>Spring 2025</td>
-                        <td>CHEM 1630 Head TA</td>
-                        <td style="text-align: right">278</td>
-                    </tr>
-                    <tr>
-                        <td>Spring 2023</td>
-                        <td>CHEM 163 Recitation + Lab</td>
-                        <td style="text-align: right">52</td>
-                    </tr>
+            <div class="cv-offset">
+                <h3>Iowa State University Chemistry TA</h3>
+                <div class="table-container">
+                    <table class="teaching-table">
+                        <thead>
+                        <tr>
+                            <th class="semester">Semester</th>
+                            <th>Course</th>
+                            <th class="number">Students</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>Spring 2025</td>
+                            <td>CHEM 1630 Head TA</td>
+                            <td style="text-align: right">278</td>
+                        </tr>
+                        <tr>
+                            <td>Spring 2023</td>
+                            <td>CHEM 163 Recitation + Lab</td>
+                            <td style="text-align: right">52</td>
+                        </tr>
 
-                    <tr>
-                        <td>Fall 2022</td>
-                        <td>CHEM 177 Head TA + Lecture Substitution</td>
-                        <td style="text-align: right">362</td>
-                    </tr>
+                        <tr>
+                            <td>Fall 2022</td>
+                            <td>CHEM 177 Head TA + Lecture Substitution</td>
+                            <td style="text-align: right">362</td>
+                        </tr>
 
-                    <tr>
-                        <td>Spring 2022</td>
-                        <td>CHEM 178 Online Head TA</td>
-                        <td style="text-align: right">112</td>
-                    </tr>
-                    <tr>
-                        <td>Fall 2021</td>
-                        <td>CHEM 177 Recitation + Lab</td>
-                        <td style="text-align: right">94</td>
-                    </tr>
-                    <tr>
-                        <td style="border: none"></td>
-                        <td style="text-align: right; border: none; color: #ffcc00;">Total:</td>
-                        <td style="text-align: right; border: none; color: #ffcc00;">898</td>
-                    </tr>
-                </table>
-            </div>
+                        <tr>
+                            <td>Spring 2022</td>
+                            <td>CHEM 178 Online Head TA</td>
+                            <td style="text-align: right">112</td>
+                        </tr>
+                        <tr>
+                            <td>Fall 2021</td>
+                            <td>CHEM 177 Recitation + Lab</td>
+                            <td style="text-align: right">94</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none"></td>
+                            <td style="border: none"></td>
+                            <td class="total">Total: 898</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <h3>Mentorship Experience</h3>
-            <div class="table-container">
-                <table class="teaching-table">
-                    <thead>
-                    <tr>
-                        <th>Semester</th>
-                        <th>Experience</th>
-                        <th>Mentees</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>Spring 2025</td>
-                        <td>CHEM 1630 Head TA</td>
-                        <td style="text-align: right">8</td>
-                    </tr>
-                    <tr>
-                        <td>Fall 2022 - Fall 2025</td>
-                        <td>Anand Lab Undergraduate-Research Mentor</td>
-                        <td style="text-align: right">2</td>
-                    </tr>
-                    <tr>
-                        <td>Fall 2022</td>
-                        <td>Graduate Student Orientation TA</td>
-                        <td style="text-align: right">46</td>
-                    </tr>
+                <h3>Mentorship Experience</h3>
+                <div class="table-container">
+                    <table class="teaching-table">
+                        <thead>
+                        <tr>
+                            <th class="semester">Semester</th>
+                            <th>Experience</th>
+                            <th class="number">Mentees</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>Spring 2025</td>
+                            <td>CHEM 1630 Head TA</td>
+                            <td style="text-align: right">8</td>
+                        </tr>
+                        <tr>
+                            <td>Fall 2022 - Fall 2025</td>
+                            <td>Anand Lab Undergraduate-Research Mentor</td>
+                            <td style="text-align: right">2</td>
+                        </tr>
+                        <tr>
+                            <td>Fall 2022</td>
+                            <td>Graduate Student Orientation TA</td>
+                            <td style="text-align: right">46</td>
+                        </tr>
 
-                    <tr>
-                    <tr>
-                        <td>Fall 2022</td>
-                        <td>CHEM 177 Head TA</td>
-                        <td style="text-align: right">8</td>
-                    </tr>
+                        <tr>
+                        <tr>
+                            <td>Fall 2022</td>
+                            <td>CHEM 177 Head TA</td>
+                            <td style="text-align: right">8</td>
+                        </tr>
                         <td>Fall 2022</td>
                         <td>Chemistry Learning Community Study Session Volunteer</td>
                         <td style="text-align: right">10</td>
-                    </tr>
+                        </tr>
 
-                    <tr>
-                        <td>Spring 2021</td>
-                        <td>Concordia College Chemistry Tutor</td>
-                        <td style="text-align: right">4</td>
-                    </tr>
-                    <tr>
-                        <td>Fall 2020</td>
-                        <td>Concordia College Chemistry Tutor</td>
-                        <td style="text-align: right">4</td>
-                    </tr>
-                    <tr>
-                        <td style="border: none"></td>
-                        <td style="text-align: right; border: none; color: #ffcc00;">Total:</td>
-                        <td style="text-align: right; border: none; color: #ffcc00;">82</td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>Spring 2021</td>
+                            <td>Concordia College Chemistry Tutor</td>
+                            <td style="text-align: right">4</td>
+                        </tr>
+                        <tr>
+                            <td>Fall 2020</td>
+                            <td>Concordia College Chemistry Tutor</td>
+                            <td style="text-align: right">4</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none"></td>
+                            <td style="border: none"></td>
+                            <td class="total">Total: 82</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-
         </article>
     </div>
 
@@ -236,14 +264,16 @@
             <h2>Presentations</h2>
 
             <div class="presentation">
-                <p><em>Dielectrophoretic Isolation of Melanoma Cells Followed by Single-Cell Protease Activity to
+                <p><em class="cv-em">Dielectrophoretic Isolation of Melanoma Cells Followed by Single-Cell Protease
+                    Activity to
                     Evaluate Invasive Potential</em></p>
                 <p>Benjamin T. Schelske, Ethan H. Leung, Joseph T. Banovetz, Jared L. Anderson, Robbyn K. Anand*</p>
                 <p class="date">October 16, 2024 - μTAS 2024, Poster Presented, Montréal, QC, Canada</p>
             </div>
 
             <div class="presentation">
-                <p><em>Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of Invasive Potential by
+                <p><em class="cv-em">Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of
+                    Invasive Potential by
                     Single-Cell Protease Secretion Assay</em></p>
                 <p>Benjamin T. Schelske, Ethan H. Leung, Joseph T. Banovetz, Jared L. Anderson, Robbyn K. Anand*</p>
                 <p class="date">August 19, 2024 - ACS Fall 2024 Rising Stars in Analytical Chemistry, Oral Presentation,
@@ -251,7 +281,8 @@
             </div>
 
             <div class="presentation">
-                <p><em>Characterizing Dielectrophoretic (DEP) Response of Melanoma Cell Lines With Known Drug
+                <p><em class="cv-em">Characterizing Dielectrophoretic (DEP) Response of Melanoma Cell Lines With Known
+                    Drug
                     Resistance</em></p>
                 <p>Pallavi Baliyara, Brittany Ginatty, Olivia Jozaitis, Benjamin Schelske, Thilini Rathnaweera,
                     Christopher Stipp, Michael Henry, Robbyn K. Anand*</p>
@@ -260,7 +291,7 @@
             </div>
 
             <div class="presentation">
-                <p><em>Identification of A375 Cell Line Drug Resistance Using Dielectrophoresis</em></p>
+                <p><em class="cv-em">Identification of A375 Cell Line Drug Resistance Using Dielectrophoresis</em></p>
                 <p>Olivia Jozaitis, Brittany Ginnaty, Pallavi Baliyara, Thillini Rathnaweera, Benjamin Schelske, Michael
                     Henry, Christopher Stipp, Robbyn K. Anand*</p>
                 <p class="date">August 2, 2024 - Summer Undergraduate Research Symposium, Poster Presentation, Iowa
@@ -268,7 +299,8 @@
             </div>
 
             <div class="presentation">
-                <p><em>Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of Invasive Potential by
+                <p><em class="cv-em">Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of
+                    Invasive Potential by
                     Single-Cell Protease Secretion Assay</em></p>
                 <p>Benjamin T. Schelske, Ethan H. Leung, Joseph T. Banovetz, Jared L. Anderson, Robbyn K. Anand*</p>
                 <p class="date">April 24, 2024 - Cotton-Uphaus Competition, Oral Presentation, Iowa State University,
@@ -276,14 +308,16 @@
             </div>
 
             <div class="presentation">
-                <p><em>Evaluation of Dielectrophoretic Response of Naïve and Drug-Resistant Melanoma</em></p>
+                <p><em class="cv-em">Evaluation of Dielectrophoretic Response of Naïve and Drug-Resistant Melanoma</em>
+                </p>
                 <p>Josué Rodríguez, Benjamin T. Schelske, Robbyn K. Anand*</p>
                 <p class="date">April 8-10, 2024 - National Conference on Undergraduate Research (NCUR) 2024, Poster
                     Presentation, Long Beach, CA </p>
             </div>
 
             <div class="presentation">
-                <p><em>Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of Invasive Potential by
+                <p><em class="cv-em">Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of
+                    Invasive Potential by
                     Single-Cell Matrix Metalloprotease-9 Activity Assay</em></p>
                 <p>Benjamin T. Schelske, Ethan H. Leung, Joseph T. Banovetz, Jared L. Anderson, Robbyn K. Anand*</p>
                 <p class="date">November 3, 2023 - Midwestern Universities Analytical Chemistry Conference, Poster
@@ -291,21 +325,24 @@
             </div>
 
             <div class="presentation">
-                <p><em>Measuring the Invasive Potential of Cancer Cells with a Small Inexpensive Device</em></p>
+                <p><em class="cv-em">Measuring the Invasive Potential of Cancer Cells with a Small Inexpensive
+                    Device</em></p>
                 <p>Benjamin T. Schelske, Ethan H. Leung, Joseph T. Banovetz, Jared L. Anderson, Robbyn K. Anand*</p>
                 <p class="date">October 27, 2022 - 3MT: Three Minute Thesis Preliminary Heat, Iowa State University,
                     Ames, IA</p>
             </div>
 
             <div class="presentation">
-                <p><em>Label-Free Selection of Circulating Tumor Cells by Dielectrophoresis and Evaluation of Invasive
+                <p><em class="cv-em">Label-Free Selection of Circulating Tumor Cells by Dielectrophoresis and Evaluation
+                    of Invasive
                     Potential by Single-Cell Protease Activity Assay</em></p>
                 <p>Benjamin T. Schelske, Ethan H. Leung, Joseph T. Banovetz, Jared L. Anderson, Robbyn K. Anand*</p>
                 <p class="date">August 21-25, 2022 - ACS Fall Technical Program, Poster Presentation, Chicago, IL</p>
             </div>
 
             <div class="presentation">
-                <p><em>Data Preparation and Analysis Automation of a Fluorogenic Assay Using ImageJ Macros and MATLAB
+                <p><em class="cv-em">Data Preparation and Analysis Automation of a Fluorogenic Assay Using ImageJ Macros
+                    and MATLAB
                     Scripting</em></p>
                 <p>Benjamin T. Schelske, Ethan H. Leung, Joseph T. Banovetz, Jared L. Anderson, Robbyn K. Anand*</p>
                 <p class="date">June 24-26, 2022 - Midwest Retreat for Diversity in Chemistry, Poster Presentation,
@@ -313,7 +350,7 @@
             </div>
 
             <div class="presentation">
-                <p><em>HS-SPME-GCMS of Phthalate Esters in Local Water</em></p>
+                <p><em class="cv-em">HS-SPME-GCMS of Phthalate Esters in Local Water</em></p>
                 <p>Benjamin T. Schelske, Jenna Pauly, Mark B. Jensen*</p>
                 <p class="date">April 10-13, 2021 - Celebration of Student Success, Poster Presentation, Concordia
                     College, Moorhead, MN</p>
@@ -326,70 +363,83 @@
         <h2>Selected Publications</h2>
         </article>
         <article class="publications">
-            <p><em>Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of Invasive Potential by
-                Single-Cell Protease Secretion Assay</em></p>
-            <p class="date">Benjamin T Schelske, Ethan Leung, Joseph Banovetz, Jared Anderson, Robbyn K Anand</p>
-            <p class="date">ChemRxiv. 2024. <a href="https://doi.org/10.26434/chemrxiv-2024-j88pm">
-                10.26434/chemrxiv-2024-j88pm</a></p>
+            <div class="presentation">
+                <p><em class="cv-em">Label-Free Selection of Cancer Cells by Dielectrophoresis and Evaluation of
+                    Invasive
+                    Potential by
+                    Single-Cell Protease Secretion Assay</em></p>
+                <p>Benjamin T Schelske, Ethan Leung, Joseph Banovetz, Jared Anderson, Robbyn K Anand</p>
+                <p class="date">ChemRxiv. 2024. <a href="https://doi.org/10.26434/chemrxiv-2024-j88pm">
+                    10.26434/chemrxiv-2024-j88pm</a></p>
+            </div>
+            <div class="presentation">
+                <p><em class="cv-em">Parallel Dielectrophoretic Capture, Isolation, and Electrical Lysis of Individual
+                    Breast Cancer Cells
+                    to Assess Variability in Enzymatic Activity</em></p>
+                <p>Joseph T Banovetz, Sivani Manimaran, Benjamin T Schelske, Robbyn K Anand</p>
+                <p class="date">Anal. Chem. 2024. <a href="https://doi.org/10.1021/acs.analchem.3c00078">
+                    10.1021/acs.analchem.3c00078</a></p>
+            </div>
         </article>
-        <article class="publications">
-            <p><em>Parallel Dielectrophoretic Capture, Isolation, and Electrical Lysis of Individual Breast Cancer Cells
-                to Assess Variability in Enzymatic Activity</em></p>
-            <p class="date">Joseph T Banovetz, Sivani Manimaran, Benjamin T Schelske, Robbyn K Anand</p>
-            <p class="date">Anal. Chem. 2024. <a href="https://doi.org/10.1021/acs.analchem.3c00078">
-                10.1021/acs.analchem.3c00078</a></p>
     </div>
 
 
     <div class="card">
         <h2>Awards</h2>
         <article class="awards">
-            <p><em>Cotton-Uphaus Oral Presentation Finalist</em></p>
-            <p class="date">April 24, 2024 - Iowa State University, Ames, IA</p>
-        </article>
-        <article class="awards">
-            <p><em>Iowa State University Teaching Excellence Award</em></p>
-            <p class="date">May 11 2023 - Iowa State University, Ames, IA</p>
+            <div class="presentation">
+                <p><em class="cv-em">Cotton-Uphaus Oral Presentation Finalist</em></p>
+                <p class="date">April 24, 2024 - Iowa State University, Ames, IA</p>
+            </div>
+            <div class="presentation">
+                <p><em class="cv-em">Iowa State University Teaching Excellence Award</em></p>
+                <p class="date">May 11 2023 - Iowa State University, Ames, IA</p>
+            </div>
         </article>
     </div>
 
 
     <div class="card">
         <h2>Certification</h2>
-        <article class="awards">
-            <p><em>LinkedIn Learning: SQL Essential Training</em></p>
-            <p class="date">December 31 2024</p>
-        </article>
-        <article class="awards">
-            <p><em>ACS Meetings & Expositions Presenter</em></p>
-            <p class="date">September 17 2024</p>
-        </article>
-        <article class="awards">
-            <p><em>American Chemical Society Member</em></p>
-            <p class="date">July 11 2024</p>
-        </article>
-        <article class="awards">
-            <p><em>NVIDIA DLI Certificate, Fundamentals of Accelerated Computing with CUDA C/C++</em></p>
-            <p class="date">October 9 2023</p>
+        <article class="certifications">
+            <div class="presentation">
+                <p><em class="cv-em">LinkedIn Learning: SQL Essential Training</em></p>
+                <p class="date">December 31 2024</p>
+            </div>
+            <div class="presentation">
+                <p><em class="cv-em">ACS Meetings & Expositions Presenter</em></p>
+                <p class="date">September 17 2024</p>
+            </div>
+            <div class="presentation">
+                <p><em class="cv-em">American Chemical Society Member</em></p>
+                <p class="date">July 11 2024</p>
+            </div>
+            <div class="presentation">
+                <p><em class="cv-em">NVIDIA DLI Certificate, Fundamentals of Accelerated Computing with CUDA C/C++</em>
+                </p>
+                <p class="date">October 9 2023</p>
+            </div>
         </article>
     </div>
 </div>
 
-
+<br>
 <div style="text-align:center">
     <a style="text-align:center" class="enter-link" href="index.html">return home</a>
 </div>
-<div class="footer">
 
-    <span style="color: #ffcc00;">created by ben</span>
+<div class="footer">
     <div class="socials">
-        <a href="www.linkedin.com/in/benjamin-schelske" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" title="Google Scholar"><i
+        <a href="www.linkedin.com/in/benjamin-schelske"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en"><i
                 class="fa-brands fa-google-scholar"></i></a>
-        <a href="https://github.com/bschelske" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/bschelske"><i class="fa-brands fa-github"></i></a>
     </div>
+    created by ben
+    <span>bschelsk@iastate.edu</span>
 </div>
 
 <script src="script.js"></script>
+<script src="mode_switcher.js"></script>
 </body>
 </html>

@@ -14,7 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lightmode.css">
+    <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
+    <link id="darkModeCSS" rel="stylesheet" href="darkmode.css" disabled>
+
     <script src="https://kit.fontawesome.com/d8b16c58d2.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
     <script>
@@ -34,85 +37,101 @@
     <div class="hamburger" onclick="toggleMenu()"><img src="img/hamburger.svg" alt="Menu"/></div>
 </div>
 <div class="dropdown-menu" id="dropdownMenu">
-    <a href="index.html">About</a>
+    <a href="index.html">Home</a>
     <a href="my-projects.html">Programming</a>
     <a href="blog.html">Blog</a>
     <a href="cv.html">CV</a>
 </div>
 <!--Navigation bar for mobile-->
 
-<div class="container">
-    <header>
-        <h1>Welcome to my blog corner</h1>
-    </header>
+<div class="hide-on-mobile">
+    <div class="header_fill">
+        <header class="header">
+            <div class="email"><h1>BEN<br>SCHELSKE</h1></div>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="my-projects.html">Programming</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="cv.html">CV</a>
+            </nav>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
 
-    <section>
-        <div class="nav" id="nav-links">
-            <a href="index.html">About</a>
-            <a href="my-projects.html">Programming</a>
-            <a href="blog.html">Blog</a>
-            <a href="cv.html">CV</a>
-        </div>
-
-        <div class="about_card">
-            <marquee style="margin-bottom: 20px;" behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
-            <img src="img/about_ben.JPG" style="display: block; margin: auto; box-shadow: 5px 5px 5px #888888;"
-                 width=305, alt="Ben enjoying a bucket of cookies">
-            <p style="text-align:center">
-                Hello, Ben again.
-            </p>
-            <p style="text-align:center">It seems you've found me enjoying a bucket of
-                <a href="https://en.wikipedia.org/wiki/Cookie">cookies</a>.</p>
-
-            <p>Currently, I'm a Ph.D. candidate in analytical chemistry at Iowa State University. Previously, I
-                graduated from
-                Concordia College, Moorhead in '21 with a B.A. in ACS Chemistry and a minor in math. At Concordia, I was
-                a captain of
-                the men's track and field team, and I threw shotput, discus, and hammer. I also did some chemistry
-                tutoring and
-                undergraduate research with HS-SPME-GC/MS of phthalate esters in local waters. </p>
-
-            <p>In my free time I like to learn new things and work on fun coding projects. I think coding is really
-                satisfying because it's like
-                solving a puzzle that changes and grows as you attempt to make solutions. I'm inspired by the masses of
-                <a href="https://www.youtube.com/@tom7">programmers</a>
-                and <a href="https://www.youtube.com/@StuffMadeHere">engineers</a> on YouTube that make awesome things.
-                I might try my hand at YouTube someday.</p>
-
-            <p>I thought making this website would be fun to showcase different programming projects I’ve built and
-                learn more about web design.
-                My goal is to replicate “old internet" aesthetics- like that of Neocities and the personal websites in
-                <a href="https://en.wikipedia.org/wiki/Hypnospace_Outlaw">Hypnospace Outlaw</a>.
-                This website is an ongoing work in progress, so pardon my dust while the site is under construction.
-                In the future, you might find some interesting quirks if you look carefully. </p>
-            <p>Finally, I like to spend time with my friends and family, try delicious food, and play videogames.</p>
-            <br><br>
-            <p>...Uhh something else? I also enjoy sipping fine wine* and shredding** on my guitar...
-                (See the included picture above***) </p>
-            <br>
-            <p style="color:#ffcc00">Disclaimers:</p>
-            <p>*box wine</p>
-            <p>**I'm only OK on guitar</p>
-            <p>***That isn't a guitar, it's a bucket of <a href="https://en.wikipedia.org/wiki/Cookie"
-                                                           title="Yes. This joke again.">cookies</a>.</p>
-            <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
-        </div>
-    </section>
-</div>
-
-<div style="text-align:center"><a class="enter-link" href="index.html">return home</a></div>
-
-<div class="footer">
-
-    <span style="color: #ffcc00;">created by ben</span>
-    <div class="socials">
-        <a href="www.linkedin.com/in/benjamin-schelske" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" title="Google Scholar"><i
-                class="fa-brands fa-google-scholar"></i></a>
-        <a href="https://github.com/bschelske" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <div class="toggle-container">
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle" class="toggle-label">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span id="modeText">Light Mode</span>
+            </div>
+        </header>
     </div>
 </div>
 
+<div class="container">
+    <div style="display:block; text-align: center;">
+        <h1 style="text-align: center;">Welcome to my blog corner</h1>
+    </div>
+    <div class="about_card">
+        <marquee style="margin-bottom: 20px;" behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
+        <img src="img/about_ben.JPG" style="display: block; margin: auto; box-shadow: 5px 5px 5px #888888;"
+             width=305, alt="Ben enjoying a bucket of cookies">
+        <p style="text-align:center">
+            Hello, Ben again.
+        </p>
+        <p style="text-align:center">It seems you've found me enjoying a bucket of
+            <a href="https://en.wikipedia.org/wiki/Cookie">cookies</a>.</p>
+
+        <p>Currently, I'm a Ph.D. candidate in analytical chemistry at Iowa State University. Previously, I
+            graduated from
+            Concordia College, Moorhead in '21 with a B.A. in ACS Chemistry and a minor in math. At Concordia, I was
+            a captain of
+            the men's track and field team, and I threw shotput, discus, and hammer. I also did some chemistry
+            tutoring and
+            undergraduate research with HS-SPME-GC/MS of phthalate esters in local waters. </p>
+
+        <p>In my free time I like to learn new things and work on fun coding projects. I think coding is really
+            satisfying because it's like
+            solving a puzzle that changes and grows as you attempt to make solutions. I'm inspired by the masses of
+            <a href="https://www.youtube.com/@tom7">programmers</a>
+            and <a href="https://www.youtube.com/@StuffMadeHere">engineers</a> on YouTube that make awesome things.
+            I might try my hand at YouTube someday.</p>
+
+        <p>I thought making this website would be fun to showcase different programming projects I’ve built and
+            learn more about web design.
+            My goal is to replicate “old internet" aesthetics- like that of Neocities and the personal websites in
+            <a href="https://en.wikipedia.org/wiki/Hypnospace_Outlaw">Hypnospace Outlaw</a>.
+            This website is an ongoing work in progress, so pardon my dust while the site is under construction.
+            In the future, you might find some interesting quirks if you look carefully. </p>
+        <p>Finally, I like to spend time with my friends and family, try delicious food, and play videogames.</p>
+        <br><br>
+        <p>...Uhh something else? I also enjoy sipping fine wine* and shredding** on my guitar...
+            (See the included picture above***) </p>
+        <br>
+        <p style="color:#ffcc00">Disclaimers:</p>
+        <p>*box wine</p>
+        <p>**I'm only OK on guitar</p>
+        <p>***That isn't a guitar, it's a bucket of <a href="https://en.wikipedia.org/wiki/Cookie"
+                                                       title="Yes. This joke again.">cookies</a>.</p>
+        <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
+    </div>
+</div>
+<br>
+<div style="text-align:center"><a class="enter-link" href="index.html">return home</a></div>
+
+<div class="footer">
+    <div class="socials">
+        <a href="www.linkedin.com/in/benjamin-schelske"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en"><i
+                class="fa-brands fa-google-scholar"></i></a>
+        <a href="https://github.com/bschelske"><i class="fa-brands fa-github"></i></a>
+    </div>
+    created by ben
+    <span>bschelsk@iastate.edu</span>
+</div>
+
+
 <script src="script.js"></script>
+<script src="mode_switcher.js"></script>
 </body>
 </html>

@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lightmode.css">
+    <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
+    <link id="darkModeCSS" rel="stylesheet" href="darkmode.css" disabled>
     <script src="https://kit.fontawesome.com/d8b16c58d2.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
     <script>
@@ -34,12 +36,35 @@
     <div class="hamburger" onclick="toggleMenu()"><img src="img/hamburger.svg" alt="Menu"/></div>
 </div>
 <div class="dropdown-menu" id="dropdownMenu">
-    <a href="index.html">About</a>
+    <a href="index.html">Home</a>
     <a href="my-projects.html">Programming</a>
     <a href="blog.html">Blog</a>
     <a href="cv.html">CV</a>
 </div>
 <!-- ^^^^^^^^^^Navigation bar for mobile^^^^^^^^^^^^^^-->
+<div class="hide-on-mobile">
+    <div class="header_fill">
+        <header class="header">
+            <div class="email"><h1>BEN<br>SCHELSKE</h1></div>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="my-projects.html" class="active">Programming</a>
+                <a href="blog.html">Blog</a>
+                <a href="cv.html">CV</a>
+            </nav>
+            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
+
+            <div class="toggle-container">
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle" class="toggle-label">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span id="modeText">Light Mode</span>
+            </div>
+        </header>
+    </div>
+</div>
 
 <div class="container">
     <div class="hide-on-mobile">
@@ -47,13 +72,6 @@
             <img src="img/flip.gif" alt="Wow look at this cool guy!" class="mirrored">
             <h1>My Programming Projects</h1>
             <img src="img/flip.gif" alt="Wow look at this cool guy!">
-        </div>
-
-        <div class="nav" id="nav-links">
-            <a href="index.html">About</a>
-            <a href="my-projects.html">Programming</a>
-            <a href="blog.html">Blog</a>
-            <a href="cv.html">CV</a>
         </div>
     </div>
 
@@ -218,22 +236,23 @@
     </section>
 </div>
 
-
+<br>
 <div style="text-align:center">
     <a style="text-align:center" class="enter-link" href="index.html">return home</a>
 </div>
 
 <div class="footer">
-
-    <span style="color: #ffcc00;">created by ben</span>
     <div class="socials">
-        <a href="www.linkedin.com/in/benjamin-schelske" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" title="Google Scholar"><i
+        <a href="www.linkedin.com/in/benjamin-schelske"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en"><i
                 class="fa-brands fa-google-scholar"></i></a>
-        <a href="https://github.com/bschelske" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/bschelske"><i class="fa-brands fa-github"></i></a>
     </div>
+    created by ben
+    <span>bschelsk@iastate.edu</span>
 </div>
 
 <script src="script.js"></script>
+<script src="mode_switcher.js"></script>
 </body>
 </html>
