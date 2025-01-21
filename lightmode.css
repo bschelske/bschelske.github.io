@@ -184,6 +184,29 @@ span {
 .dropdown-menu {
         display: none;
 }
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.badges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.badges img {
+   width: 88px;
+    height: 31px;
+  transition: transform .2s;
+}
+
+.badges img:hover {
+  transform: scale(1.1);
+}
 
 .footer {
 	max-width: 222px;

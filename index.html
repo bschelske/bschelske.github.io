@@ -76,74 +76,77 @@
 
 <div class="container">
     <div class="about_card">
-        <img src="img/ben.jpg" width=305,
-             style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;"
-             alt="A picture of what is probably Ben" title="ben">
+        <div style="overflow: hidden">
+            <img src="img/ben.jpg" width=305,
+                 style="float: left; box-shadow: 5px 5px 5px #888888; margin: 20px 20px 0 0;"
+                 alt="A picture of what is probably Ben" title="ben">
 
-        <p>👋 <span>Welcome</span> to Ben's personal home page!</p>
+            <p>👋 <span>Welcome</span> to Ben's personal home page!</p>
 
-        <p>
-            I am a graduate student at Iowa State University studying for a <span>PhD in analytical chemistry</span>.
-            My graduate research
-            involves single-cell analysis and developing platforms for cancer detection. You can read more about
-            my research <a href="https://anand.chem.iastate.edu/">here</a> or check out my
-            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page (<span>I have an h-index of 1! 😎</span>).
-            My research enabled me to gain expertise in
-            <span>microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
-        </p>
-        <p>In graduate school, I also taught myself <span>Python, Blender, COMSOL,</span>
-            and (a
-            little) mandarin <span>你好</span>. Most of all, I learned
-            how to become a <span>professional problem solver</span> and that I can learn
-            anything I put my mind to.</p>
+            <p>
+                I am a graduate student at Iowa State University studying for a <span>PhD in analytical chemistry</span>.
+                My graduate research
+                involves single-cell analysis and developing platforms for cancer detection. You can read more about
+                my research <a href="https://anand.chem.iastate.edu/">here</a> or check out my
+                <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page (<span>I have an h-index of 1! 😎</span>).
+                My research enabled me to gain expertise in
+                <span>microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
+            </p>
+            <p>In graduate school, I also taught myself <span>Python, Blender, COMSOL,</span>
+                and (a
+                little) mandarin <span>你好</span>. Most of all, I learned
+                how to become a <span>professional problem solver</span> and that I can learn
+                anything I put my mind to.</p>
 
+            <p>
+                Outside of my graduate work, I am very interested in learning more about computer science and
+                mathematics.
+                I really enjoy <a href="my-projects.html">programming</a>, and you can learn more about me using the
+                links
+                above.
+            </p>
 
-        <p>
-            Outside of my graduate work, I am very interested in learning more about computer science and
-            mathematics.
-            I really enjoy <a href="my-projects.html">programming</a>, and you can learn more about me using the
-            links
-            above.
-        </p>
-
-        <p>Please enjoy yourself on my retro-inspired webpage and feel free to write me an <span>"E-Mail"</span>
-            at <span>bschelsk@iastate.edu</span></p>
-        <div class="badges">
-            <img src="img/bschelsk.gif">
-            <img src="img/best viewed.jpg">
-            <img src="img/email-icon.gif">
+            <p>Please enjoy yourself on my retro-inspired webpage and feel free to write me an <span>"E-Mail"</span>
+                at <span>bschelsk@iastate.edu</span></p>
         </div>
+        <div style="display: inline;">
+            <div class="badges">
+                <img src="img/bschelsk.gif">
+                <img src="img/best viewed.jpg">
+                <img src="img/email-icon.gif">
+            </div>
 
-        <img src="img/under_construction.gif" alt="Construction worker working on my website"
-             style="margin: 0 auto;">
+            <img src="img/under_construction.gif" alt="Construction worker working on my website"
+                 style="margin: 0 auto;">
+        </div>
         <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
     </div>
-        <!--Update visitor count here!-->
-        <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000063</span>
-        </div>
-        <script>
-            function padWithZeros(number, width) {
-                number = number.toString();
-                return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
-            }
+    <!--Update visitor count here!-->
+    <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000063</span>
+    </div>
+    <script>
+        function padWithZeros(number, width) {
+            number = number.toString();
+            return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
+        }
 
-            if (localStorage.pagecount) {
-                localStorage.pagecount = Number(localStorage.pagecount) + 1;
-            } else {
-                localStorage.pagecount = 63;  // UPDATE HERE TOO VISITOR NUMBER!!!!!!!!!!!!!!!!!!
-            }
+        if (localStorage.pagecount) {
+            localStorage.pagecount = Number(localStorage.pagecount) + 1;
+        } else {
+            localStorage.pagecount = 63;  // UPDATE HERE TOO VISITOR NUMBER!!!!!!!!!!!!!!!!!!
+        }
 
-            const paddedCount = padWithZeros(localStorage.pagecount, 7);
+        const paddedCount = padWithZeros(localStorage.pagecount, 7);
 
-            const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
-            const actualCount = paddedCount.slice(leadingZeros.length);
+        const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
+        const actualCount = paddedCount.slice(leadingZeros.length);
 
-            document.getElementById("hitCounter").innerHTML = `You are visitor:
-                ${leadingZeros}<span class="ticker">${actualCount}</span>`;
-        </script>
-        <div style="text-align: center">
-            <em>counting since September 17th, 2024!</em>
-        </div>
+        document.getElementById("hitCounter").innerHTML = `You are visitor:
+            ${leadingZeros}<span class="ticker">${actualCount}</span>`;
+    </script>
+    <div style="text-align: center">
+        <em>counting since September 17th, 2024!</em>
+    </div>
 </div>
 
 <div class="footer">
