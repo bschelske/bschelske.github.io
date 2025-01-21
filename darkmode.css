@@ -68,6 +68,16 @@ margin-bottom: 10px;
 	margin: 0 10px;
 	font-weight: bold;
 	text-shadow: 2px 2px #000010;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav a.active {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ff00;
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 /* Toggle Container */
@@ -429,6 +439,11 @@ p {
 	}
 }
 
+.cv-em{
+    color: #ffcc00;
+    font-weight: bold;
+}
+
 .ticker {
 	display: inline-block;
 	animation: ticker 2s ease-in-out;
@@ -483,6 +498,10 @@ hr {
 	margin: 15px 0;
 }
 
+.cv-offset{
+padding-left: 10px;
+}
+
 .skills ul {
 	list-style-type: none;
 	padding: 0;
@@ -499,6 +518,9 @@ hr {
 	color: #ffffff;
 }
 
+.skill-em{
+    color: #ffcc00;
+}
 .teaching-table {
 	width: 100%;
 	border-collapse: collapse;
@@ -520,6 +542,24 @@ hr {
 	text-align: left;
 }
 
+.teaching-table .semester {
+text-align: left;
+width: 190px;
+}
+
+.teaching-table .number {
+text-align: right;
+width: 120px;
+}
+
+
+.teaching-table .total {
+    text-align: right;
+    border: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
 .presentation {
 	background-color: #1e004b;
 	padding: 10px;
@@ -529,21 +569,6 @@ hr {
 
 .presentation p {
 	margin: 5px 0;
-}
-
-.publications {
-	background-color: #1e004b;
-	padding: 10px;
-	margin-bottom: 5px;
-	border-radius: 5px;
-}
-
-.awards {
-	background-color: #1e004b;
-	padding: 10px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	border-radius: 5px;
 }
 
 em {
