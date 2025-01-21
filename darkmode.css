@@ -530,17 +530,9 @@ padding-left: 10px;
 	background-color: #1e004b;
 	color: #ffcc00;
 	border: 1px solid #00ff00;
-	padding: 8px;
-	text-align: center;
-}
-
-.teaching-table td {
-	background-color: #2d006b;
-	color: #ffffff;
-	border: 1px solid #00ff00;
-	padding: 8px;
 	text-align: left;
 }
+
 
 .teaching-table .semester {
 text-align: left;
@@ -552,6 +544,13 @@ text-align: right;
 width: 120px;
 }
 
+.teaching-table td {
+	background-color: #2d006b;
+	color: #ffffff;
+	border: 1px solid #00ff00;
+	padding: 8px;
+	text-align: left;
+}
 
 .teaching-table .total {
     text-align: right;
