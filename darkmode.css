@@ -267,8 +267,14 @@ p {
         display: none;
 }
 
-@media only screen and (max-width: 600px) {
+.show-on-mobile{
+    display: none;
+}
 
+@media only screen and (max-width: 600px) {
+    .show-on-mobile{
+        display: block;
+    }
     .hide-on-mobile {
         display: none;
     }
@@ -287,11 +293,11 @@ p {
         text-align: justify;
     }
 
-    .menu-bar {
+     .menu-bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: rgba(30, 0, 75, 0.85);
+        background-color: rgba(46, 117, 79, 0.85);
         color: white;
         padding: 10px;
         position: fixed;
@@ -304,30 +310,19 @@ p {
 
     .menu-header {
         display: flex;
-        align-items: center;
+        align-items: left;
         flex-grow: 1;
-        justify-content: center;
+        justify-content: left;
     }
 
-    .ufo-icon {
-        width: 50px;
-        height: auto;
-    }
-
-    .hamburger {
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-    }
-
-    .hamburger img {
-        width: 100%;
-        height: auto;
+    .fa-bars {
+    font-size:30px;
+    text-align: left;
     }
 
     .dropdown-menu {
         display: none;
-        background-color: rgba(45, 0, 107, 0.95);
+        background-color: rgba(76, 136, 103, 0.80);
         position: fixed;
         top: 70px;
         left: 0;
@@ -338,12 +333,12 @@ p {
     .dropdown-menu a {
         display: block;
         padding: 10px 15px;
-        color: white; /* Fully opaque text color */
+        color: white;
         text-decoration: none;
     }
 
     .dropdown-menu a:hover {
-        background-color: rgba(85, 85, 85, 0.8);
+        background-color: rgba(76, 136, 103, 0.90);
     }
 
 	h1 {
@@ -364,11 +359,16 @@ p {
 		text-align: left;
 	}
 
+    .ben-img {
+        float: left;
+        box-shadow: 5px 5px 5px #888888;
+        margin: 20px;
+    }
 
 	img {
 		display: block;
-		margin: 0 auto;
-		max-width: 100%;
+		margin: auto;
+		width: 100%;
 		height: auto;
 	}
 
@@ -399,6 +399,21 @@ p {
 	.menu-toggle.active+.nav {
 		display: flex;
 	}
+
+
+    .badges{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 0.5rem;
+    }
+
+    .badges img {
+       width: 88px;
+        height: 31px;
+      transition: transform .2s;
+    }
 }
 
 .table-container {
