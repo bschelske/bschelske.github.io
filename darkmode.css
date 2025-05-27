@@ -18,6 +18,10 @@ body {
     box-sizing: border-box;
 }
 
+.show-on-alien{
+    display:block
+    }
+
 span {
     color: #ffcc00;
     }

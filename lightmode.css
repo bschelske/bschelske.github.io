@@ -439,6 +439,9 @@ h3 {
 	text-align: left;
 }
 
+.hide-on-day{
+    display:none;
+}
 
 @media only screen and (max-width: 600px) {
 	.show-on-mobile {
