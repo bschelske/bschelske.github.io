@@ -296,6 +296,47 @@ p {
 	z-index: 1;
 }
 
+.whats-new-space{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 3rem;
+	right: 0;
+	height: auto;
+	position: fixed;
+	width: 210px;
+	padding: 8px;
+	gap: 1rem;
+}
+
+.whats-new {
+    display: flex;
+	flex-direction: column;
+	height: auto;
+	position: relative;
+	padding: 8px;
+	border-radius: 8px;
+	width: 263px;
+    background-color: #1e004b;
+    border: 5px solid #00ff00;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+.whats-new ul{
+    padding-left: 8px;
+}
+
+.whats-new li{
+    padding-bottom: 8px;
+}
+
+
+.whats-new p{
+    text-wrap: wrap;
+    text-align: justify;
+}
+
+
 .sidebar-space { display: flex;
     flex-direction: column;
     margin-left: 2rem;
@@ -317,7 +358,6 @@ p {
     float: left;
     height: auto;
     position: fixed;
-    top: 6rem + 1rem;
     width: 210px;
     padding: 8px;
     border-radius: 8px;
