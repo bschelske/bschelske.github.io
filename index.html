@@ -71,60 +71,45 @@
     </div>
 </div>
 
-<div class="fun-container">
+<div class="home-layout">
     <!--Side Navigation-->
-    <div class="whats-new-space hide-on-mobile">
-        <div class="whats-new hide-on-mobile">
-            <h2 style="text-align: center;">What's New:</h2>
-            <ul>
-                <li>05-26-2025: Updated
-                    <a href="projects.html">Projects</a>
-                    and
-                    <a href="blog.html">Fun</a>
-                    to a have a fresh new look
-                </li>
-                <li>05-26-2025: Improper CV viewing now discouraged.
-                </li>
-            </ul>
-        </div>
-
-    </div>
-    <div class="container">
-        <div class="about_card">
-            <div style="overflow: hidden">
+    <div class="home-container">
+        <div class="about-card">
+            <div class="split-container">
                 <img src="img/ben.jpg" width=305,
                      class="ben-img"
                      alt="A picture of what is probably Ben" title="ben">
+                <div>
+                    <p>👋 <span>Welcome</span> to Ben's personal home page!</p>
 
-                <p>👋 <span>Welcome</span> to Ben's personal home page!</p>
+                    <p>
+                        I am a graduate student at Iowa State University studying for a
+                        <span>PhD in analytical chemistry</span>.
+                        My graduate research involves single-cell analysis and developing platforms for cancer
+                        detection.
+                        You can read more about my research <a href="https://anand.chem.iastate.edu/">here</a>
+                        or check out my
+                        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page
+                        (<span>I have an h-index of 1! 😎</span>).
+                        My research has enabled me to gain expertise in
+                        <span>microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
+                    </p>
+                    <p>In graduate school, I've also taught myself <span>Python, Blender, COMSOL,</span>
+                        and (a little) mandarin <span>你好</span>. Most of all, I learned
+                        how to become a <span>professional problem solver</span> and that I can learn
+                        anything I put my mind to.</p>
+                    <p>
+                        Outside my graduate work, I love learning new things and picking up new hobbies. I really enjoy
+                        coding,
+                        and you can learn more about some of my <a href="projects.html">personal projects here.</a>
+                        This website is under active construction, but you can explore and learn more about me using the links above.
 
-                <p>
-                    I am a graduate student at Iowa State University studying for a
-                    <span>PhD in analytical chemistry</span>.
-                    My graduate research
-                    involves single-cell analysis and developing platforms for cancer detection. You can read more about
-                    my research <a href="https://anand.chem.iastate.edu/">here</a> or check out my
-                    <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar</a> page
-                    (<span>I have an h-index of 1! 😎</span>).
-                    My research enabled me to gain expertise in
-                    <span>microfabrication, BSL-2 lab work, and designing microfluidic devices.</span>
-                </p>
-                <p>In graduate school, I also taught myself <span>Python, Blender, COMSOL,</span>
-                    and (a
-                    little) mandarin <span>你好</span>. Most of all, I learned
-                    how to become a <span>professional problem solver</span> and that I can learn
-                    anything I put my mind to.</p>
+                    </p>
 
-                <p>
-                    Outside of my graduate work, I am very interested in learning more about computer science and
-                    mathematics.
-                    I really enjoy <a href="projects.html">coding</a>, and you can learn more about me using the
-                    links
-                    above.
-                </p>
-
-                <p>Please enjoy yourself on my retro-inspired webpage and feel free to write me an <span>"E-Mail"</span>
-                    at <span>ben@benschelske.com</span></p>
+                    <p>Please enjoy yourself on my webpage and feel free to write me an
+                        <span>"E-Mail"</span>
+                        at <span>ben@benschelske.com</span></p>
+                </div>
             </div>
             <div style="display: inline;">
                 <div class="badges">
@@ -139,7 +124,7 @@
             <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
         </div>
         <!--Update visitor count here!-->
-        <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000118</span>
+        <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000132</span>
         </div>
         <script>
             function padWithZeros(number, width) {
@@ -150,8 +135,8 @@
             if (localStorage.pagecount) {
                 localStorage.pagecount = Number(localStorage.pagecount) + 1;
             } else {
-                localStorage.pagecount = 118;  // UPDATE HERE TOO VISITOR NUMBER!!!!!!!!!!!!!!!!!!
-            }
+                localStorage.pagecount = 132;  // UPDATE HERE TOO VISITOR NUMBER!!!!!!!!!!!!!!!!!!
+            } // VISITOR COUNTER IS UPDATED MANUALLY!!! AAAAAAAAAAAAAAAAA
 
             const paddedCount = padWithZeros(localStorage.pagecount, 7);
 
@@ -165,24 +150,40 @@
             <em>counting since September 17th, 2024!</em>
         </div>
     </div>
-    <div class="footer">
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/benjamin-schelske" title="LinkedIn"><i
-                    class="fa-brands fa-linkedin"></i></a>
-            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" title="Google Scholar"><i
-                    class="fa-brands fa-google-scholar"></i></a>
-            <a href="https://github.com/bschelske" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        </div>
-        created by ben
-        <span>ben@benschelske.com</span>
+    <div class="whats-new hide-on-mobile">
+        <h2 style="text-align: center;">What's New:</h2>
+        <ul>
+            <li>05-28-2025: Fixed home page layout.
+            </li>
+            <li>05-26-2025: Updated
+                <a href="projects.html">Projects</a>
+                and
+                <a href="blog.html">Fun</a>
+                to a have a fresh new look
+            </li>
+            <li>05-26-2025: Improper CV viewing now discouraged.
+            </li>
+        </ul>
     </div>
-
-    <div class="floating-container hide-on-mobile">
-        <a href="secret.html"><img src="img/panic_spin.gif" alt="a spinning alien floats by?"
-                                   class="floating-image"></a>
+</div>
+<div class="footer">
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/benjamin-schelske" title="LinkedIn"><i
+                class="fa-brands fa-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" title="Google Scholar"><i
+                class="fa-brands fa-google-scholar"></i></a>
+        <a href="https://github.com/bschelske" title="GitHub"><i class="fa-brands fa-github"></i></a>
     </div>
+    created by ben
+    <span>ben@benschelske.com</span>
+</div>
 
-    <script src="script.js"></script>
-    <script src="mode_switcher.js"></script>
+<div class="floating-container hide-on-mobile">
+    <a href="secret.html"><img src="img/panic_spin.gif" alt="a spinning alien floats by?"
+                               class="floating-image"></a>
+</div>
+
+<script src="script.js"></script>
+<script src="mode_switcher.js"></script>
 </body>
 </html>

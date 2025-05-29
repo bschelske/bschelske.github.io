@@ -46,11 +46,29 @@ h3,
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 }
 
+.home-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%;
+  margin-top: 6rem;
+}
+
+.home-container {
+    flex: 1;
+	max-width: 50rem;
+	padding: 2rem;
+	border: 5px solid #fff;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+}
+
 .fun-container {
 	display: block;
 	flex-direction: column;
 	align-items: center;
-	justify-content: top;
 	margin: 0 auto;
 	margin-top: 6rem;
 	padding: 20px 20px 10px 20px;
@@ -70,7 +88,21 @@ h3,
 	border-radius: 8px;
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 }
+.split-container{
+    display:flex;
+    flex-direction: row;
+}
 
+.about-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
 
 .main-content {
 	display: flex;
@@ -172,26 +204,25 @@ h3,
 
 .whats-new-space{
     display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-right: 3rem;
-	right: 0;
-	height: auto;
-	position: fixed;
-	width: 210px;
-	padding: 8px;
-	gap: 1rem;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-bottom: 100%;
+    float: right;
+    height: auto;
+    position: relative;
+    width: 210px;
+    padding: 8px;
 }
 
 .whats-new {
-    display: flex;
-	flex-direction: column;
-	height: auto;
-	position: relative;
-	padding: 8px;
+    position: sticky;
+    top: 8rem;
+    width: 250px;
+    flex-shrink: 0;
+    padding: 1rem;
 	border: 5px solid #fff;
 	border-radius: 8px;
-	width: 263px;
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 	text-align: left;
 }
@@ -338,7 +369,8 @@ h3,
 .ben-img {
 	float: left;
 	box-shadow: 5px 5px 5px #888888;
-	margin: 20px 20px 0 0;
+	width: 100%;
+    height: auto;
 }
 
 img {
@@ -495,6 +527,10 @@ h3 {
 		margin-top 70px;
 	}
 
+    .split-container {
+        flex-direction: column;
+    }
+
 	.container {
 		max-width: 800px;
 		margin: 0 auto;
@@ -505,6 +541,21 @@ h3 {
 		box-shadow: 10px 10px 10px transparent;
 		text-align: justify;
 	}
+
+	.home-layout {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 0.5rem;
+        max-width: 100%;
+        margin-top: 0rem;
+    }
+
+    .home-container {
+        margin-top: 5rem;
+        padding: 0.5rem;
+    }
 
 	.menu-bar {
 		display: flex;
@@ -574,16 +625,24 @@ h3 {
 	}
 
 	.ben-img {
-		float: left;
 		box-shadow: 5px 5px 5px #888888;
-		margin: 20px;
+		margin: 0 auto;
+		max-width: 100%;
+        height: auto;
+        display: block;
 	}
+
+    .about-card {
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 100%;
+    }
 
 	img {
 		display: block;
-		margin: auto;
-		max-width: 100%;
-		height: auto;
+        margin: auto;
+        max-width: 100%;
+        height: auto;`
 	}
 
 	.nav {
