@@ -91,6 +91,8 @@ h3,
 
 .split-container{
     display:flex;
+    gap: 1rem;
+    align-items: flex-start;
     flex-direction: row;
     margin-bottom: 1rem;
 }
@@ -368,11 +370,22 @@ h3,
 	display: none;
 }
 
+.img-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .ben-img {
     margin-right: 1rem;
-	box-shadow: 5px 5px 5px #888888;
-	max-width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+
+.text-content {
+  flex: 1.5
 }
 
 img {
@@ -534,7 +547,7 @@ h3 {
     }
 
 	.container {
-		max-width: 800px;
+		width: 45rem;
 		margin: 0 auto;
 		background-color: transparent;
 		padding: 5px;
