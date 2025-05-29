@@ -91,6 +91,7 @@ h3,
 .split-container{
     display:flex;
     flex-direction: row;
+    margin-bottom: 1rem;
 }
 
 .about-card{
@@ -367,9 +368,9 @@ h3,
 }
 
 .ben-img {
-	float: left;
+    margin-right: 1rem;
 	box-shadow: 5px 5px 5px #888888;
-	width: 100%;
+	max-width: 100%;
     height: auto;
 }
 
@@ -572,6 +573,11 @@ h3 {
 		z-index: 1000;
 	}
 
+	.fun-container {
+	    padding: 0.5rem;
+	}
+
+
 	.menu-header {
 		display: flex;
 		align-items: left;
@@ -691,9 +697,9 @@ h3 {
 	.project-container {
 		display: flex;
 		flex-wrap: wrap;
-		padding: clamp(1rem, 5vw, 3rem);
-		margin-left: 1rem;
-		margin-right: 1rem;
+		padding: 0.5rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
 		justify-content: center;
 		gap: 1rem;
 	}
