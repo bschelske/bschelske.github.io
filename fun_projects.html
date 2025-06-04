@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ben Schelske">
-    <meta name="description" content="Ben Schelske's personal projects">
-    <meta name="keywords" content="Ben Schelske, Benjamin Schelske, personal website, portfolio, projects">
+    <meta name="description" content="Ben Schelske's fun projects">
+    <meta name="keywords"
+          content="Ben Schelske, Benjamin Schelske, personal website, portfolio, projects, fun, posts">
     <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" sizes="48x48" href="img/favicon-48x48.png">
     <link rel="icon" sizes="96x96" href="img/favicon-96x96.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Benjmain T. Schelske</title>
+    <title>Fun Projects | Benjamin T. Schelske</title>
+    <link rel="canonical" href="https://benschelske.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lightmode.css">
     <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
     <link id="darkModeCSS" rel="stylesheet" href="darkmode.css" disabled>
+
     <script src="https://kit.fontawesome.com/d8b16c58d2.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
     <script>
@@ -28,7 +31,6 @@
     </script>
 </head>
 <body>
-
 
 <!--Navigation bar for mobile-->
 <div class="menu-bar">
@@ -42,7 +44,7 @@
     <a href="cv.html">CV</a>
     <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
 </div>
-<!-- ^^^^^^^^^^Navigation bar for mobile^^^^^^^^^^^^^^-->
+<!--Navigation bar for mobile-->
 <div class="hide-on-mobile">
     <div class="header_fill">
         <header class="header">
@@ -50,8 +52,8 @@
             <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
             <nav class="nav">
                 <a href="index.html">Home</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="fun.html">Fun</a>
+                <a href="projects.html">Projects</a>
+                <a href="fun.html" class="active">Fun</a>
                 <a href="cv.html">CV</a>
             </nav>
             <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
@@ -67,45 +69,35 @@
     </div>
 </div>
 
+<br>
+
 <div class="fun-container">
     <div class="hide-on-mobile">
         <!--Side Navigation-->
         <div class="sidebar-space"></div>
         <div class="sidebar">
-            <h2 style="text-align: center;">Projects:</h2>
-            <a href="#west">The Wild Wild West</a>
-            <a href="#MLEIS">Machine Learning + Electrochemistry</a>
-            <a href="#pump">Get Pumped!</a>
-            <a href="#count">COUNT</a>
-            <a href="#website">This website</a>
-            <a href="#grift">The Perfect Grift</a>
-            <a href="#intruder">Intruder Detection System</a>
-            <a href="#mmp9">Single-Cell (Data) Analysis</a>
-            <a href="#imagej">ImageJ Macros</a>
-            <a href="#starbattles">Starbattles / Queens Solver</a>
+            <h2 style="text-align: center;">Navigation</h2>
+            <a href="fun.html">Fun Projects</a>
+            <a href="fun.html">FAQ</a>
+            <a href="fun.html">Blog</a>
+            <a href="fun.html">Horseplay</a>
+            <a href="fun.html">Monkey Business</a>
+            <a href="fun.html">etc</a>
         </div>
     </div>
-
-
-    <div class="project-container">
-        <div class="container-title">
-            <div class="hide-on-mobile">
-                <div class="projects-header">
-                    <img src="img/flip.gif" alt="Wow look at this cool guy!" class="mirrored">
-                    <h1 id="#top", style="margin-left:2rem; margin-right:2rem;">Coding Projects</h1>
-                    <img src="img/flip.gif" alt="Wow look at this cool guy!">
-                </div>
+    <div class="container-title">
+        <div class="hide-on-mobile">
+            <div class="projects-header">
+                <img src="img/flip.gif" alt="Wow look at this cool guy!" class="mirrored">
+                <h1 id="#top" , style="margin-left:2rem; margin-right:2rem;">Fun Projects!</h1>
+                <img src="img/flip.gif" alt="Wow look at this cool guy!">
             </div>
-
-
-            <marquee style="margin-bottom: 20px;" behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
-
-            <p>Here are some coding projects I've worked on mostly for fun or to learn new skills. Some of my graduate
-                work has spilled over here, but you can explore my <a href="cv.html">professional work (CV)</a> and
-                    <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">publications (Google Scholar)</a>
-                    for a more complete view.
-                <br><br>I'm still working on creating updating this page... check back soon!</p>
         </div>
+        <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
+
+        Here are some projects I've worked on during my spare time for fun!
+    </div>
+    <div class="project-container">
         <div class="item">
             <h2 id="#west">The Wild Wild West</h2>
             <h4>Tracking crime in my neighborhood</h4>
@@ -119,66 +111,12 @@
                 There was always something interesting happening just outside my window.
             </p>
                 <p>With this project, I want to visualize just how interesting the <em>Wild West</em> really is. The
-                    idea is to drop pins on a map according to the locations from local police reports. Maybe I would be
+                    idea is to drop pins on a map according to the locations from local police reports. Maybe I
+                    would be
                     able to see a huge crime hotspot in the west...?</p>
             </div>
             <h3><span class="highlight">Skills Learned:</span></h3>
             <p>HTTP requests, .pdf parsing, map visualization (folium)</p>
-        </div>
-
-        <div class="item">
-            <h2 id="#MLEIS">Machine Learning + Electrochemistry</h2>
-            <h4>My first foray in machine learning</h4>
-            <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc">I have a lot of domain knowledge when it comes to machine learning principles, but
-                not
-                very much
-                experience.
-                It's like <em>the difference between being a hardcore sports fan and actually playing professional
-                    sports.</em>
-                My personal goal for this project is to bridge that gap and get hands-on experience with machine
-                learning.
-
-                Here I'm using a random forest model to help interpret electrochemical impedance spectroscopy (EIS)
-                data. So far, the results have been very interesting!
-            </div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Random Forest Models, EIS</p>
-        </div>
-
-        <div class="item">
-            <h2 id="#pump">Get Pumped!</h2>
-            <h4>Automating control and imaging microfluidics</h4>
-            <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc">
-                This project was the automation of an experiment that involved lots of <em>tedious</em> pipeting.
-                The control
-                of a few syringe pumps can remove this repetitive task from the experiment workflow. In this
-                project,
-                I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
-            </div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Serial control over USB, interfacing hardware + software, multithreading, UX design</p>
-        </div>
-
-        <div class="item">
-            <h2 id="#count">COUNT: Count objects until no tomorrow</h2>
-            <h4>Custom object tracking for cancer cells</h4>
-            <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc">
-                I like to look at cells under a microscope. I would like to count them, but they move, and there's
-                <em>thousands</em> of them... I wrote some code to track and count cells using OpenCV. This project
-                is my first
-                foray into computer vision, and also includes a gui for increased accessibility. I learned a lot
-                about
-                different image processing techniques and object detection algorithms. Building this was
-                <em>intense!</em>
-            </div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Computer vision, Python, APIs, version control</p>
         </div>
 
         <div class="item">
@@ -218,8 +156,10 @@
                 impression,
                 but this also ends poorly.
             </p>
-                <p>*People don't want to watch 'ai-generated' or code generated slop. In general, retention is bad and
-                    <em>dislikes are high</em>, but this has been a fun project! Lately I've been trying to incorporate
+                <p>*People don't want to watch 'ai-generated' or code generated slop. In general, retention is bad
+                    and
+                    <em>dislikes are high</em>, but this has been a fun project! Lately I've been trying to
+                    incorporate
                     Blender and DaVinci Resolve to make the videos more appealing.</p></div>
             <h3><span class="highlight">Skills Learned:</span></h3>
             <p>MoviePy, PIL, OpenCV, Blender, video editing</p>
@@ -236,7 +176,8 @@
                 assembly together.
                 I learned about working with APIs, software, and hardware.
             </p>
-                <p>Here, I've re-enacted the scene I was hoping to capture. Don't be fooled, the intruder is still at
+                <p>Here, I've re-enacted the scene I was hoping to capture. Don't be fooled, the intruder is still
+                    at
                     large.</p>
 
                 <p>No, the intruder <em>didn't</em> vacuum my floors.</p></div>
@@ -245,22 +186,8 @@
         </div>
 
         <div class="item">
-            <h2 id="#mmp9">Single-Cell (Data) Analysis</h2>
-            <h4>Data analysis for a project in my grad studies</h4>
-            <img src="img/mmp9.png" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc"><p>
-                One of my graduate projects involved making measurements on individual cancer cells. This gave me an
-                opportunity to learn about data analysis and <em>transcend</em> from excel.
-            </p></div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Pandas, numpy,
-                matplotlib/seaborn, and a lot of python.</p>
-        </div>
-
-        <div class="item">
-            <h2 id="imagej">ImageJ Macros</h2>
-            <h4>Useful tools for image analysis</h4>
+            <h2 id="imagej">Goofy ImageJ Macros</h2>
+            <h4>Semi-useful tools for image analysis</h4>
             <img src="img/under_construction.gif" alt="Construction worker working on my website"
                  style="margin: 0 auto;">
             <div class="item-desc"><p>
@@ -292,22 +219,22 @@
                 me. This
                 is the first project I've ever attempted.
             </p>
-                <p>For some reason I used python's <em>turtle graphics</em> to create a game board that I could interact
+                <p>For some reason I used python's <em>turtle graphics</em> to create a game board that I could
+                    interact
                     with. I
-                    can encode different boards and display them using the turtle graphics. I never got around to the
+                    can encode different boards and display them using the turtle graphics. I never got around to
+                    the
                     solving
-                    heuristics, but having a program solve these puzzles is something I think about <em>constantly</em>.
+                    heuristics, but having a program solve these puzzles is something I think about
+                    <em>constantly</em>.
                     I'm very tempted to
                     try and use <em>Rust</em> for this problem.</p></div>
             <h3><span class="highlight">Skills Learned:</span></h3>
             <p>Python</p>
         </div>
     </div>
-</div>
-
-<br>
-<div class="hide-on-mobile" style="text-align:center ">
-    <a style="text-align:center" class="enter-link" href="#top">back to top</a>
+    <br>
+    <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
 </div>
 
 <div class="footer">
@@ -322,8 +249,8 @@
     <span>ben@benschelske.com</span>
 </div>
 
+
 <script src="script.js"></script>
 <script src="mode_switcher.js"></script>
-<script src="sidebar.js"></script>
 </body>
 </html>
