@@ -512,6 +512,11 @@ img {
 	flex: 0 0 calc(33.333% - 1rem);
 }
 
+.publication {
+border: 5px solid #ffcc00;
+background: linear-gradient(135deg, #fff8e1, #fff);
+}
+
 .highlight {
 	color: black;
 	background: linear-gradient(to bottom,

@@ -19,8 +19,12 @@ body {
 }
 
 .show-on-alien{
-    display:block
+    display:inline
     }
+
+.white{
+    color: #fff;
+}
 
 span {
     color: #ffcc00;
@@ -846,6 +850,10 @@ a:active {
     flex: 0 0 calc(33.333% - 1rem);
     }
 
+.publication {
+    border: 5px solid #ffcc00;
+    background: linear-gradient(135deg,  #8c02b3, #1e004b);
+}
 .item img{
     display: flex;
     justify-content: center;
