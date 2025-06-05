@@ -9,23 +9,33 @@
 
 <url>
   <loc>https://benschelske.com/</loc>
-  <lastmod>2025-05-16T14:30:59+00:00</lastmod>
+  <lastmod>2025-06-05T00:02:31+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://benschelske.com/index.html</loc>
-  <lastmod>2025-05-16T14:30:59+00:00</lastmod>
+  <lastmod>2025-06-05T00:02:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/projects.html</loc>
-  <lastmod>2025-05-16T14:30:59+00:00</lastmod>
+  <lastmod>2025-06-05T00:02:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://benschelske.com/fun.html</loc>
+  <lastmod>2025-06-05T00:02:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/cv.html</loc>
-  <lastmod>2025-05-16T14:30:59+00:00</lastmod>
+  <lastmod>2025-06-05T00:02:31+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://benschelske.com/fun_projects.html</loc>
+  <lastmod>2025-06-05T00:02:31+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
