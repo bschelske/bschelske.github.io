@@ -147,13 +147,13 @@ h3,
 	width: 100%;
 	z-index: 10;
 	position: fixed;
-	height: 6rem;
+	height: 9rem;
 	top: 0px;
 	background-color: #f7f7f2;
 }
 
 .header_fill {
-	height: 6rem;
+	height: 9rem;
 }
 
 .site-header__wrapper {
@@ -168,7 +168,7 @@ h3,
 	flex: 1;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 0px;
+	margin-bottom: 1rem;
 	margin-top: 1rem;
 }
 
@@ -220,7 +220,6 @@ h3,
 
 .whats-new {
     position: sticky;
-    top: 8rem;
     width: 250px;
     flex-shrink: 0;
     padding: 1rem;
