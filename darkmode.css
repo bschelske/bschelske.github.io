@@ -18,9 +18,6 @@ body {
     box-sizing: border-box;
 }
 
-.show-on-alien{
-    display:inline
-    }
 
 .white{
     color: #fff;
@@ -584,8 +581,19 @@ p {
 	}
 
 }
-
 /* ^^^ Set defaults for Desktop and mobile ^^^ */
+
+.hide-on-day{
+    display:none;
+}
+
+.hide-on-alien{
+    display:none;
+}
+
+.show-on-alien{
+    display:flex
+    }
 
 #hitCounter {
 	padding: 10px;

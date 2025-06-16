@@ -539,6 +539,15 @@ h3 {
     display:none;
 }
 
+.hide-on-alien{
+    display:none;
+}
+
+.show-on-day{
+    display:flex
+    }
+
+
 @media only screen and (max-width: 600px) {
 	.show-on-mobile {
 		display: block;
