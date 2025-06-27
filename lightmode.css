@@ -53,6 +53,7 @@ h3,
   gap: 2rem;
   padding: 2rem;
   max-width: 100%;
+  padding-top: 0;
 }
 
 .home-container {
@@ -73,6 +74,7 @@ h3,
 	text-align: justify;
 	position: relative;
 	z-index: 1;
+	padding-top: 0;
 
 }
 
@@ -81,7 +83,8 @@ h3,
 	flex-direction: column;
 	align-items: center;
 	padding: 1rem;
-	margin-bottom: 1rem;
+	padding-bottom: 0;
+	margin-bottom: 0;
 	border: 5px solid #fff;
 	border-radius: 8px;
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
@@ -792,6 +795,10 @@ h2 {
 	margin-bottom: .75rem;
 	color: #2e754f;
 	font-weight: bold;
+}
+
+h2[id] {
+    scroll-margin-top: 11rem;
 }
 
 .date {
