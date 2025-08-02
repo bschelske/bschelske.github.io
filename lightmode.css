@@ -87,7 +87,7 @@ h3,
 	max-width: 60%;
 	padding: 2rem;
 	padding-top: 0;
-	margin-bottom: 2rem;
+	margin-bottom: 0;
 }
 
 
@@ -429,7 +429,7 @@ img {
 	max-width: 222px;
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 0px;
 	padding: 0px 30px 10px 30px;
 	z-index: 11;
 	position: relative;
@@ -440,6 +440,7 @@ img {
 	justify-content: center;
 	gap: 15px;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .socials a {
