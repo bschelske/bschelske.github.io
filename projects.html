@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ben Schelske">
@@ -21,34 +22,38 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-B3P7YVMXYJ');
     </script>
 </head>
+
 <body>
 
 
-<!--Navigation bar for mobile-->
-<div class="menu-bar">
-    <div class="menu-header"><h1>BEN<br>SCHELSKE</h1></div>
-    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-</div>
-<div class="dropdown-menu" id="dropdownMenu">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="fun.html">Fun</a>
-    <a href="cv.html">CV</a>
-    <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
-</div>
-<!-- ^^^^^^^^^^Navigation bar for mobile^^^^^^^^^^^^^^-->
-<div class="hide-on-mobile">
-    <div class="header_fill">
+    <!--Navigation bar for mobile-->
+    <div class="menu-bar">
+        <div class="menu-header">
+            <h1>BEN<br>SCHELSKE</h1>
+        </div>
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+    </div>
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="fun.html">Fun</a>
+        <a href="cv.html">CV</a>
+        <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2">LinkedIn</a>
+    </div>
+    <!-- ^^^^^^^^^^Navigation bar for mobile^^^^^^^^^^^^^^-->
+    <div class="header_fill hide-on-mobile">
         <header class="header">
-             <div class="show-on-day hide-on-alien email"><img class="logo show-on-day hide-on-alien" src="img/logo.gif" alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM"></div>
-            <div class="show-on-alien hide-on-day email"><img class="logo hide-on-day show-on-alien" src="img/dark_logo.gif" alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM"></div>
-
+            <div class="show-on-day hide-on-alien email"><img class="logo show-on-day hide-on-alien" src="img/logo.gif"
+                    alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM">
+            </div>
+            <div class="show-on-alien hide-on-day email"><img class="logo hide-on-day show-on-alien"
+                    src="img/dark_logo.gif" alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM"></div>
             <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
             <nav class="nav">
                 <a href="index.html">Home</a>
@@ -67,13 +72,9 @@
             </div>
         </header>
     </div>
-</div>
 
-<div class="fun-container">
-    <div class="hide-on-mobile">
-        <!--Side Navigation-->
-        <div class="sidebar-space"></div>
-        <div class="sidebar">
+    <div class="fun-container">
+        <div class="sidebar hide-on-mobile">
             <h2 style="text-align: center;">Projects:</h2>
             <a href="#MLEIS">Identification of Critical Microfluidic Events</a>
             <a href="#MLEIS">Classification of Healthy WBCs vs. Melanoma Cells</a>
@@ -85,173 +86,188 @@
             <a href="#imagej">ImageJ Macros</a>
             <a href="#imagej">First publication experience</a>
         </div>
-    </div>
+        <div class="project-container">
+            <div class="container-title">
+                <div class="hide-on-mobile">
+                    <div class="projects-header">
+                        <h1 id="top" style="margin-left:2rem; margin-right:2rem;">Graduate School Projects</h1>
+                    </div>
+                </div>
 
 
-    <div class="project-container">
-        <div class="container-title">
-            <div class="hide-on-mobile">
-                <div class="projects-header">
-                    <h1 id="top" style="margin-left:2rem; margin-right:2rem;">Graduate School Projects</h1>
+                <p>Here are some projects I've worked on in the <a href="https://anand.chem.iastate.edu/">Anand Lab</a>.
+                    Most of these projects are related to publications (emphasized in <span
+                        class="hide-on-day show-on-alien white">purple and</span> gold),
+                    but I've included a few little projects / curiosity pursuits as well. <em>I've simplified and
+                        abridged
+                        the project titles and descriptions compared to their published counterparts.</em> If you are
+                    interested
+                    to learn more about my professional career, feel free to check out my <a
+                        href="cv.html">resume/cv</a>
+                    and
+                    <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar page</a>.
+                    I am also happy to connect on <a href="https://www.linkedin.com/in/benjamin-schelske">LinkedIn</a>.
+                    <br><br>This page is a work in progress. I'm only providing <em>limited information about
+                        unpublished
+                        work</em>,
+                    but I'm excited to share more soon!
+                </p>
+            </div>
+            <div class="item publication">
+                <h2>ML Identification of Critical Microfluidic Events</h2>
+                <i>Manuscript in progress</i><br><br>
+                <img src="img/traffic.png" alt="Image of a microfluidic device with arrows coming out"
+                    style="margin: 0 auto;">
+                <div class="item-desc">
+                    <p>I can't share too much about this project right now, but working on it has really
+                        skyrocketed my ML abilities.
+
+                    </p>
+                </div>
+                <h3><span class="highlight">Skills Learned:</span></h3>
+                <p>PyTorch, CNNs,
+                    transfer learning, deep learning fundamentals.</p>
+            </div>
+
+            <div class="item publication">
+                <h2>ML Classification of Healthy WBCs vs. Melanoma Cells</h2>
+                <i>Manuscript in progress</i><br><br>
+                <img src="img/under_construction.gif" alt="Construction worker working on my website"
+                    style="margin: 0 auto;">
+                <div class="item-desc">
+                    <p>Check back for more info later!
+                    </p>
                 </div>
             </div>
 
+            <div class="item">
+                <h2 id="MLEIS">Machine Learning + Electrochemistry</h2>
+                <p>Pursuing my curiosity about machine learning</p>
+                <img src="img/EIS.png" alt="Construction worker working on my website" style="margin: 0 auto;">
+                <div class="item-desc">At the time, I had a lot of domain knowledge when it comes to machine learning
+                    principles, but
+                    not very much experience. It was like <em>the difference between being a hardcore sports fan and
+                        actually
+                        playing professional
+                        sports.</em>
+                    My personal goal for this project was to bridge that gap and get hands-on experience with machine
+                    learning.
 
-            <p>Here are some projects I've worked on in the <a href="https://anand.chem.iastate.edu/">Anand Lab</a>.
-                Most of these projects are related to publications (emphasized in <span
-                        class="hide-on-day show-on-alien white">purple and</span> gold),
-                but I've included a few little projects / curiosity pursuits as well. <em>I've simplified and abridged
-                    the project titles and descriptions compared to their published counterparts.</em> If you are
-                interested
-                to learn more about my professional career, feel free to check out my <a href="cv.html">resume/cv</a>
-                and
-                <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en">Google Scholar page</a>.
-                I am also happy to connect on <a href="https://www.linkedin.com/in/benjamin-schelske">LinkedIn</a>.
-                <br><br>This page is a work in progress. I'm only providing <em>limited information about unpublished
-                    work</em>,
-                but I'm excited to share more soon!</p>
-        </div>
-        <div class="item publication">
-            <h2>ML Identification of Critical Microfluidic Events</h2>
-            <i>Manuscript in progress</i><br><br>
-            <img src="img/traffic.png" alt="Image of a microfluidic device with arrows coming out"
-                 style="margin: 0 auto;">
-            <div class="item-desc"><p>I can't share too much about this project right now, but working on it has really
-                skyrocketed my ML abilities.
-
-            </p></div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>PyTorch, CNNs,
-                transfer learning, deep learning fundamentals.</p>
-        </div>
-
-        <div class="item publication">
-            <h2>ML Classification of Healthy WBCs vs. Melanoma Cells</h2>
-            <i>Manuscript in progress</i><br><br>
-            <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc"><p>Check back for more info later!
-            </p></div>
-        </div>
-
-        <div class="item">
-            <h2 id="MLEIS">Machine Learning + Electrochemistry</h2>
-            <p>Pursuing my curiosity about machine learning</p>
-            <img src="img/EIS.png" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc">At the time, I had a lot of domain knowledge when it comes to machine learning
-                principles, but
-                not very much experience. It was like <em>the difference between being a hardcore sports fan and
-                    actually
-                    playing professional
-                    sports.</em>
-                My personal goal for this project was to bridge that gap and get hands-on experience with machine
-                learning.
-
-                Here I'm using a random forest model to help interpret electrochemical impedance spectroscopy (EIS)
-                data. So far, the results have been very interesting!
-            </div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Random Forest Models, EIS</p>
-        </div>
-
-        <div class="item">
-            <h2 id="pump">Get Pumped!</h2>
-            <p>Enabling ML data collection by automating microfluidic operation.</p>
-            <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc">
-                This project was the automation of an experiment that involved lots of <em>tedious</em> pipetting.
-                The control
-                of a few syringe pumps can remove this repetitive task from the experiment workflow. In this
-                project,
-                I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
-            </div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Serial control over USB, interfacing hardware + software, multithreading, UX design</p>
-        </div>
-
-        <div class="item">
-            <h2 id="count">COUNT: Count objects until no tomorrow</h2>
-            <h4>Custom object tracking for cancer cells</h4>
-            <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc">
-                I like to look at cells under a microscope. I would like to count them, but they move, and there's
-                <em>thousands</em> of them... I wrote some code to track and count cells using OpenCV. This project
-                is my first
-                foray into computer vision, and also includes a gui for increased accessibility. I learned a lot
-                about
-                different image processing techniques and object detection algorithms. Building this was
-                <em>intense!</em>
-            </div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Computer vision, Python, APIs, version control</p>
-        </div>
-
-        <div class="item">
-            <h2>Cotton-Uphaus Competition</h2>
-            <p>ISU oral presentation competition</p>
-            <img src="img/cu.png" alt="Example slide from competition"
-                 style="margin: 0 auto;">
-            <div class="item-desc"><p>I competed in a department wide presentation competition on April 24, 2024! I made
-                a really nice presentation about my work on the MMP9 project, using animations created in Blender.
-                Blender is hard to learn but extremely powerful for scientific communication. I plan to write more about
-                this soon!</p>
-            </div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Blender, scientific communication, professional presentations</p>
-        </div>
-
-        <div class="item item-final publication">
-            <h2 id="mmp9">MMP9 Project</h2>
-            <i>Manuscript submitted</i><br><br>
-            <img src="img/mmp9.png" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc"><p>
-                One of my graduate projects involved making measurements on individual cancer cells. This gave me an
-                opportunity to learn about data analysis and <em>transcend</em> from Excel.
-            </p></div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>Pandas, numpy,
-                matplotlib/seaborn, and a lot of python.</p>
-        </div>
-
-        <div class="item item-final">
-            <h2 id="imagej">ImageJ Macros</h2>
-            <h4>Useful tools for image analysis</h4>
-            <img src="img/circle_pro.png" alt="Construction worker working on my website"
-                 style="margin: 0 auto;">
-            <div class="item-desc"><p>
-                Some of the first code I've ever wrote was in the ImageJ macro language using <em>notepad</em>. I
-                was interested in improving the
-                data analysis workflow for making measurements on fluorescence microscopy images. I wrote a series
-                of macros
-                that automatically place regions of interest (ROIs) over regions of interest, identify the presence
-                of cancer cells,
-                and made data collection easier. <em>ImageJ is awesome!</em>
-            </p>
-                <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">See the code on
-                    GitHub</a></div>
-            <h3><span class="highlight">Skills Learned:</span></h3>
-            <p>ImageJ Macro Language, image analysis/processing</p>
-        </div>
-
-        <div class="item item-final publication">
-            <h2>First publication experience</h2>
-            <i>Published in Anal. Chem. 2023, 95, 20, 7880–7887, as third author</i>
-            <img src="img/bano.png" alt="TOC abstract"
-                 style="margin: 0 auto;">
-            <div class="item-desc"><p>I contributed towards this project while being trained by my mentor Joe. This
-                project is about device optimizations and an investigation into single-cell β-galactosidase
-                activity.</p>Read more:<br>DOI: <a href="https://doi.org/10.1021/acs.analchem.3c00078">10.1021/acs.analchem.3c00078</a>
-
+                    Here I'm using a random forest model to help interpret electrochemical impedance spectroscopy (EIS)
+                    data. So far, the results have been very interesting!
+                </div>
                 <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Lab skills, microfluidics, cleanroom skills, technical writing</p>
+                <p>Random Forest Models, EIS</p>
+            </div>
+
+            <div class="item">
+                <h2 id="pump">Get Pumped!</h2>
+                <p>Enabling ML data collection by automating microfluidic operation.</p>
+                <img src="img/under_construction.gif" alt="Construction worker working on my website"
+                    style="margin: 0 auto;">
+                <div class="item-desc">
+                    This project was the automation of an experiment that involved lots of <em>tedious</em> pipetting.
+                    The control
+                    of a few syringe pumps can remove this repetitive task from the experiment workflow. In this
+                    project,
+                    I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
+                </div>
+                <h3><span class="highlight">Skills Learned:</span></h3>
+                <p>Serial control over USB, interfacing hardware + software, multithreading, UX design</p>
+            </div>
+
+            <div class="item">
+                <h2 id="count">COUNT: Count objects until no tomorrow</h2>
+                <h4>Custom object tracking for cancer cells</h4>
+                <img src="img/under_construction.gif" alt="Construction worker working on my website"
+                    style="margin: 0 auto;">
+                <div class="item-desc">
+                    I like to look at cells under a microscope. I would like to count them, but they move, and there's
+                    <em>thousands</em> of them... I wrote some code to track and count cells using OpenCV. This project
+                    is my first
+                    foray into computer vision, and also includes a gui for increased accessibility. I learned a lot
+                    about
+                    different image processing techniques and object detection algorithms. Building this was
+                    <em>intense!</em>
+                </div>
+                <h3><span class="highlight">Skills Learned:</span></h3>
+                <p>Computer vision, Python, APIs, version control</p>
+            </div>
+
+            <div class="item">
+                <h2>Cotton-Uphaus Competition</h2>
+                <p>ISU oral presentation competition</p>
+                <img src="img/cu.png" alt="Example slide from competition" style="margin: 0 auto;">
+                <div class="item-desc">
+                    <p>I competed in a department wide presentation competition on April 24, 2024! I made
+                        a really nice presentation about my work on the MMP9 project, using animations created in
+                        Blender.
+                        Blender is hard to learn but extremely powerful for scientific communication. I plan to write
+                        more about
+                        this soon!</p>
+                </div>
+                <h3><span class="highlight">Skills Learned:</span></h3>
+                <p>Blender, scientific communication, professional presentations</p>
+            </div>
+
+            <div class="item item-final publication">
+                <h2 id="mmp9">MMP9 Project</h2>
+                <i>Manuscript submitted</i><br><br>
+                <img src="img/mmp9.png" alt="Construction worker working on my website" style="margin: 0 auto;">
+                <div class="item-desc">
+                    <p>
+                        One of my graduate projects involved making measurements on individual cancer cells. This gave
+                        me an
+                        opportunity to learn about data analysis and <em>transcend</em> from Excel.
+                    </p>
+                </div>
+                <h3><span class="highlight">Skills Learned:</span></h3>
+                <p>Pandas, numpy,
+                    matplotlib/seaborn, and a lot of python.</p>
+            </div>
+
+            <div class="item item-final">
+                <h2 id="imagej">ImageJ Macros</h2>
+                <h4>Useful tools for image analysis</h4>
+                <img src="img/circle_pro.png" alt="Construction worker working on my website" style="margin: 0 auto;">
+                <div class="item-desc">
+                    <p>
+                        Some of the first code I've ever wrote was in the ImageJ macro language using <em>notepad</em>.
+                        I
+                        was interested in improving the
+                        data analysis workflow for making measurements on fluorescence microscopy images. I wrote a
+                        series
+                        of macros
+                        that automatically place regions of interest (ROIs) over regions of interest, identify the
+                        presence
+                        of cancer cells,
+                        and made data collection easier. <em>ImageJ is awesome!</em>
+                    </p>
+                    <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">See the code on
+                        GitHub</a>
+                </div>
+                <h3><span class="highlight">Skills Learned:</span></h3>
+                <p>ImageJ Macro Language, image analysis/processing</p>
+            </div>
+
+            <div class="item item-final publication">
+                <h2>First publication experience</h2>
+                <i>Published in Anal. Chem. 2023, 95, 20, 7880–7887, as third author</i>
+                <img src="img/bano.png" alt="TOC abstract" style="margin: 0 auto;">
+                <div class="item-desc">
+                    <p>I contributed towards this project while being trained by my mentor Joe. This
+                        project is about device optimizations and an investigation into single-cell β-galactosidase
+                        activity.</p>Read more:<br>DOI: <a
+                        href="https://doi.org/10.1021/acs.analchem.3c00078">10.1021/acs.analchem.3c00078</a>
+
+                    <h3><span class="highlight">Skills Learned:</span></h3>
+                    <p>Lab skills, microfluidics, cleanroom skills, technical writing</p>
+                </div>
             </div>
         </div>
+        <div class="sidebar-space hide-on-mobile"></div>
     </div>
-</div>
+
     <br>
 
     <div class="footer">
@@ -262,7 +278,7 @@
                     class="fa-brands fa-google-scholar"></i></a>
             <a href="https://github.com/bschelske" title="GitHub"><i class="fa-brands fa-github"></i></a>
         </div>
-        created by ben
+        Handcrafted by ben &copy 2025
         <span>ben@benschelske.com</span>
     </div>
 
@@ -270,4 +286,5 @@
     <script src="mode_switcher.js"></script>
 
 </body>
+
 </html>
