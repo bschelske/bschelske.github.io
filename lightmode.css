@@ -29,7 +29,7 @@ body {
 }
 
 span {
-	color: #2e754f;
+	color: #0a570f;
 }
 
 section,
@@ -93,9 +93,12 @@ h3,
 
 .container-title {
 	display: flex;
+	flex: 0 0 100%;
+	padding: 1rem;
+	box-sizing: border-box;
+	width: 100%;
 	flex-direction: column;
 	align-items: center;
-	padding: 1rem;
 	margin-bottom: 0;
 	border: 5px solid #fff;
 	border-radius: 8px;
@@ -152,7 +155,7 @@ h3,
 .ticker {
 	display: inline-block;
 	animation: ticker 2s ease-in-out;
-	color: #2e754f;
+	color: #0a570f;
 }
 
 .header {
@@ -217,7 +220,7 @@ h3,
 .nav a.active {
 	font-size: 1.7rem;
 	font-weight: bold;
-	color: #2e754f;
+	color: #0a570f;
 	transform: scale(1.1);
 	text-decoration: underline;
 }
@@ -225,8 +228,10 @@ h3,
 
 .whats-new-spacer {
 	position: sticky;
-	width: 250px;
+	width: 260px;
+	/* whats-new border makes box 10px larger than spacer ^ so width is +10px */
 	flex-shrink: 0;
+	border: 5px;
 	padding: 1rem;
 }
 
@@ -261,7 +266,7 @@ h3,
 	position: sticky;
 	flex-shrink: 0;
 	flex-direction: column;
-	width: 250px;
+	width: 260px;
 	padding: 8px;
 }
 
@@ -273,7 +278,7 @@ h3,
 	flex-direction: column;
 	margin: 0;
 	height: fit-content;
-	width: 210px;
+	width: 250px;
 	padding: 8px;
 	border: 5px solid #fff;
 	border-radius: 8px;
@@ -295,10 +300,42 @@ h3,
 .sidebar a.active {
 	font-size: 1.7rem;
 	font-weight: bold;
-	color: #2e754f;
+	color: #0a570f;
 	transform: scale(1.1);
 	text-decoration: underline;
 }
+
+.fun-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	gap: 1rem;
+	margin-top: -2rem;
+	/* border: 5px solid #fff; */
+	/* border-radius: 8px; */
+	/* background-color: #f7f7f2; */
+	/* box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2); */
+	margin-bottom: 1rem;
+}
+
+.fun-nav a {
+	color: #222725;
+	text-decoration: none;
+	margin: 0 10px;
+	font-weight: bold;
+	font-size: 1.2rem;
+	transition: all 0.3s ease;
+}
+
+.fun-nav a.active {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #0a570f;
+	transform: scale(1.1);
+	text-decoration: underline;
+}
+
 
 .projects-header {
 	display: flex;
@@ -777,6 +814,11 @@ h3 {
 
 }
 
+a {
+	color: #1400ff;
+	text-decoration: none;
+}
+
 a:visited {
 	background-color: transparent;
 	text-decoration: underline;
@@ -801,7 +843,7 @@ a:active {
 
 h2 {
 	margin-bottom: .75rem;
-	color: #2e754f;
+	color: #0a570f;
 	font-weight: bold;
 }
 
@@ -890,7 +932,7 @@ hr {
 .teaching-table .total {
 	text-align: right;
 	border: none;
-	color: #2e754f;
+	color: #0a570f;
 	font-weight: bold;
 }
 
@@ -905,7 +947,7 @@ hr {
 
 em {
 	font-style: italic;
-	color: #2e754f;
+	color: #0a570f;
 }
 
 article {
