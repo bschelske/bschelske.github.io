@@ -39,7 +39,9 @@ span {
 }
 
 .header_fill {
-    margin-bottom: 10px;
+    height: 9rem;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .site-header__wrapper {
@@ -90,6 +92,25 @@ span {
     text-decoration: underline;
 }
 
+.fun-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+.fun-nav a.active {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff00;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
 .home-layout {
     display: flex;
     justify-content: center;
@@ -98,13 +119,13 @@ span {
     padding: 2rem;
     max-width: 100%;
     margin-top: 0rem;
+    padding-top: 0;
 }
 
 .home-container {
     flex: 1;
     max-width: 50rem;
     padding: 2rem;
-    border: 5px solid #fff;
     border-radius: 0px;
     background-color: #1e004b;
     border: 5px solid #00ff00;
@@ -354,7 +375,6 @@ p {
 
 .whats-new {
     position: sticky;
-    top: 8rem;
     width: 250px;
     flex-shrink: 0;
     padding: 1rem;
@@ -383,8 +403,7 @@ p {
 .sidebar-space {
     position: sticky;
     flex-shrink: 0;
-    flex-direction: column;
-    width: 250px;
+    width: 260px;
     padding: 8px;
 }
 
@@ -396,7 +415,7 @@ p {
     flex-direction: column;
     margin: 0;
     height: fit-content;
-    width: 210px;
+    width: 250px;
     padding: 8px;
     border-radius: 0px;
     background-color: #1e004b;

@@ -163,9 +163,7 @@ h3,
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	z-index: 10;
 	height: 9rem;
-	top: 0px;
 	max-width: 1920px;
 	margin: auto;
 }
@@ -265,7 +263,6 @@ h3,
 .sidebar-space {
 	position: sticky;
 	flex-shrink: 0;
-	flex-direction: column;
 	width: 260px;
 	padding: 8px;
 }
@@ -312,10 +309,6 @@ h3,
 	padding: 1rem;
 	gap: 1rem;
 	margin-top: -2rem;
-	/* border: 5px solid #fff; */
-	/* border-radius: 8px; */
-	/* background-color: #f7f7f2; */
-	/* box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2); */
 	margin-bottom: 1rem;
 }
 
