@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=VT323&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/d8b16c58d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lightmode.css">
     <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
@@ -36,7 +37,6 @@
 </head>
 
 <body>
-
     <!--Navigation bar for mobile-->
     <div class="menu-bar">
         <div class="menu-header">
@@ -44,14 +44,21 @@
         </div>
         <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
     </div>
-    <div class="dropdown-menu" id="dropdownMenu">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="fun.html">Fun</a>
-        <a href="cv.html">CV</a>
-        <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2" target="_blank">LinkedIn</a>
-    </div>
-    <!--^^^^^^^^^^^^^^^^^Navigation bar for mobile^^^^^^^^^-->
+    <ul class="dropdown-menu" id="dropdownMenu">
+        <li class="mobile-nav-item"><a href="index.html">HOME</a></li>
+        <li class="mobile-nav-item"><a href="projects.html">PROJECTS</a></li>
+        <li class="mobile-nav-item"><a href="fun.html">FUN</a></li>
+        <li class="mobile-nav-item"><a href="cv.html">CV</a></li>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/benjamin-schelske" target="_blank" title="LinkedIn"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" target="_blank"
+                title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            <a href="https://github.com/bschelske" target="_blank" title="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+    </ul>
+    <!--Navigation bar for mobile-->
 
     <div class="header_fill hide-on-mobile">
         <header class="header">
@@ -173,19 +180,25 @@
         <div class="whats-new hide-on-mobile">
             <h2 style="text-align: center; margin-top: 0px;">What's New:</h2>
             <ul>
+                <li>08-09-2025: Improved mobile navigation</li>
+                <li>08-07-2025: Added a <a href="books.html" target="_blank">books</a> page!</li>
+                <li>08-07-2025: Added the <a target="_blank" href="https://www.credit-role-generator.app/">CRediT
+                        Generator app</a> to
+                    the <a href="fun_projects.html">Fun Projects</a> page.</li>
                 <li>08-02-2025: Fixed layout alignments!!</li>
                 <li>06-15-2025: New logo!</li>
-                <li>06-04-2025: <a href="projects.html">Projects</a> page overhaul! <span>Fun Projects</span> added to
-                    <a href="fun.html">Fun</a>.
+                <li>06-04-2025: <a href="projects.html" target="_blank">Projects</a> page overhaul! <span>Fun
+                        Projects</span> added to
+                    <a href="fun.html" target="_blank">Fun</a>.
                 </li>
                 <li>05-28-2025: Fixed home page layout and site-wide mobile formatting.</li>
                 <li>05-26-2025: Updated
-                    <a href="projects.html">Projects</a>
+                    <a href="projects.html" target="_blank">Projects</a>
                     and
-                    <a href="fun.html">Fun</a>
+                    <a href="fun.html" target="_blank">Fun</a>
                     to a have a fresh new look
                 </li>
-                <li>05-26-2025: <span>Improper</span> <a href="cv.html">CV</a> viewing now discouraged.
+                <li>05-26-2025: <span>Improper</span> <a href="cv.html" target="_blank">CV</a> viewing now discouraged.
                 </li>
             </ul>
         </div>

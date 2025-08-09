@@ -26,6 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="lightmode.css">
     <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
     <link id="darkModeCSS" rel="stylesheet" href="darkmode.css" disabled>
@@ -42,13 +43,20 @@
         </div>
         <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
     </div>
-    <div class="dropdown-menu" id="dropdownMenu">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="fun.html">Fun</a>
-        <a href="cv.html">CV</a>
-        <a href="https://www.linkedin.com/in/benjamin-schelske-4351211a2" target="_blank">LinkedIn</a>
-    </div>
+    <ul class="dropdown-menu" id="dropdownMenu">
+        <li class="mobile-nav-item"><a href="index.html">HOME</a></li>
+        <li class="mobile-nav-item"><a href="projects.html">PROJECTS</a></li>
+        <li class="mobile-nav-item"><a href="fun.html">FUN</a></li>
+        <li class="mobile-nav-item"><a href="cv.html">CV</a></li>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/benjamin-schelske" target="_blank" title="LinkedIn"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" target="_blank"
+                title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            <a href="https://github.com/bschelske" target="_blank" title="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+    </ul>
     <!--Navigation bar for mobile-->
     <div class="header_fill hide-on-mobile ">
         <header class="header">
