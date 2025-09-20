@@ -1,6 +1,8 @@
 html {
 	margin: 0;
 	padding: 0;
+	line-height: 1.5;
+	font-family: Monaco, Helvetica, monospace;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
@@ -8,7 +10,7 @@ html {
 
 body {
 	background-color: #f7f7f2;
-	font-family: Monaco, Helvetica, monospace;
+
 	margin: 0;
 	padding: 0;
 	color: #000000;
@@ -206,6 +208,7 @@ h3,
 	font-weight: bold;
 	font-size: 1.5rem;
 	transition: all 0.3s ease;
+	white-space: nowrap;
 }
 
 .nav a.active {
@@ -618,7 +621,6 @@ h3 {
 .show-on-day {
 	display: flex
 }
-
 
 @media only screen and (max-width: 600px) {
 	.show-on-mobile {
