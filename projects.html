@@ -85,13 +85,13 @@
     <div class="fun-container with-sidebar">
         <div class="sidebar hide-on-mobile">
             <h2 style="text-align: center;">Projects:</h2>
-            <a href="#MLEIS">Identification of Critical Microfluidic Events</a>
-            <a href="#MLEIS">ML Cell Classification</a>
+            <a href="#mmp9">My First Publication!</a>
+            <a href="#MLEIS">Machine Learning on a Chip</a>
+            <a href="#MLEIS">Machine Learning Cell Classification</a>
             <a href="#MLEIS">Machine Learning + Electrochemistry</a>
             <a href="#pump">Get Pumped!</a>
             <a href="#count">COUNT</a>
             <a href="#count">Cotton-Uphaus Competition</a>
-            <a href="#mmp9">MMP9 Project</a>
             <a href="#imagej">ImageJ Macros</a>
             <a href="#imagej">First publication experience</a>
         </div>
@@ -125,15 +125,32 @@
                     but I'm excited to share more soon!
                 </p>
             </div>
+
             <div class="item publication">
-                <h2>ML Identification of Critical Microfluidic Events</h2>
-                <i>Manuscript in progress</i><br><br>
+                <h2 id="mmp9">My First Publication!</h2>
+                <i>Preprint available on Analytica Chimica Acta<br>(first author)</i><br><br>
+                <img src="img/mmp9.png" alt="Construction worker working on my website" style="margin: 0 auto;">
+                <div class="item-desc">
+                    <p>
+                        My <span>first publication as first author!</span> I am very excited to have this work
+                        published! I plan to do a write up on what this project was all about soon, but I am so,
+                        <span>so</span> busy
+                        (5th year grad student).
+                    </p>
+                    </p>Read more:<br>DOI: <a href="https://doi.org/10.1016/j.aca.2025.344663"
+                        target="_blank">10.1016/j.aca.2025.344663</a>
+                    <h3><span class="highlight">Skills Learned:</span></h3>
+                    <p>Analytical skills, Python, Blender, Data analysis and visualization, grit</p>
+                </div>
+            </div>
+
+            <div class="item publication">
+                <h2>Machine Learning on a Chip</h2>
+                <i>Manuscript in progress</i><br>(first author)<br><br>
                 <img src="img/traffic.png" alt="Image of a microfluidic device with arrows coming out"
                     style="margin: 0 auto;">
                 <div class="item-desc">
-                    <p>I can't share too much about this project right now, but working on it has really
-                        skyrocketed my ML abilities.
-
+                    <p>Check back for more info later!
                     </p>
                 </div>
                 <h3><span class="highlight">Skills Learned:</span></h3>
@@ -142,14 +159,17 @@
             </div>
 
             <div class="item publication">
-                <h2>ML Classification of Healthy WBCs vs. Melanoma Cells</h2>
-                <i>Manuscript in progress</i><br><br>
+                <h2>Machine Learning Cell Classification</h2>
+                <i>Manuscript in progress</i>
+                <br>(first author)<br><br>
                 <img src="img/under_construction.gif" alt="Construction worker working on my website"
                     style="margin: 0 auto;">
                 <div class="item-desc">
                     <p>Check back for more info later!
                     </p>
                 </div>
+                <h3><span class="highlight">Skills Learned:</span></h3>
+                <p>Machine Learning, Interpretable AI, Model Evaluation, CNNs, Transfer Learning</p>
             </div>
 
             <div class="item">
@@ -166,7 +186,12 @@
                     learning.
 
                     Here I'm using a random forest model to help interpret electrochemical impedance spectroscopy (EIS)
-                    data. So far, the results have been very interesting!
+                    data. The results help predict device performance.
+                    <br><br>
+                    During this project, I had a need to plot the output of a CH Instruments CHI650E potentiostat. You
+                    can find the code for plotting here: <a href="https://github.com/bschelske/EIS_plotter"
+                        target="_blank">GitHub</a>.
+
                 </div>
                 <h3><span class="highlight">Skills Learned:</span></h3>
                 <p>Random Forest Models, EIS</p>
@@ -175,24 +200,24 @@
             <div class="item">
                 <h2 id="pump">Get Pumped!</h2>
                 <p>Enabling ML data collection by automating microfluidic operation.</p>
-                <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                    style="margin: 0 auto;">
+                <img src="img/pump.png" alt="Image of an automated microfluidic device" style="margin: 0 auto;">
                 <div class="item-desc">
                     This project was the automation of an experiment that involved lots of <em>tedious</em> pipetting.
                     The control
                     of a few syringe pumps can remove this repetitive task from the experiment workflow. In this
                     project,
                     I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
+                    <p>You can find the code for this project on <a
+                            href="https://github.com/bschelske/get_pumped">GitHub</a></p>
                 </div>
                 <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Serial control over USB, interfacing hardware + software, multithreading, UX design</p>
+                <p>Serial control over USB, interfacing hardware + software, multithreading, UI design</p>
             </div>
 
             <div class="item">
                 <h2 id="count">COUNT: Count objects until no tomorrow</h2>
                 <h4>Custom object tracking for cancer cells</h4>
-                <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                    style="margin: 0 auto;">
+                <img src="img/count.png" alt="User interface for COUNT" style="margin: 0 auto;">
                 <div class="item-desc">
                     I like to look at cells under a microscope. I would like to count them, but they move, and there's
                     <em>thousands</em> of them... I wrote some code to track and count cells using OpenCV. This project
@@ -201,9 +226,11 @@
                     about
                     different image processing techniques and object detection algorithms. Building this was
                     <em>intense!</em>
+                    <p>You can find the code for this project on <a href="https://github.com/bschelske/COUNT">GitHub</a>
+                    </p>
                 </div>
                 <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Computer vision, Python, APIs, version control</p>
+                <p>Computer vision, Python, UI, Git, OpenCV, APIs, Clean Code</p>
             </div>
 
             <div class="item">
@@ -220,24 +247,6 @@
                 </div>
                 <h3><span class="highlight">Skills Learned:</span></h3>
                 <p>Blender, scientific communication, professional presentations</p>
-            </div>
-
-            <div class="item item-final publication">
-                <h2 id="mmp9">MMP9 Project</h2>
-                <i>Preprint available</i><br><br>
-                <img src="img/mmp9.png" alt="Construction worker working on my website" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
-                        One of my graduate projects involved making measurements on individual cancer cells. This gave
-                        me an
-                        opportunity to learn about data analysis and <em>transcend</em> from Excel.
-                    </p>
-                    </p>Read more:<br>DOI: <a href="https://doi.org/10.26434/chemrxiv-2024-j88pm"
-                        target="_blank">10.26434/chemrxiv-2024-j88pm</a>
-                    <h3><span class="highlight">Skills Learned:</span></h3>
-                    <p>Pandas, numpy,
-                        matplotlib/seaborn, and a lot of python.</p>
-                </div>
             </div>
 
             <div class="item item-final">
@@ -267,7 +276,7 @@
 
             <div class="item item-final publication">
                 <h2>First publication experience</h2>
-                <i>Published in Anal. Chem. 2023, 95, 20, 7880–7887, co-author</i>
+                <i>Published in Analytical Chemistry<br>(co-author)</i>
                 <img src="img/bano.png" alt="TOC abstract" style="margin: 0 auto;">
                 <div class="item-desc">
                     <p>I contributed towards this project while being trained by my mentor Joe. This
@@ -289,12 +298,10 @@
         <div class="footer-container">
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/benjamin-schelske" target="_blank" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
+                    <i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" target="_blank"
                     title="Google Scholar">
-                    <i class="fa-brands fa-google-scholar"></i>
-                </a>
+                    <i class="fa-brands fa-google-scholar"></i></a>
                 <a href="https://github.com/bschelske" target="_blank" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
