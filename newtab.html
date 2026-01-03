@@ -159,7 +159,7 @@
 
 <body>
     <div class="new-tab-wrapper">
-        <div class="welcome-text">sapere aude</div>
+        <div class="welcome-text" id="randomQuote">SAPERE AUDE</div>
 
         <div class="shortcut-grid">
             <a href="https://www.washingtonpost.com/games/crossword/" class="item shortcut-card">
@@ -232,6 +232,25 @@
                 chevron.style.transform = "rotate(0deg)";
             }
         }
+        const quotes = [
+            "ACTA NON VERBA",
+            "TEMPUS FUGIT",
+            "NUNC AUT NUNQUAM",
+            "你好",
+            "SAPERE AUDE",
+            "IT'S NOT OVER YET!",
+            "LAUGH AND GROW FAT",
+            "YOU'RE PRETTY GOOD",
+            "VINCIT QUI SE VINCIT",
+            "加油 (Jiā yóu ADD OIL)",
+
+        ];
+
+        // Don't tell me, I already know. 
+
+        const randomElement = document.getElementById("randomQuote");
+        randomElement.innerText = quotes[Math.floor(Math.random() * quotes.length)];
+
     </script>
 
 </body>
