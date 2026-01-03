@@ -29,29 +29,12 @@
 
 
     <style>
-        .new-tab-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 60vh;
-            padding: 20px;
-        }
-
         .welcome-text {
             font-family: 'VT323', monospace;
             font-size: 3.5rem;
             color: #0a570f;
             margin-bottom: 2rem;
             text-align: center;
-        }
-
-        .shortcut-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1.5rem;
-            width: 100%;
-            max-width: 900px;
         }
 
         .shortcut-card {
@@ -123,13 +106,52 @@
             margin-top: 1rem;
         }
 
+        .new-tab-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 20px;
+            /* Prevent horizontal scroll on the wrapper itself */
+            width: 100%;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .shortcut-grid {
+            display: grid;
+            /* Use 1fr but ensure it can't exceed the container */
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            /* Force centering */
+            box-sizing: border-box;
+        }
+
+        /* Mobile Responsive Fixes */
         @media only screen and (max-width: 768px) {
             .shortcut-grid {
-                grid-template-columns: repeat(2, 1fr);
+                /* Reduce to 2 columns and ensure they fit */
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1rem;
+                /* Ensure the grid doesn't touch the very edge of the glass */
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .shortcut-card {
+                /* Allow height to grow naturally on small screens */
+                aspect-ratio: auto;
+                min-height: 120px;
+                padding: 1.5rem 0.5rem;
             }
 
             .welcome-text {
-                font-size: 2.5rem;
+                font-size: 2rem;
+                width: 100%;
             }
         }
     </style>
