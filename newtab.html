@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3P7YVMXYJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B3P7YVMXYJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start | Ben Schelske</title>
+    <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" sizes="48x48" href="img/favicon-48x48.png">
+    <link rel="icon" sizes="96x96" href="img/favicon-96x96.png">
+    <meta name="robots" content="noindex">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="lightmode.css">
+    <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
+
+
+    <style>
+        .new-tab-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 20px;
+        }
+
+        .welcome-text {
+            font-family: 'VT323', monospace;
+            font-size: 3.5rem;
+            color: #0a570f;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .shortcut-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .shortcut-card {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            cursor: pointer;
+            aspect-ratio: 1 / 1;
+        }
+
+        .shortcut-card i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #0a570f;
+        }
+
+        .shortcut-card span {
+            font-family: 'Comic Neue', cursive;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .shortcut-card:hover {
+            transform: scale(1.05);
+            border-color: #ffcc00;
+        }
+
+        .info-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .info-toggle {
+            cursor: pointer;
+            color: #0a570f;
+            font-family: 'VT323', monospace;
+            font-size: 1.8rem;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .info-toggle:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+
+        .info-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.3s ease;
+            opacity: 0;
+            text-align: justify;
+        }
+
+        .info-content.expanded {
+            max-height: 500px;
+            /* Adjust based on content */
+            opacity: 1;
+            margin-top: 1rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .shortcut-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .welcome-text {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="new-tab-wrapper">
+        <div class="welcome-text">sapere aude</div>
+
+        <div class="shortcut-grid">
+            <a href="https://www.washingtonpost.com/games/crossword/" class="item shortcut-card">
+                <i class="fa-solid fa-table-cells"></i>
+                <span>Crossword</span>
+            </a>
+
+            <a href="https://www.minutecryptic.com/" class="item shortcut-card">
+                <i class="fa-solid fa-key"></i>
+                <span>Cryptic</span>
+            </a>
+
+            <a href="https://benschelske.com/" class="item shortcut-card">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="https://leetcode.com/" target="_blank" class="item shortcut-card">
+                <i class="fa-solid fa-code"></i>
+                <span>Leetcode</span>
+            </a>
+
+            <a href="https://news.google.com/" class="item shortcut-card">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>News</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <h2 class="info-toggle" onclick="toggleInfo()">
+            What is this? <i id="chevron" class="fa-solid fa-chevron-down" style="font-size: 1rem;"></i>
+        </h2>
+        <div id="infoContent" class="info-content">
+            <p>I am so tired of Firefox injecting ads into the startup new tab home page. I don't want to see pop
+                culture
+                and celebrity 'news' or any advertisements whatsoever. I built this page for my own use. It has
+                bookmarks to
+                pages that I frequently visit.</p>
+            <br>
+            <p>Wait a second... what are you doing here? How did you find this page? This is like the equivalent of
+                going through someone's sock drawer. Get out of here!</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-credit">
+            <p>Ben &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu) {
+                menu.style.display = (menu.style.display === "block") ? "none" : "block";
+            }
+        }
+
+        function toggleInfo() {
+            const content = document.getElementById("infoContent");
+            const chevron = document.getElementById("chevron");
+
+            content.classList.toggle("expanded");
+
+            // Rotate chevron
+            if (content.classList.contains("expanded")) {
+                chevron.style.transform = "rotate(180deg)";
+            } else {
+                chevron.style.transform = "rotate(0deg)";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
