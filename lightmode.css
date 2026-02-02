@@ -255,6 +255,11 @@ h3,
 	font-size: 4em;
 }
 
+.email h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .nav {
 	display: flex;
 	flex: 1;

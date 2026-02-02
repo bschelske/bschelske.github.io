@@ -55,32 +55,57 @@
                     class="fa-brands fa-github"></i></a>
         </div>
     </ul>
-    <!--Navigation bar for mobile-->
-    <div class="header_fill hide-on-mobile">
-        <header class="header">
-            <div class="show-on-day hide-on-alien email"><img class="logo show-on-day hide-on-alien" src="img/logo.gif"
-                    alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM">
-            </div>
-            <div class="show-on-alien hide-on-day email"><img class="logo hide-on-day show-on-alien"
-                    src="img/dark_logo.gif" alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM"></div>
-            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="projects.html" class="active">Graduate Research</a>
-                <a href="fun.html">Fun</a>
-                <a href="cv.html">CV</a>
-            </nav>
-            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
 
-            <div class="toggle-container">
-                <input type="checkbox" id="darkModeToggle">
-                <label for="darkModeToggle" class="toggle-label">
-                    <span class="toggle-slider"></span>
-                </label>
-                <span id="modeText">Light Mode</span>
+    <!--Alien Nav-->
+    <header class="header header_fill hide-on-mobile show-on-alien hide-on-day">
+        <div class="header_spacer"></div>
+        <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
+        <div class="header-content-wrapper">
+            <div class="email">
+                <img class="logo hide-on-day show-on-alien" src="img/dark_logo.gif" alt="BEN SCHELSKE"
+                    title="Welcome to BEN SCHELSKE.COM">
+                <nav class="nav">
+                    <a href="index.html" class="active">HOME</a>
+                    <a href="projects.html">GRADUATE RESEARCH</a>
+                    <a href="fun.html">FUN</a>
+                    <a href="cv.html">CV</a>
+                </nav>
             </div>
-        </header>
-    </div>
+        </div>
+        <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+            </label>
+            <span id="modeText">Light Mode</span>
+        </div>
+    </header>
+
+    <!--Day Nav-->
+    <header class="header header_fill hide-on-mobile show-on-day hide-on-alien">
+        <div class="header_spacer"></div>
+        <div class="ufo-spacer"></div>
+        <div class="header-content-wrapper">
+            <div class="email">
+                <h1>BEN SCHELSKE</h1>
+                <nav class="nav">
+                    <a href="index.html" class="active">HOME</a>
+                    <a href="projects.html">GRADUATE RESEARCH</a>
+                    <a href="fun.html">FUN</a>
+                    <a href="cv.html">CV</a>
+                </nav>
+            </div>
+        </div>
+        <div class="ufo-spacer"></div>
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+            </label>
+            <span id="modeText">Light Mode</span>
+        </div>
+    </header>
 
     <div class="fun-container with-sidebar">
         <div class="sidebar hide-on-mobile">
