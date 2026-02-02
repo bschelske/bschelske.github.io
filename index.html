@@ -58,33 +58,57 @@
                     class="fa-brands fa-github"></i></a>
         </div>
     </ul>
-    <!--Navigation bar for mobile-->
 
-    <div class="header_fill hide-on-mobile">
-        <header class="header">
-            <div class="show-on-day hide-on-alien email"><img class="logo show-on-day hide-on-alien" src="img/logo.gif"
-                    alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM">
+    <!--Alien Nav-->
+    <header class="header header_fill hide-on-mobile show-on-alien hide-on-day">
+        <div class="header_spacer"></div>
+        <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
+        <div class="header-content-wrapper">
+            <div class="email">
+                <img class="logo hide-on-day show-on-alien" src="img/dark_logo.gif" alt="BEN SCHELSKE"
+                    title="Welcome to BEN SCHELSKE.COM">
+                <nav class="nav">
+                    <a href="index.html" class="active">HOME</a>
+                    <a href="projects.html">GRADUATE RESEARCH</a>
+                    <a href="fun.html">FUN</a>
+                    <a href="cv.html">CV</a>
+                </nav>
             </div>
-            <div class="show-on-alien hide-on-day email"><img class="logo hide-on-day show-on-alien"
-                    src="img/dark_logo.gif" alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM"></div>
-            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
-            <nav class="nav">
-                <a href="index.html" class="active">Home</a>
-                <a href="projects.html">Graduate Research</a>
-                <a href="fun.html">Fun</a>
-                <a href="cv.html">CV</a>
-            </nav>
-            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
+        </div>
+        <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+            </label>
+            <span id="modeText">Light Mode</span>
+        </div>
+    </header>
 
-            <div class="toggle-container">
-                <input type="checkbox" id="darkModeToggle">
-                <label for="darkModeToggle" class="toggle-label">
-                    <span class="toggle-slider"></span>
-                </label>
-                <span id="modeText">Light Mode</span>
+    <!--Day Nav-->
+    <header class="header header_fill hide-on-mobile show-on-day hide-on-alien">
+        <div class="header_spacer"></div>
+        <div class="ufo-spacer"></div>
+        <div class="header-content-wrapper">
+            <div class="email">
+                <h1>BEN SCHELSKE</h1>
+                <nav class="nav">
+                    <a href="index.html" class="active">HOME</a>
+                    <a href="projects.html">GRADUATE RESEARCH</a>
+                    <a href="fun.html">FUN</a>
+                    <a href="cv.html">CV</a>
+                </nav>
             </div>
-        </header>
-    </div>
+        </div>
+        <div class="ufo-spacer"></div>
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+            </label>
+            <span id="modeText">Light Mode</span>
+        </div>
+    </header>
 
     <div class="home-layout">
         <div class="whats-new-spacer hide-on-mobile">
@@ -101,17 +125,15 @@
                             I'm a graduate student at Iowa State University studying for a
                             <span>PhD in analytical chemistry</span>. I am a member of the <a
                                 href="https://anand.chem.iastate.edu/" target="_blank">Anand group</a>, and my
-                            research
-                            focus is on
+                            research focus is on implementing machine learning for
                             <strong>single-cell analysis</strong> and developing
-                            <strong>platforms for cancer detection</strong>. Lately, I've been exploring
-                            how to integrate <strong>machine learning</strong> into these systems. <br>
+                            <strong>platforms for cancer detection</strong>.<br>
                         <p><a href="projects.html">Click here! to learn more about my graduate
                                 research</a> or read my publications on
                             <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en"
                                 target="_blank">Google
                                 Scholar</a>
-                            (<span>16 citations 😎</span>).
+                            (<span>18 citations 😎</span>).
                         </p>
                         </p>
 
