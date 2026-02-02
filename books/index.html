@@ -16,20 +16,20 @@
     <meta name="description" content="Ben Schelske's personal blog, fun, blog-corner, posts">
     <meta name="keywords"
         content="Ben Schelske, Benjamin Schelske, personal website, portfolio, blog, blog corner, posts">
-    <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" sizes="48x48" href="img/favicon-48x48.png">
-    <link rel="icon" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" sizes="48x48" href="/img/favicon-48x48.png">
+    <link rel="icon" sizes="96x96" href="/img/favicon-96x96.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books | Benjamin T. Schelske</title>
     <link rel="canonical" href="https://benschelske.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="lightmode.css">
+    <link rel="stylesheet" href="/lightmode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link id="lightModeCSS" rel="stylesheet" href="lightmode.css">
-    <link id="darkModeCSS" rel="stylesheet" href="darkmode.css" disabled>
+    <link id="lightModeCSS" rel="stylesheet" href="/lightmode.css">
+    <link id="darkModeCSS" rel="stylesheet" href="/darkmode.css" disabled>
 
     <script src="https://kit.fontawesome.com/d8b16c58d2.js" crossorigin="anonymous"></script>
 </head>
@@ -57,39 +57,68 @@
                     class="fa-brands fa-github"></i></a>
         </div>
     </ul>
-    <!--Navigation bar for mobile-->
-    <div class="header_fill hide-on-mobile ">
-        <header class="header">
-            <div class="show-on-day hide-on-alien email"><img class="logo show-on-day hide-on-alien" src="img/logo.gif"
-                    alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM"></div>
-            <div class="show-on-alien hide-on-day email"><img class="logo hide-on-day show-on-alien"
-                    src="img/dark_logo.gif" alt="BEN SCHELSKE" title="Welcome to BEN SCHELSKE.COM"></div>
-            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Graduate Research</a>
-                <a href="fun.html" class="active">Fun</a>
-                <a href="cv.html">CV</a>
-            </nav>
-            <img class="ufo-header" src="img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
 
-            <div class="toggle-container">
-                <input type="checkbox" id="darkModeToggle">
-                <label for="darkModeToggle" class="toggle-label">
-                    <span class="toggle-slider"></span>
-                </label>
-                <span id="modeText">Light Mode</span>
+
+    <!--Alien Nav-->
+    <header class="header header_fill hide-on-mobile show-on-alien hide-on-day">
+        <div class="header_spacer"></div>
+        <img class="ufo-header" src="/img/ufo.gif" alt="AHHH! A UFO on the left!" title="AHHH! A UFO on the left!">
+        <div class="header-content-wrapper">
+            <div class="email">
+                <a href="/"><img class="logo hide-on-day show-on-alien" src="/img/dark_logo.gif" alt="BEN SCHELSKE"
+                        title="Welcome to BEN SCHELSKE.COM"></a>
+                <nav class="nav">
+                    <a href="/projects/">RESEARCH</a>
+                    <a href="/fun/" class="active">FUN</a>
+                    <a href="/cv/">CV</a>
+                    <a href="https://github.com/bschelske" target="_blank">GITHUB</a>
+
+                </nav>
             </div>
-        </header>
-        <div class="fun-nav hide-on-mobile">
-            <a href="fun.html">Fun Home</a>
-            <a href="fun_projects.html">Fun Projects</a>
-            <a href="books.html" class="active">Books</a>
-            <a href="fun.html">Blog</a>
-            <a href="fun.html">Horseplay</a>
-            <a href="fun.html">Monkey Business</a>
-            <a href="fun.html">etc</a>
         </div>
+        <img class="ufo-header" src="/img/ufo.gif" alt="AHHH! A UFO on the right!" title="AHHH! A UFO on the right!">
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+            </label>
+            <span id="modeText">Light Mode</span>
+        </div>
+    </header>
+
+    <!--Day Nav-->
+    <header class="header header_fill hide-on-mobile show-on-day hide-on-alien">
+        <div class="header_spacer"></div>
+        <div class="ufo-spacer"></div>
+        <div class="header-content-wrapper">
+            <div class="email">
+                <h1><a href="/">BEN SCHELSKE</a></h1>
+                <nav class="nav">
+                    <a href="/projects/">RESEARCH</a>
+                    <a href="/fun/" class="active">FUN</a>
+                    <a href="/cv/">CV</a>
+                    <a href="https://github.com/bschelske" target="_blank">GITHUB</a>
+                </nav>
+            </div>
+        </div>
+        <div class="ufo-spacer"></div>
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+            </label>
+            <span id="modeText">Light Mode</span>
+        </div>
+    </header>
+    </div>
+    <div class="fun-nav hide-on-mobile">
+        <a href="/fun/">Fun Home</a>
+        <a href="/fun_projects/">Fun Projects</a>
+        <a href="/books/" class="active">Books</a>
+        <a href="/fun/">Blog</a>
+        <a href="/fun/">Horseplay</a>
+        <a href="/fun/">Monkey Business</a>
+        <a href="/fun/">etc</a>
     </div>
 
 
@@ -117,7 +146,7 @@
                     </div>
 
                     <div class="book-item">
-                        <h2>Hardship and happiness</h2>
+                        <h2>Hardship and Happiness</h2>
                         <p>Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D., author.; Fantham, Elaine; Hine, Harry
                             M.; Ker, James, 1970-; Williams, Gareth D.</p>
                     </div>
@@ -235,10 +264,10 @@
             </div>
 
             <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Graduate Research</a>
-                <a href="fun.html">Fun</a>
-                <a href="cv.html">CV / Resume</a>
+                <a href="/">Home</a>
+                <a href="/projects/">Graduate Research</a>
+                <a href="/fun/">Fun</a>
+                <a href="/cv/">CV / Resume</a>
                 <a href="mailto:ben@benschelske.com">Contact</a>
             </div>
             <div class="footer-credit">
@@ -249,8 +278,8 @@
     </footer>
 
 
-    <script src="script.js"></script>
-    <script src="mode_switcher.js"></script>
+    <script src="/script.js"></script>
+    <script src="/mode_switcher.js"></script>
 </body>
 
 </html>
