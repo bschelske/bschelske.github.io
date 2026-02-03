@@ -310,7 +310,7 @@ h3,
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 	text-align: left;
 
-	max-height: 300px;
+	max-height: 420px;
 	overflow-y: auto;
 	scrollbar-gutter: stable;
 }
