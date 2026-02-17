@@ -111,18 +111,19 @@
     <div class="fun-container with-sidebar">
         <div class="sidebar hide-on-mobile">
             <h2 style="text-align: center;">Navigation:</h2>
-            <a href="#stage">SlideStride</a>
-            <a href="#ML_class">Machine Learning Cancer Cell Classification</a>
-            <a href="#mmp9">My First Publication!</a>
-            <a href="#credit">CRediT Role Generator</a>
-            <a href="#MLEIS">Machine Learning on a Chip</a>
-            <a href="#MLEIS">Machine Learning + Electrochemistry</a>
-            <a href="#pump">Get Pumped!</a>
-            <a href="#count">COUNT</a>
-            <a href="#count">Cotton-Uphaus Competition</a>
-            <a href="#imagej">ImageJ Macros</a>
-            <a href="#imagej">First publication experience</a>
+            <a href="#stage" data-category="side">SlideStride</a>
+            <a href="#ML_class" data-category="main">Machine Learning Cancer Cell Classification</a>
+            <a href="#mmp9" data-category="main">My First Publication!</a>
+            <a href="#credit" data-category="side">CRediT Role Generator</a>
+            <a href="#MLEIS" data-category="main">Machine Learning on a Chip</a>
+            <a href="#MLEIS" data-category="side">Machine Learning + Electrochemistry</a>
+            <a href="#pump" data-category="side">Get Pumped!</a>
+            <a href="#count" data-category="side">COUNT</a>
+            <a href="#count" data-category="side">Cotton-Uphaus Competition</a>
+            <a href="#imagej" data-category="side">ImageJ Macros</a>
+            <a href="#imagej" data-category="main">First publication experience</a>
         </div>
+
         <div class="project-container">
             <div class="container-title">
                 <div class="hide-on-mobile">
@@ -130,7 +131,6 @@
                         <h1 id="top" style="margin-left:2rem; margin-right:2rem;">Graduate School Projects</h1>
                     </div>
                 </div>
-
 
                 <p>Here are some projects I've worked on in the <a href="https://anand.chem.iastate.edu/"
                         target="_blank">Anand Lab</a>.
@@ -152,9 +152,17 @@
                         work</em>,
                     but I'm excited to share more soon!
                 </p>
+
+            </div>
+            <div class="buttons-container">
+                <div class="filter-controls" style="text-align: center; margin-bottom: 0px;">
+                    <button class="filter-btn active" onclick="filterProjects('all')">Show All</button>
+                    <button class="filter-btn" onclick="filterProjects('main')">Main Projects</button>
+                    <button class="filter-btn" onclick="filterProjects('side')">Side Projects</button>
+                </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-category="side">
                 <h2 id="stage">SlideStride</h2>
                 <p>A tool to generate instructions for automatic microscope stages</p>
                 <img src="/img/stage_movement.png" alt="Screenshot of a terminal showing stage movement program"
@@ -171,7 +179,7 @@
                 <p>Rust, CLI tools, GitHub releases, XML</p>
             </div>
 
-            <div class="item publication">
+            <div class="item publication" data-category="main">
                 <h2 id="ML_class">Machine Learning Cancer Cell Classification</h2>
                 <i>Preprint Available</i>
                 <br>(first author)<br><br>
@@ -187,7 +195,7 @@
                 <p>Machine Learning, Interpretable AI, Model Evaluation, CNNs, Transfer Learning</p>
             </div>
 
-            <div class="item publication">
+            <div class="item publication" data-category="main">
                 <h2 id="mmp9">My First Publication!</h2>
                 <i>Available on Analytica Chimica Acta<br>(first author)</i><br><br>
                 <img src="/img/mmp9.png" alt="Construction worker working on my website" style="margin: 0 auto;">
@@ -206,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-category="side">
                 <h2 id="credit">CRediT Role Generator</h2>
                 <h4>Generate CRediT contribution statements easily</h4>
                 <img src="/img/credit.png" alt="Screenshot of CRediT role generator" style="margin: 0 auto;">
@@ -227,7 +235,8 @@
                 <h3><span class="highlight">Skills Learned:</span></h3>
                 <p>HTML, CSS, React</p>
             </div>
-            <div class="item publication">
+
+            <div class="item publication" data-category="main">
                 <h2>Machine Learning on a Chip</h2>
                 <i>Manuscript in progress</i><br>(first author)<br><br>
                 <img src="/img/under_construction.gif" alt="Image of a microfluidic device with arrows coming out"
@@ -241,9 +250,7 @@
                     transfer learning, deep learning fundamentals.</p>
             </div>
 
-
-
-            <div class="item">
+            <div class="item" data-category="side">
                 <h2 id="MLEIS">Machine Learning + Electrochemistry</h2>
                 <p>Pursuing my curiosity about machine learning</p>
                 <img src="/img/EIS.png" alt="Construction worker working on my website" style="margin: 0 auto;">
@@ -268,7 +275,7 @@
                 <p>Random Forest Models, EIS</p>
             </div>
 
-            <div class="item">
+            <div class="item" data-category="side">
                 <h2 id="pump">Get Pumped!</h2>
                 <p>Enabling ML data collection by automating microfluidic operation.</p>
                 <img src="/img/pump.png" alt="Image of an automated microfluidic device" style="margin: 0 auto;">
@@ -285,7 +292,7 @@
                 <p>Serial control over USB, interfacing hardware + software, multithreading, UI design</p>
             </div>
 
-            <div class="item">
+            <div class="item" data-category="side">
                 <h2 id="count">COUNT: Count objects until no tomorrow</h2>
                 <h4>Custom object tracking for cancer cells</h4>
                 <img src="/img/count.png" alt="User interface for COUNT" style="margin: 0 auto;">
@@ -304,7 +311,7 @@
                 <p>Computer vision, Python, UI, Git, OpenCV, APIs, Clean Code</p>
             </div>
 
-            <div class="item">
+            <div class="item" data-category="side">
                 <h2>Cotton-Uphaus Competition</h2>
                 <p>ISU oral presentation competition</p>
                 <img src="/img/cu.png" alt="Example slide from competition" style="margin: 0 auto;">
@@ -320,7 +327,7 @@
                 <p>Blender, scientific communication, professional presentations</p>
             </div>
 
-            <div class="item item-final">
+            <div class="item item-final" data-category="side">
                 <h2 id="imagej">ImageJ Macros</h2>
                 <h4>Useful tools for image analysis</h4>
                 <img src="/img/circle_pro.png" alt="Construction worker working on my website" style="margin: 0 auto;">
@@ -345,7 +352,7 @@
                 <p>ImageJ Macro Language, image analysis/processing</p>
             </div>
 
-            <div class="item item-final publication">
+            <div class="item item-final publication" data-category="main">
                 <h2>First publication experience</h2>
                 <i>Published in Analytical Chemistry<br>(co-author)</i>
                 <img src="/img/bano.png" alt="TOC abstract" style="margin: 0 auto;">
