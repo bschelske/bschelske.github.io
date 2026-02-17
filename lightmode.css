@@ -144,6 +144,33 @@ h3,
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 }
 
+.buttons-container {
+	display: flex;
+	flex: 0 0 100%;
+	box-sizing: border-box;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.filter-btn {
+	padding: 10px 20px;
+	margin: 5px;
+	cursor: pointer;
+	border: 2px solid #ffcc00;
+	background: transparent;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+	background-color: #ffcc00;
+	color: #000;
+}
+
+
 .split-container {
 	display: flex;
 	gap: 1rem;
