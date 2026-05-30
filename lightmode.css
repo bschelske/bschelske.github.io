@@ -54,6 +54,7 @@ h3,
 	align-items: flex-start;
 	gap: 2rem;
 	padding: 2rem;
+	padding-bottom: 1rem;
 	max-width: 100%;
 	flex-wrap: wrap;
 }
@@ -382,6 +383,124 @@ h3,
 	padding: 8px;
 }
 
+.home-news {
+	max-height: 220px;
+	overflow-y: auto;
+	scrollbar-gutter: stable;
+}
+
+.home-news {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.home-news::-webkit-scrollbar {
+	width: 6px;
+}
+
+.home-news::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.home-news::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+}
+
+.old-school {
+	max-width: 50rem;
+	padding: 2rem;
+	/* background-color: #f7f7f2;
+	border: 5px solid #fff;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px rgba(154, 160, 185, .05),
+		0 5px 20px rgba(166, 173, 201, .2); */
+
+	margin: 0 auto;
+}
+
+
+.home-pub {
+	max-width: 50rem;
+	padding: 2rem;
+	padding-top: 1rem;
+	background-color: #f7f7f2;
+	border: 5px solid #fff;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px rgba(154, 160, 185, .05),
+		0 5px 20px rgba(166, 173, 201, .2);
+
+	margin: 0 auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.pub-thumbnail {
+	width: 170px;
+	height: 125px;
+	flex-shrink: 0;
+	border: 1px solid var(--border-color);
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.publication-item {
+	margin-bottom: 1.5rem;
+	padding: 0.75rem 0;
+	border-bottom: 1px solid var(--border-color);
+	display: flex;
+	gap: 1.25rem;
+}
+
+.pub-title {
+	font-weight: 700;
+	margin-bottom: 0.4rem;
+	font-size: 1.05rem;
+}
+
+.pub-authors {
+	font-size: 0.9rem;
+	color: #555;
+	margin-bottom: 0.5rem;
+}
+
+.pub-journal {
+	font-size: 0.9rem;
+	color: #777;
+	margin-bottom: 0.5rem;
+}
+
+.pub-highlight {
+	color: #0a570f;
+	font-weight: bold;
+}
+
+.pub-links {
+	font-size: 0.85rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.pub-links a {
+	color: var(--accent-color);
+	transition: all var(--transition-time) ease;
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+	background-color: #f7f2d9;
+}
+
+.pub-links a:hover {
+	background-color: #2e754f;
+}
+
+.pub-content {
+	flex: 1;
+}
+
 .sidebar {
 	flex: 0 0 250px;
 	position: sticky;
@@ -611,7 +730,7 @@ img {
 
 
 .footer {
-	background-color: #f8f8f8;
+	background-color: #eaeae5;
 	padding: 2rem 1rem;
 	text-align: center;
 	font-size: 0.9rem;

@@ -123,20 +123,19 @@
                         <div
                             style="background: rgba(255, 204, 0, 0.1); border-left: 5px solid #ffcc00; padding: 15px; margin-bottom: 20px;">
                             <p style="margin: 0; font-weight: bold; color: var(--text-color);">
-                                🚀 Status: PhD Candidate finishing Fall 2026
+                                Status: PhD Candidate finishing Fall 2026
                             </p>
                             <p style="margin: 5px 0 0 0; font-size: 0.9em;">
                                 Currently seeking roles in <strong>Machine Learning, Analytical Chemistry/R&D, or
                                     Biotech</strong>.
                             </p>
                         </div>
-                        <p style="margin-top: 0px;">👋 <span>Welcome</span> to Ben's personal home page!</p>
 
                         <p>
                             I'm a graduate student at Iowa State University completing my
                             <span>PhD in Analytical Chemistry</span>. As a member of the
                             <a href="https://anand.chem.iastate.edu/" target="_blank">Anand group</a>,
-                            I bridge the gap between wet-lab chemistry and computational intelligence,
+                            I bridge the gap between wet-lab chemistry and artificial intelligence,
                             specifically implementing machine learning for <strong>single-cell analysis</strong>
                             and developing <strong>platforms for cancer detection</strong>.
                         </p>
@@ -145,7 +144,7 @@
                             <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en"
                                 target="_blank">Google
                                 Scholar</a>
-                            (<span>18 citations 😎</span>).
+                            (<span>20 citations 😎</span>).
                         </p>
                         </p>
 
@@ -157,75 +156,27 @@
                             <li><strong>Machine learning</strong></li>
                             <li><strong>Microfabrication and microfluidics</strong></li>
                         </ul>
-
-
                         <p>
-                            Outside the lab, I've taught myself <span>Python, Blender, COMSOL</span>, and a bit of
-                            <span>Mandarin</span> (你好). Most importantly, I've learned how to become a
-                            <strong>professional problem solver</strong>, and with hard work I can master anything I set
-                            my
-                            mind to.
-                        </p>
-                        <p>
-                            When I'm not doing research, I love <strong>learning new skills</strong> and
+                            Outside of research, I love <strong>learning new skills</strong> and
                             <strong>picking up new hobbies</strong>. I especially enjoy
-                            coding projects and working on this webpage. You can read more about what I do for fun on my
-                            <a href="/fun/">fun page</a>!
+                            coding projects and working on this webpage.
                         </p>
-                        This website is under active construction, but you can explore and learn more about me using
-                        the
-                        links above. Be sure to bookmark this page and be on the lookout for secrets. 😁
+                        <p>
+                            If you have any questions, want to chat about research, or just want to say hi, feel free to
+                            <a href="mailto:ben@benschelske.com">email me</a> or connect with me on
+                            <a href="https://www.linkedin.com/in/benjamin-schelske" target="_blank">LinkedIn</a>!
 
-                        </p>
-
-                        <p>Please enjoy your stay, and feel free to write me an
-                            <span>"E-Mail"</span>
-                            at <span>ben@benschelske.com</span>
-                        </p>
-                        <p>-Ben</p>
                     </div>
                 </div>
-                <div style="display: inline;">
-                    <div class="badges">
-                        <img src="img/bschelsk.gif">
-                        <img src="img/best viewed.jpg">
-                        <img src="img/email-icon.gif">
-                    </div>
-
-                    <img src="img/under_construction.gif" alt="Construction worker working on my website"
-                        style="margin: 0 auto;">
-                </div>
-                <marquee behavior="scroll" direction="left">🚧 UNDER CONSTRUCTION 🚧</marquee>
             </div>
-            <!--Update visitor count here!-->
-            <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000673</span>
-            </div>
-            <script>
-                function padWithZeros(number, width) {
-                    number = number.toString();
-                    return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
-                }
 
-                if (localStorage.pagecount) {
-                    localStorage.pagecount = Number(localStorage.pagecount) + 1;
-                } else {
-                    localStorage.pagecount = 673;  // UPDATE HERE TOO VISITOR NUMBER!!!!!!!!!!!!!!!!!!
-                } // VISITOR COUNTER IS UPDATED MANUALLY!!! HAHAHAHA!
 
-                const paddedCount = padWithZeros(localStorage.pagecount, 7);
 
-                const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
-                const actualCount = paddedCount.slice(leadingZeros.length);
 
-                document.getElementById("hitCounter").innerHTML = `You are visitor:
-                ${leadingZeros}<span class="ticker">${actualCount}</span>`;
-            </script>
-            <div style="text-align: center">
-                <em>counting since September 17th, 2024!</em>
-            </div>
         </div>
+
         <div class="whats-new hide-on-mobile">
-            <h2 style="text-align: center; margin-top: 0px;">What's New:</h2>
+            <h2 style="text-align: center; margin-top: 0px;">Website updates:</h2>
             <ul>
                 <li>03-23-2026: Updated<a href="/cv/" target="_blank"> CV</a> to include Frank J. Moore and Thoreen Beth
                     Moore Fellowship.</li>
@@ -265,7 +216,159 @@
                 </li>
             </ul>
         </div>
+
     </div>
+
+    <div class="home-pub">
+        <div class="card">
+            <h2>Selected Publications</h2>
+            <div class="publication-item">
+                <div class="pub-thumbnail">
+                    <img src="img/cmc_ml_toc.png" alt="Publication Thumbnail">
+                </div>
+                <div class="pub-content">
+
+                    <div class="pub-title">Marker-Free Classification of Melanoma Cells by Machine Learning
+                        Following
+                        Their Isolation From Peripheral Blood by Dielectrophoresis</div>
+                    <div class="pub-authors"><span class="pub-highlight">Benjamin Schelske</span>, Brittany Ginnaty,
+                        Han Chen, Josué Rodriguez, Robbyn
+                        Anand</div>
+
+                    <div class="pub-journal">ChemRxiv 2025</div>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.26434/chemrxiv-2025-z6k68-v2" target="_blank">[arxiv]</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-item">
+                <div class="pub-thumbnail">
+                    <img src="img/mmp9.png" alt="Publication Thumbnail">
+                </div>
+                <div class="pub-content">
+
+                    <div class="pub-title">Evaluation of Single-Cell Heterogeneity and Invasive Potential in Cancer
+                        Cells via Secreted Protease Activity Assay</div>
+                    <div class="pub-authors"><span class="pub-highlight">Benjamin Schelske</span>, Ethan Leung, Joseph
+                        Banovetz, Jared Anderson, Robbyn K
+                        Anand</div>
+
+                    <div class="pub-journal">Analytica Chimica Acta 2025</div>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.1016/j.aca.2025.344663" target="_blank">[Journal]</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-item">
+                <div class="pub-thumbnail">
+                    <img src="img/bano.png" alt="Publication Thumbnail">
+                </div>
+                <div class="pub-content">
+
+                    <div class="pub-title">Parallel Dielectrophoretic Capture, Isolation, and Electrical Lysis of
+                        Individual Breast Cancer Cells to Assess Variability in Enzymatic Activity</div>
+                    <div class="pub-authors">Joseph T Banovetz, Sivani Manimaran, <span class="pub-highlight">Benjamin
+                            Schelske</span>, Robbyn K Anand</div>
+
+                    <div class="pub-journal">Analytical Chemistry 2023</div>
+                    <div class="pub-links">
+                        <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.3c00078" target="_blank">[Journal]</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    </div>
+    <div class="home-pub">
+        <h2>News</h2>
+        <div class="card home-news">
+
+            <ul>
+                <li>
+                    <p><strong>June 2026</strong> Presenting an oral presentation at the <a
+                            href="https://www.dep2026.org/index.html" target="_blank">Dielectrophoresis 2026
+                            conference</a> as a Co-Chair!</p>
+                </li>
+                <li>
+                    <p><strong>April 2026</strong> Received Frank J. Moore and Thoreen Beth Moore Fellowship</p>
+                </li>
+
+                <li>
+                    <p><strong>June 2026</strong> Received the Mary K. and Velmer A. Fassel Analytical Chemistry
+                        Fellowship</p>
+                </li>
+                <li>
+                    <p><strong>December 2025</strong> First paper as first author published as journal cover in <a
+                            href="https://www.sciencedirect.com/science/article/abs/pii/S0003267025010578?via%3Dihub"
+                            target="_blank">Analytica Chimica Acta</a></p>
+                </li>
+                <li>
+                    <p><strong>August 2024</strong> Gave a talk at the ACS Fall National Conference in the
+                        Rising Stars in Analytical Chemistry special session</p>
+                </li>
+                <li>
+                    <p><strong>April 2024</strong> Competed in the final round of the Cotton-Uphaus Oral Presentation
+                        Competition</p>
+                </li>
+                <li>
+                    <p><strong>May 2023</strong> Received the Iowa State University Teaching Excellence Award</p>
+                </li>
+                <li>
+                    <p><strong>May 2023</strong> Paper accepted in Analytical Chemistry <a
+                            href="https://pubs.acs.org/doi/10.1021/acs.analchem.3c00078" target="_blank">Analytical
+                            Chemistry</a></p>
+                </li>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="old-school">
+        <div style="display: inline;">
+            <div class="badges">
+                <img src="img/bschelsk.gif">
+                <img src="img/best viewed.jpg">
+                <img src="img/email-icon.gif">
+            </div>
+
+        </div>
+
+        <!--Update visitor count here!-->
+        <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000673</span>
+        </div>
+        <script>
+            function padWithZeros(number, width) {
+                number = number.toString();
+                return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
+            }
+
+            if (localStorage.pagecount) {
+                localStorage.pagecount = Number(localStorage.pagecount) + 1;
+            } else {
+                localStorage.pagecount = 673;  // UPDATE HERE TOO VISITOR NUMBER!!!!!!!!!!!!!!!!!!
+            } // VISITOR COUNTER IS UPDATED MANUALLY!!! HAHAHAHA!
+
+            const paddedCount = padWithZeros(localStorage.pagecount, 7);
+
+            const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
+            const actualCount = paddedCount.slice(leadingZeros.length);
+
+            document.getElementById("hitCounter").innerHTML = `You are visitor:
+                ${leadingZeros}<span class="ticker">${actualCount}</span>`;
+        </script>
+        <div style="text-align: center">
+            <em>counting since September 17th, 2024!</em>
+        </div>
+
+    </div>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-socials">
