@@ -9,7 +9,7 @@ html {
 
 
 body {
-	background-color: #f7f7f2;
+	background-color: #f7f7f5;
 
 	margin: 0;
 	padding: 0;
@@ -63,6 +63,7 @@ h3,
 	flex: 1;
 	max-width: 50rem;
 	padding: 2rem;
+	margin-bottom: 1rem;
 	background-color: #f7f7f2;
 	border: 5px solid #fff;
 	border-radius: 8px;
@@ -763,7 +764,7 @@ img {
 
 
 .footer {
-	background-color: #eaeae5;
+	background-color: #eee;
 	padding: 2rem 1rem;
 	text-align: center;
 	font-size: 0.9rem;
