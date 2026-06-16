@@ -48,7 +48,7 @@ h3,
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 }
 
-.home-layout {
+/* .home-layout {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -57,6 +57,16 @@ h3,
 	padding-bottom: 1rem;
 	max-width: 100%;
 	flex-wrap: wrap;
+} */
+
+.home-layout {
+	display: grid;
+	grid-template-columns: 1fr minmax(0, 50rem) 280px;
+	align-items: flex-start;
+	gap: 2rem;
+	padding: 2rem;
+	padding-bottom: 1rem;
+	max-width: 100%;
 }
 
 .home-container {
@@ -321,7 +331,7 @@ h3,
 
 .whats-new-spacer {
 	position: sticky;
-	width: 260px;
+	/* width: 260px; */
 	/* whats-new border makes box 10px larger than spacer ^ so width is +10px */
 	flex-shrink: 0;
 	border: 5px;
@@ -962,12 +972,8 @@ h3 {
 
 	.home-layout {
 		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		gap: 2rem;
+		flex-direction: column;
 		padding: 0.5rem;
-		max-width: 100%;
-		margin-top: 0rem;
 	}
 
 	.home-container {
