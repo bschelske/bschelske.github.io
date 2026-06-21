@@ -48,20 +48,10 @@ h3,
 	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 }
 
-/* .home-layout {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 2rem;
-	padding: 2rem;
-	padding-bottom: 1rem;
-	max-width: 100%;
-	flex-wrap: wrap;
-} */
 
 .home-layout {
 	display: grid;
-	grid-template-columns: 1fr minmax(0, 50rem) 280px;
+	grid-template-columns: minmax(280px, 1fr) minmax(0, 50rem) minmax(280px, 1fr);
 	align-items: flex-start;
 	gap: 2rem;
 	padding: 2rem;
