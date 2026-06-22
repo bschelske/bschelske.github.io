@@ -121,7 +121,7 @@
     </div>
 
 
-    <div class="fun-container">
+    <div class="research-layout">
         <div class="sidebar hide-on-mobile">
             <h2 style="text-align: center;">Projects:</h2>
             <a href="#credit">CRediT Role Generator</a>
@@ -134,7 +134,7 @@
             <a href="#imagej">Goofy ImageJ Macros</a>
             <a href="#starbattles">Starbattles / Queens Solver</a>
         </div>
-        <div class="project-container">
+        <div class="research-center-column">
             <div class="container-title">
                 <div class="hide-on-mobile">
                     <div class="projects-header">
@@ -151,237 +151,202 @@
 
 
             <div class="item">
-                <h2 id="credit">CRediT Role Generator</h2>
-                <h4>Generate CRediT contribution statements easily</h4>
-                <img src="/img/credit.png" alt="Screenshot of CRediT role generator" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
-
+                <div class="pub-thumbnail">
+                    <img src="/img/credit.png" alt="Screenshot of CRediT role generator">
+                </div>
+                <div class="pub-content">
+                    <h2 id="credit" class="pub-title">CRediT Role Generator</h2>
+                    <div class="pub-status">Generate CRediT contribution statements easily</div>
+                    <p class="pub-desc">
                         I couldn't find a simple tool to generate CRediT roles for my publications, so I made one!
-                        I think this tool can help other researchers generate CRediT roles for their
-                        publications too.
+                        I think this tool can help other researchers generate CRediT roles for their publications too.
                         This is a simple web app that allows you to select roles and generate a formatted list of
-                        authorship contributions.
+                        authorship contributions. The site went live in early August 2025. As of 2025-09-28, this site
+                        has helped 71 visitors! Pretty cool!
                     </p>
-                    <p>The site went live in early August 2025. As of 2025-09-28, this site has helped 71 visitors!
-                        Pretty cool!</p>
-                    <p>Check it out on <a class="project-link" target="_blank"
-                            href="https://www.credit-role-generator.app/">www.credit-role-generator.app</a>!</p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">HTML, CSS, React</p>
+                    <div class="pub-links">
+                        <a href="https://www.credit-role-generator.app/" target="_blank">[Visit Site]</a>
+                    </div>
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>HTML, CSS, React</p>
             </div>
+
             <div class="item">
-                <h2 id="tomatoes">No Tomatoes (Rust Stopwatch)</h2>
-                <h4>A simple stopwatch built with Rust</h4>
-                <img src="/img/tomatoes.png" alt="Screenshot of No Tomatoes" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>A simple command-line stopwatch written in Rust.
-                        Built because I wanted to learn Rust and make something I'd actually use while studying.
-
-                        It's like a pomodoro timer — but without the pomodoro...
-
-                        no tomatoes
-                    </p>
-                    <p>I LOVE this project and I use it all the time! I plan to do a bigger writeup on it soon. :)</p>
-                    <p>Check it out on <a class="project-link" target="_blank"
-                            href="https://github.com/bschelske/no-tomatoes">GitHub</a>!
-                    </p>
+                <div class="pub-thumbnail">
+                    <img src="/img/tomatoes.png" alt="Screenshot of No Tomatoes">
                 </div>
-                <h3><span class="highlight">Skills Learned*:</span></h3>
-                <p>Rust<br><br>*<i>Skills Used</i> might be more accurate... Rust might be the hardest thing I've
-                    tried to
-                    learn</p>
+                <div class="pub-content">
+                    <h2 id="tomatoes" class="pub-title">No Tomatoes (Rust Stopwatch)</h2>
+                    <div class="pub-status">A simple stopwatch built with Rust</div>
+                    <p class="pub-desc">
+                        A simple command-line stopwatch written in Rust. Built because I wanted to learn Rust and make
+                        something I'd actually use while studying. It's like a pomodoro timer — but without the
+                        pomodoro... no tomatoes. I LOVE this project and I use it all the time! I plan to do a bigger
+                        writeup on it soon. :)
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned*:</span></div>
+                    <p class="pub-skills">Rust<br><br>*<i>Skills Used</i> might be more accurate... Rust might be the
+                        hardest thing I've tried to learn</p>
+                    <div class="pub-links">
+                        <a href="https://github.com/bschelske/no-tomatoes" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <h2 id="#wridges">Wridges Solver</h2>
-                <h4>Trying to beat my sister at a word game</h4>
-                <img src="/img/wridges.PNG" alt="Screenshot fo Wridges game" style="margin: 0 auto; max-width: 75%">
-                <div class="item-desc">
-                    <p>
-                        My family likes to solve crosswords and play word games. Wridges is a word game by the <a
-                            href="https://www.washingtonpost.com/games/wridges/" target="_blank">Washington Post</a>.
 
+            <div class="item">
+                <div class="pub-thumbnail">
+                    <img src="/img/wridges.PNG" alt="Screenshot of Wridges game">
+                </div>
+                <div class="pub-content">
+                    <h2 id="wridges" class="pub-title">Wridges Solver</h2>
+                    <div class="pub-status">Trying to beat my sister at a word game</div>
+                    <p class="pub-desc">
+                        My family likes to solve crosswords and play word games. Wridges is a word game by the
+                        <a href="https://www.washingtonpost.com/games/wridges/" target="_blank">Washington Post</a>.
                         The objective of the game is to create words from a grid of letters. I can usually match the
-                        daily average if I try, but I wanted to aim higher and torture my sister. <br>
-                        <br>
+                        daily average if I try, but I wanted to aim higher and torture my sister.
                         In this project I've attempted to make a solver for the puzzle. My solver uses graph theory
                         to find the best and longest words available after using optical character recognition to
-                        identify available letters. I
-                        still haven't figured out how to automatically get screenshots from the site, but I might
-                        come back to this project some day.
+                        identify available letters. I still haven't figured out how to automatically get screenshots
+                        from the site, but I might come back to this project some day.
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Python, Optical Character Recognition (OCR), Graph Theory</p>
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Python, Optical Character Recognition (OCR), Graph Theory</p>
             </div>
 
             <div class="item">
-                <h2 id="#west">The Wild Wild West</h2>
-                <h4>Tracking crime in my neighborhood</h4>
-                <img src="/img/crime.PNG" alt="map of crime" style="margin: 0 auto; max-width: 75%">
-                <div class="item-desc">
-                    <p>
+                <div class="pub-thumbnail">
+                    <img src="/img/crime.PNG" alt="Map of crime locations near my neighborhood">
+                </div>
+                <div class="pub-content">
+                    <h2 id="west" class="pub-title">The Wild Wild West</h2>
+                    <div class="pub-status">Tracking crime in my neighborhood</div>
+                    <p class="pub-desc">
                         I used to live in the bad part of town, which I later learned was locally known as the
-                        <em>Wild
-                            West</em>.
-                        During my time in the west, I witnessed car break-ins, heard gunshots, and had <a
-                            href="#intruder">my
-                            own home invaded</a>.
-                        There was always something interesting happening just outside my window.
+                        <em>Wild West</em>. During my time in the west, I witnessed car break-ins, heard gunshots, and
+                        had <a href="#intruder">my own home invaded</a>. There was always something interesting
+                        happening just outside my window. With this project, I want to visualize just how interesting
+                        the <em>Wild West</em> really is. The idea is to drop pins on a map according to the locations
+                        from local police reports. Maybe I would be able to see a huge crime hotspot in the west...?
                     </p>
-                    <p>With this project, I want to visualize just how interesting the <em>Wild West</em> really is.
-                        The
-                        idea is to drop pins on a map according to the locations from local police reports. Maybe I
-                        would be
-                        able to see a huge crime hotspot in the west...?</p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">HTTP requests, .pdf parsing, map visualization (folium)</p>
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>HTTP requests, .pdf parsing, map visualization (folium)</p>
             </div>
 
             <div class="item">
-                <h2 id="#website">This Website!</h2>
-                <h4>The coolest website ever</h4>
-                <img src="/img/website.png" alt="Screenshot of my website. So meta." style="margin: 0 auto;">
-                <div class="item-desc">
-                    I want to revive the style of personal sites from the <em>good old days</em>. This project is
-                    helping me learn
-                    html, css, javascript, and <em>bad website design practices</em>. I'm inspired by the aesthetic
-                    of the "old"
-                    internet, and I try to emulate that here. I'm torn between going full fun/retro and or
-                    modern/employable. I recommend browsing the pages on <a class="project-link" target="_blank"
-                        href="https://neocities.org/browse">neocities.com</a>
-                    if you're nostalgic for the old web.
-                    There are some <em>incredible</em> webpages over there. This is an ongoing project, and in the
-                    future I plan on adding
-                    some fun elements and secrets.
+                <div class="pub-thumbnail">
+                    <img src="/img/website.png" alt="Screenshot of my website. So meta.">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>HTML, CSS, SEO</p>
+                <div class="pub-content">
+                    <h2 id="website" class="pub-title">This Website!</h2>
+                    <div class="pub-status">The coolest website ever</div>
+                    <p class="pub-desc">
+                        I want to revive the style of personal sites from the <em>good old days</em>. This project is
+                        helping me learn html, css, javascript, and <em>bad website design practices</em>. I'm
+                        inspired by the aesthetic of the "old" internet, and I try to emulate that here. I'm torn
+                        between going full fun/retro and or modern/employable. I recommend browsing the pages on
+                        <a href="https://neocities.org/browse" target="_blank">neocities.com</a> if you're nostalgic
+                        for the old web. There are some <em>incredible</em> webpages over there. This is an ongoing
+                        project, and in the future I plan on adding some fun elements and secrets.
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">HTML, CSS, SEO</p>
+                </div>
             </div>
 
             <div class="item">
-                <h2 id="grift">The Perfect Grift</h2>
-                <h4>Cashing* in on TikTok</h4>
-                <img src="/img/under_construction.gif" alt="Construction worker working on my website"
-                    style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
+                <div class="pub-thumbnail">
+                    <img src="/img/under_construction.gif"
+                        alt="Page under construction; TikTok automation project coming soon">
+                </div>
+                <div class="pub-content">
+                    <h2 id="grift" class="pub-title">The Perfect Grift</h2>
+                    <div class="pub-status">Cashing* in on TikTok</div>
+                    <p class="pub-desc">
                         Short-form content is a digital gold rush. I've automated production of TikToks using OpenCV
-                        and
-                        moviepy.
-                        Originally, I wanted to make videos that seem like they would be a part of an <a
-                            class="project-link" target="_blank"
-                            href="https://en.wikipedia.org/wiki/Alternate_reality_game">ARG</a>
-                        campaign- but these videos
-                        performed extremely poorly. Since then, I've tried to optimize the videos to retain viewer
-                        impression,
-                        but this also ends poorly.
+                        and moviepy. Originally, I wanted to make videos that seem like they would be a part of an
+                        <a href="https://en.wikipedia.org/wiki/Alternate_reality_game" target="_blank">ARG</a>
+                        campaign — but these videos performed extremely poorly. Since then, I've tried to optimize the
+                        videos to retain viewer impression, but this also ends poorly. <br><br>*People don't want to
+                        watch
+                        'ai-generated' or code generated slop. In general, retention is bad and <em>dislikes are
+                            high</em>,
+                        but this has been a fun project! Lately I've been trying to incorporate Blender and DaVinci
+                        Resolve to make the videos more appealing.
                     </p>
-                    <p>*People don't want to watch 'ai-generated' or code generated slop. In general, retention is
-                        bad
-                        and
-                        <em>dislikes are high</em>, but this has been a fun project! Lately I've been trying to
-                        incorporate
-                        Blender and DaVinci Resolve to make the videos more appealing.
-                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">MoviePy, PIL, OpenCV, Blender, video editing</p>
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>MoviePy, PIL, OpenCV, Blender, video editing</p>
             </div>
 
-            <div class="item ">
-                <h2 id="intruder">Intruder Detection System</h2>
-                <h4>A classic tale of revenge</h4>
-                <img src="/img/intruder.png" style="margin: auto;">
-                <div class="item-desc">
-                    <p>
-                        <em>Someone broke into my apartment</em> and moved my <em>vacuum</em>. I used a Raspberry
-                        Pi
-                        and IR
-                        motion sensor to send alerts to my phone to catch the next intruder in the act. I later 3D
-                        printed a
-                        case to hold the
-                        assembly together.
-                        I learned about working with APIs, software, and hardware.
-                    </p>
-                    <p>Here, I've re-enacted the scene I was hoping to capture. Don't be fooled, the intruder is
-                        still
-                        at
-                        large.</p>
-
-                    <p>No, the intruder <em>didn't</em> vacuum my floors.</p>
+            <div class="item">
+                <div class="pub-thumbnail">
+                    <img src="/img/intruder.png" alt="Re-enactment photo for the intruder detection system project">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Electronics, APIs (SMS), 3D Printing</p>
+                <div class="pub-content">
+                    <h2 id="intruder" class="pub-title">Intruder Detection System</h2>
+                    <div class="pub-status">A classic tale of revenge</div>
+                    <p class="pub-desc">
+                        <em>Someone broke into my apartment</em> and moved my <em>vacuum</em>. I used a Raspberry Pi
+                        and IR motion sensor to send alerts to my phone to catch the next intruder in the act. I later
+                        3D printed a case to hold the assembly together. I learned about working with APIs, software,
+                        and hardware. Here, I've re-enacted the scene I was hoping to capture. Don't be fooled, the
+                        intruder is still at large. No, the intruder <em>didn't</em> vacuum my floors.
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Electronics, APIs (SMS), 3D Printing</p>
+                </div>
             </div>
 
-            <div class="item item-final ">
-                <h2 id="imagej">Goofy ImageJ Macros</h2>
-                <h4>Semi-useful tools for image analysis</h4>
-                <img src="/img/under_construction.gif" alt="Construction worker working on my website"
-                    style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
-                        Some of the first code I've ever wrote was in the ImageJ macro language using
-                        <em>notepad</em>.
-                        I
-                        was interested in improving the
-                        data analysis workflow for making measurements on fluorescence microscopy images. I wrote a
-                        series
-                        of macros
-                        that automatically place regions of interest (ROIs) over regions of interest, identify the
-                        presence
-                        of cancer cells,
-                        and made data collection easier. <em>ImageJ is awesome!</em>
-                    </p>
-                    <a class="project-link" target="_blank"
-                        href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros">See the
-                        code on
-                        GitHub</a>
+            <div class="item item-final">
+                <div class="pub-thumbnail">
+                    <img src="/img/imagej.png" alt="ImageJ macro project">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>ImageJ Macro Language, image analysis/processing</p>
+                <div class="pub-content">
+                    <h2 id="imagej" class="pub-title">Goofy ImageJ Macros</h2>
+                    <div class="pub-status">Semi-useful tools for image analysis</div>
+                    <p class="pub-desc">
+                        Some of the first code I've ever wrote was in the ImageJ macro language using <em>notepad</em>.
+                        I was interested in improving the data analysis workflow for making measurements on
+                        fluorescence microscopy images. I wrote a series of macros that automatically place regions of
+                        interest (ROIs) over regions of interest, identify the presence of cancer cells, and made data
+                        collection easier. <em>ImageJ is awesome!</em>
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">ImageJ Macro Language, image analysis/processing</p>
+                    <div class="pub-links">
+                        <a href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="item item-final ">
-                <h2 id="starbattles">Starbattles / Queens Solver</h2>
-                <h4>Attemps at a puzzle game solver</h4>
-                <img src="/img/under_construction.gif" alt="Construction worker working on my website"
-                    style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
-                        <a class="project-link" href="https://www.puzzle-star-battle.com/"
-                            target="_blank">Starbattles</a> are a fun
-                        logic
-                        puzzle. The objective is to fill a grid of shapes with stars,
-                        with a few simple limitations for how stars can be placed. I like solving these puzzles
-                        (<em>I'm
-                            ranked in the top 2% of puzzlers</em>),
-                        so naturally (<em>ambitiously/naively</em>), I thought I'd try to get a computer to solve
-                        them
-                        for
-                        me. This
-                        is the first project I've ever attempted.
-                    </p>
-                    <p>For some reason I used python's <em>turtle graphics</em> to create a game board that I could
-                        interact
-                        with. I
-                        can encode different boards and display them using the turtle graphics. I never got around
-                        to
-                        the
-                        solving
-                        heuristics, but having a program solve these puzzles is something I think about
-                        <em>constantly</em>.
-                        I'm very tempted to
-                        try and use <em>Rust</em> for this problem.
-                    </p>
+            <div class="item item-final">
+                <div class="pub-thumbnail">
+                    <img src="/img/starbattle.png" alt="Starbattles puzzle">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Python</p>
+                <div class="pub-content">
+                    <h2 id="starbattles" class="pub-title">Starbattles / Queens Solver</h2>
+                    <div class="pub-status">Attempts at a puzzle game solver</div>
+                    <p class="pub-desc">
+                        <a href="https://www.puzzle-star-battle.com/" target="_blank">Starbattles</a> are a fun logic
+                        puzzle. The objective is to fill a grid of shapes with stars, with a few simple limitations
+                        for how stars can be placed. I like solving these puzzles (<em>I'm ranked in the top 2% of
+                            puzzlers</em>), so naturally (<em>ambitiously/naively</em>), I thought I'd try to get a
+                        computer to solve them for me. This is the first project I've ever attempted. For some reason
+                        I used python's <em>turtle graphics</em> to create a game board that I could interact with. I
+                        can encode different boards and display them using the turtle graphics. I never got around to
+                        the solving heuristics, but having a program solve these puzzles is something I think about
+                        <em>constantly</em>. I'm very tempted to try and use <em>Rust</em> for this problem.
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Python</p>
+                </div>
             </div>
-
         </div>
+        <div class="research-spacer"></div>
 
     </div>
 

@@ -108,7 +108,7 @@
         </div>
     </header>
 
-    <div class="fun-container with-sidebar">
+    <div class="research-layout">
         <div class="sidebar hide-on-mobile">
             <h2 style="text-align: center;">Navigation:</h2>
             <a href="#stage" data-category="side">SlideStride</a>
@@ -123,25 +123,25 @@
             <a href="#imagej" data-category="side">ImageJ Macros</a>
             <a href="#imagej" data-category="main">First publication experience</a>
         </div>
+        <div class="research-center-column">
 
-        <div class="project-container">
             <div class="container-title">
                 <div class="hide-on-mobile">
                     <div class="projects-header">
                         <h1 id="top" style="margin-left:2rem; margin-right:2rem;">Graduate School Projects</h1>
                     </div>
                 </div>
-
                 <p>Here are some projects I've worked on in the <a href="https://anand.chem.iastate.edu/"
                         target="_blank">Anand Lab</a>.
                     Most of these projects are related to publications (emphasized in <span
                         class="hide-on-day show-on-alien white">purple and</span> gold),
                     but I've included a few little projects / curiosity pursuits as well. <em>I've simplified and
                         abridged
-                        the project titles and descriptions compared to their published counterparts.</em> If you are
+                        the project titles and descriptions compared to their published counterparts.</em> If you
+                    are
                     interested
-                    to learn more about my professional career, feel free to check out my <a
-                        href="cv.html">resume/cv</a>
+                    to learn more about my professional career, feel free to check out my
+                    <a href="cv.html">resume/cv</a>
                     and
                     <a href="https://scholar.google.com/citations?user=BzZ1ouIAAAAJ&hl=en" target="_blank">Google
                         Scholar page</a>.
@@ -152,224 +152,262 @@
                         work</em>,
                     but I'm excited to share more soon!
                 </p>
-
             </div>
+
             <div class="buttons-container">
                 <div class="filter-controls" style="text-align: center; margin-bottom: 0px;">
                     <button class="filter-btn active" onclick="filterProjects('all')">Show All</button>
-                    <button class="filter-btn" onclick="filterProjects('main')">Main Projects</button>
+                    <button class="filter-btn" onclick="filterProjects('main')">Publications</button>
                     <button class="filter-btn" onclick="filterProjects('side')">Side Projects</button>
                 </div>
             </div>
 
-            <div class="item" data-category="side">
-                <h2 id="stage">SlideStride</h2>
-                <p>A tool to generate instructions for automatic microscope stages</p>
-                <img src="/img/stage_movement.png" alt="Screenshot of a terminal showing stage movement program"
-                    style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>The purpose of this program is to generate a coordinate list of positions for a microscope to
-                        visit using an automatic stage. It calculates a linear path between a start and end point and
-                        formats it into an XML file that Nikon NIS-Elements can read.
-                    </p>
-                    <p>You can find the code for this project on <a
-                            href="https://github.com/bschelske/stage_movement_xml">GitHub</a></p>
+
+            <div class="item publication" data-category="main">
+                <div class="pub-thumbnail">
+                    <img src="/img/cmc_ml_toc.png" alt="Page under construction; preprint figures coming soon">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Rust, CLI tools, GitHub releases, XML</p>
+                <div class="pub-content">
+                    <h2 id="ML_class" class="pub-title">Machine Learning Cancer Cell Classification</h2>
+                    <div class="pub-status">Preprint Available · first author</div>
+                    <p class="pub-desc">Check back for more info later!</p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Machine Learning, Interpretable AI, Model Evaluation, CNNs, Transfer
+                        Learning
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.26434/chemrxiv-2025-z6k68" target="_blank">[arXiv]</a>
+                    </div>
+                </div>
             </div>
 
             <div class="item publication" data-category="main">
-                <h2 id="ML_class">Machine Learning Cancer Cell Classification</h2>
-                <i>Preprint Available</i>
-                <br>(first author)<br><br>
-                <img src="/img/under_construction.gif" alt="Construction worker working on my website"
-                    style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>Check back for more info later!
-                    </p>
-                    </p>Read more:<br>DOI: <a href="https://doi.org/10.26434/chemrxiv-2025-z6k68"
-                        target="_blank">10.26434/chemrxiv-2025-z6k68</a>
+                <div class="pub-thumbnail">
+                    <img src="/img/mmp9.png" alt="Graphical abstract for the MMP9 single-cell protease activity paper">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Machine Learning, Interpretable AI, Model Evaluation, CNNs, Transfer Learning</p>
-            </div>
-
-            <div class="item publication" data-category="main">
-                <h2 id="mmp9">My First Publication!</h2>
-                <i>Available on Analytica Chimica Acta<br>(first author)</i><br><br>
-                <img src="/img/mmp9.png" alt="Construction worker working on my website" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
+                <div class="pub-content">
+                    <h2 id="mmp9" class="pub-title">Evaluation of single-cell heterogeneity and invasive potential in
+                        cancer cells via secreted protease activity assay</h2>
+                    <div class="pub-status">Analytica Chimica Acta · first author</div>
+                    <p class="pub-desc">
                         My <span>first publication as first author!</span> I am very excited to have this work
-                        published. This article was featured as the front cover of Analytica Chimica Acta! I plan to do
-                        a write up on what this project was all about soon, but I am so,
-                        <span>so</span> busy
+                        published. This article was featured as the front cover of Analytica Chimica Acta! I plan to
+                        do
+                        a write up on what this project was all about soon, but I am so, <span>so</span> busy
                         (5th year grad student).
                     </p>
-                    </p>Read more:<br>DOI: <a href="https://doi.org/10.1016/j.aca.2025.344663"
-                        target="_blank">10.1016/j.aca.2025.344663</a>
-                    <h3><span class="highlight">Skills Learned:</span></h3>
-                    <p>Analytical skills, Python, Blender, Data analysis and visualization, grit</p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Analytical skills, Python, Blender, Data analysis and visualization, grit
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.1016/j.aca.2025.344663" target="_blank">[Journal]</a>
+                    </div>
                 </div>
             </div>
 
             <div class="item" data-category="side">
-                <h2 id="credit">CRediT Role Generator</h2>
-                <h4>Generate CRediT contribution statements easily</h4>
-                <img src="/img/credit.png" alt="Screenshot of CRediT role generator" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
-
-                        I couldn't find a simple tool to generate CRediT roles for my publications, so I made one!
-                        I think this tool can help other researchers generate CRediT roles for their
-                        publications too.
-                        This is a simple web app that allows you to select roles and generate a formatted list of
-                        authorship contributions.
-                    </p>
-                    <p>The site went live in early August 2025. As of 2025-09-28, this site has helped 71 visitors!
-                        Pretty cool!</p>
-                    <p>Check it out on <a class="project-link" target="_blank"
-                            href="https://www.credit-role-generator.app/">www.credit-role-generator.app</a>!</p>
+                <div class="pub-thumbnail">
+                    <img src="/img/credit.png" alt="Screenshot of CRediT role generator">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>HTML, CSS, React</p>
+                <div class="pub-content">
+                    <h2 id="credit" class="pub-title">CRediT Role Generator</h2>
+                    <div class="pub-status">Generate CRediT contribution statements easily</div>
+                    <p class="pub-desc">
+                        I couldn't find a simple tool to generate CRediT roles for my publications, so I made one!
+                        I think this tool can help other researchers generate CRediT roles for their publications
+                        too.
+                        This is a simple web app that allows you to select roles and generate a formatted list of
+                        authorship contributions. The site went live in Dec 2025 and serves around 50 users per
+                        month.
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">HTML, CSS, React</p>
+                    <div class="pub-links">
+                        <a href="https://www.credit-role-generator.app/" target="_blank">[Visit Site]</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-category="side">
+                <div class="pub-thumbnail">
+                    <img src="/img/stage_movement.png" alt="Screenshot of a terminal showing stage movement program">
+                </div>
+                <div class="pub-content">
+                    <h2 id="stage" class="pub-title">SlideStride</h2>
+                    <div class="pub-status">A tool to generate instructions for automatic microscope stages</div>
+                    <p class="pub-desc">
+                        The purpose of this program is to generate a coordinate list of positions for a microscope
+                        to
+                        visit using an automatic stage. It calculates a linear path between a start and end point
+                        and
+                        formats it into an XML file that Nikon NIS-Elements can read.
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Rust, CLI tools, GitHub releases, XML</p>
+                    <div class="pub-links">
+                        <a href="https://github.com/bschelske/stage_movement_xml" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
             </div>
 
             <div class="item publication" data-category="main">
-                <h2>Machine Learning on a Chip</h2>
-                <i>Manuscript in progress</i><br>(first author)<br><br>
-                <img src="/img/under_construction.gif" alt="Image of a microfluidic device with arrows coming out"
-                    style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>Check back for more info later!
+                <div class="pub-thumbnail">
+                    <img src="/img/under_construction.gif" alt="Image of a microfluidic device with arrows coming out">
+                </div>
+                <div class="pub-content">
+                    <h2 id="chip" class="pub-title">Machine Learning on a Chip</h2>
+                    <div class="pub-status">Manuscript in progress · first author</div>
+                    <p class="pub-desc">Check back for more info later!</p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">PyTorch, CNNs, transfer learning, deep learning fundamentals.</p>
+                </div>
+            </div>
+
+            <div class="item" data-category="side">
+                <div class="pub-thumbnail">
+                    <img src="/img/EIS.png"
+                        alt="Electrochemical impedance spectroscopy plot used for the random forest model">
+                </div>
+                <div class="pub-content">
+                    <h2 id="MLEIS" class="pub-title">Machine Learning + Electrochemistry</h2>
+                    <div class="pub-status">Pursuing my curiosity about machine learning</div>
+                    <p class="pub-desc">
+                        At the time, I had a lot of domain knowledge when it comes to machine learning principles,
+                        but
+                        not very much experience. It was like <em>the difference between being a hardcore sports fan
+                            and
+                            actually playing professional sports.</em> My personal goal for this project was to
+                        bridge
+                        that
+                        gap and get hands-on experience with machine learning. Here I'm using a random forest model
+                        to
+                        help interpret electrochemical impedance spectroscopy (EIS) data. The results help predict
+                        device performance. During this project, I had a need to plot the output of a CH Instruments
+                        CHI650E potentiostat.
                     </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Random Forest Models, EIS</p>
+                    <div class="pub-links">
+                        <a href="https://github.com/bschelske/EIS_plotter" target="_blank">[GitHub]</a>
+                    </div>
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>PyTorch, CNNs,
-                    transfer learning, deep learning fundamentals.</p>
             </div>
 
             <div class="item" data-category="side">
-                <h2 id="MLEIS">Machine Learning + Electrochemistry</h2>
-                <p>Pursuing my curiosity about machine learning</p>
-                <img src="/img/EIS.png" alt="Construction worker working on my website" style="margin: 0 auto;">
-                <div class="item-desc">At the time, I had a lot of domain knowledge when it comes to machine learning
-                    principles, but
-                    not very much experience. It was like <em>the difference between being a hardcore sports fan and
-                        actually
-                        playing professional
-                        sports.</em>
-                    My personal goal for this project was to bridge that gap and get hands-on experience with machine
-                    learning.
-
-                    Here I'm using a random forest model to help interpret electrochemical impedance spectroscopy (EIS)
-                    data. The results help predict device performance.
-                    <br><br>
-                    During this project, I had a need to plot the output of a CH Instruments CHI650E potentiostat. You
-                    can find the code for plotting here: <a href="https://github.com/bschelske/EIS_plotter"
-                        target="_blank">GitHub</a>.
-
+                <div class="pub-thumbnail">
+                    <img src="/img/pump.png" alt="Image of an automated microfluidic device">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Random Forest Models, EIS</p>
-            </div>
-
-            <div class="item" data-category="side">
-                <h2 id="pump">Get Pumped!</h2>
-                <p>Enabling ML data collection by automating microfluidic operation.</p>
-                <img src="/img/pump.png" alt="Image of an automated microfluidic device" style="margin: 0 auto;">
-                <div class="item-desc">
-                    This project was the automation of an experiment that involved lots of <em>tedious</em> pipetting.
-                    The control
-                    of a few syringe pumps can remove this repetitive task from the experiment workflow. In this
-                    project,
-                    I learned about interfacing hardware and software, utilizing serial connections, and multithreading.
-                    <p>You can find the code for this project on <a
-                            href="https://github.com/bschelske/get_pumped">GitHub</a></p>
-                </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Serial control over USB, interfacing hardware + software, multithreading, UI design</p>
-            </div>
-
-            <div class="item" data-category="side">
-                <h2 id="count">COUNT: Count objects until no tomorrow</h2>
-                <h4>Custom object tracking for cancer cells</h4>
-                <img src="/img/count.png" alt="User interface for COUNT" style="margin: 0 auto;">
-                <div class="item-desc">
-                    I like to look at cells under a microscope. I would like to count them, but they move, and there's
-                    <em>thousands</em> of them... I wrote some code to track and count cells using OpenCV. This project
-                    is my first
-                    foray into computer vision, and also includes a gui for increased accessibility. I learned a lot
-                    about
-                    different image processing techniques and object detection algorithms. Building this was
-                    <em>intense!</em>
-                    <p>You can find the code for this project on <a href="https://github.com/bschelske/COUNT">GitHub</a>
+                <div class="pub-content">
+                    <h2 id="pump" class="pub-title">Get Pumped!</h2>
+                    <div class="pub-status">Enabling ML data collection by automating microfluidic operation</div>
+                    <p class="pub-desc">
+                        This project was the automation of an experiment that involved lots of <em>tedious</em>
+                        pipetting. The control of a few syringe pumps can remove this repetitive task from the
+                        experiment workflow. In this project, I learned about interfacing hardware and software,
+                        utilizing serial connections, and multithreading.
                     </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Serial control over USB, interfacing hardware + software, multithreading,
+                        UI
+                        design</p>
+                    <div class="pub-links">
+                        <a href="https://github.com/bschelske/get_pumped" target="_blank">[GitHub]</a>
+                    </div>
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Computer vision, Python, UI, Git, OpenCV, APIs, Clean Code</p>
             </div>
 
             <div class="item" data-category="side">
-                <h2>Cotton-Uphaus Competition</h2>
-                <p>ISU oral presentation competition</p>
-                <img src="/img/cu.png" alt="Example slide from competition" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>I competed in a department wide presentation competition on April 24, 2024! I made
-                        a really nice presentation about my work on the MMP9 project, using animations created in
-                        Blender.
-                        Blender is hard to learn but extremely powerful for scientific communication. I plan to write
-                        more about
-                        this soon!</p>
+                <div class="pub-thumbnail">
+                    <img src="/img/count.png" alt="User interface for COUNT">
                 </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>Blender, scientific communication, professional presentations</p>
-            </div>
-
-            <div class="item item-final" data-category="side">
-                <h2 id="imagej">ImageJ Macros</h2>
-                <h4>Useful tools for image analysis</h4>
-                <img src="/img/circle_pro.png" alt="Construction worker working on my website" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>
-                        Some of the first code I've ever wrote was in the ImageJ macro language using <em>notepad</em>.
-                        I
-                        was interested in improving the
-                        data analysis workflow for making measurements on fluorescence microscopy images. I wrote a
-                        series
-                        of macros
-                        that automatically place regions of interest (ROIs) over regions of interest, identify the
-                        presence
-                        of cancer cells,
-                        and made data collection easier. <em>ImageJ is awesome!</em>
+                <div class="pub-content">
+                    <h2 id="count" class="pub-title">COUNT: Count objects until no tomorrow</h2>
+                    <div class="pub-status">Custom object tracking for cancer cells</div>
+                    <p class="pub-desc">
+                        I like to look at cells under a microscope. I would like to count them, but they move, and
+                        there's <em>thousands</em> of them... I wrote some code to track and count cells using
+                        OpenCV.
+                        This project is my first foray into computer vision, and also includes a gui for increased
+                        accessibility. I learned a lot about different image processing techniques and object
+                        detection algorithms. Building this was <em>intense!</em>
                     </p>
-                    <a class="project-link" href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros"
-                        target="_blank">See the code on
-                        GitHub</a>
-                </div>
-                <h3><span class="highlight">Skills Learned:</span></h3>
-                <p>ImageJ Macro Language, image analysis/processing</p>
-            </div>
-
-            <div class="item item-final publication" data-category="main">
-                <h2>First publication experience</h2>
-                <i>Published in Analytical Chemistry<br>(co-author)</i>
-                <img src="/img/bano.png" alt="TOC abstract" style="margin: 0 auto;">
-                <div class="item-desc">
-                    <p>I contributed towards this project while being trained by my mentor Joe. This
-                        project is about device optimizations and an investigation into single-cell β-galactosidase
-                        activity.</p>Read more:<br>DOI: <a href="https://doi.org/10.1021/acs.analchem.3c00078"
-                        target="_blank">10.1021/acs.analchem.3c00078</a>
-
-                    <h3><span class="highlight">Skills Learned:</span></h3>
-                    <p>Lab skills, microfluidics, cleanroom skills, technical writing</p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Computer vision, Python, UI, Git, OpenCV, APIs, Clean Code</p>
+                    <div class="pub-links">
+                        <a href="https://github.com/bschelske/COUNT" target="_blank">[GitHub]</a>
+                    </div>
                 </div>
             </div>
+
+            <div class="item" data-category="side">
+                <div class="pub-thumbnail">
+                    <img src="/img/cu.png" alt="Example slide from competition">
+                </div>
+                <div class="pub-content">
+                    <h2 id="cottonuphaus" class="pub-title">Cotton-Uphaus Competition</h2>
+                    <div class="pub-status">ISU oral presentation competition</div>
+                    <p class="pub-desc">
+                        I competed in a department wide presentation competition on April 24, 2024! I made a really
+                        nice presentation about my work on the MMP9 project, using animations created in Blender.
+                        Blender is hard to learn but extremely powerful for scientific communication. I plan to
+                        write
+                        more about this soon!
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Blender, scientific communication, professional presentations</p>
+                </div>
+            </div>
+
+            <div class="item " data-category="side">
+                <div class="pub-thumbnail">
+                    <img src="/img/circle_pro.png" alt="ImageJ macro output showing detected regions of interest">
+                </div>
+                <div class="pub-content">
+                    <h2 id="imagej" class="pub-title">ImageJ Macros</h2>
+                    <div class="pub-status">Useful tools for image analysis</div>
+                    <p class="pub-desc">
+                        Some of the first code I've ever wrote was in the ImageJ macro language using
+                        <em>notepad</em>.
+                        I was interested in improving the data analysis workflow for making measurements on
+                        fluorescence microscopy images. I wrote a series of macros that automatically place regions
+                        of
+                        interest (ROIs) over regions of interest, identify the presence of cancer cells, and made
+                        data
+                        collection easier. <em>ImageJ is awesome!</em>
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">ImageJ Macro Language, image analysis/processing</p>
+                    <div class="pub-links">
+                        <a href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item  publication" data-category="main">
+                <div class="pub-thumbnail">
+                    <img src="/img/bano.png" alt="TOC abstract">
+                </div>
+                <div class="pub-content">
+                    <h2 id="bano" class="pub-title">Parallel Dielectrophoretic Capture, Isolation, and Electrical Lysis
+                        of Individual Breast Cancer Cells to Assess Variability in Enzymatic Activity</h2>
+                    <div class="pub-status">Published in Analytical Chemistry · co-author</div>
+                    <p class="pub-desc">
+                        I contributed towards this project while being trained by my mentor Joe. This project is
+                        about
+                        device optimizations and an investigation into single-cell β-galactosidase activity.
+                    </p>
+                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
+                    <p class="pub-skills">Lab skills, microfluidics, cleanroom skills, technical writing</p>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.1021/acs.analchem.3c00078" target="_blank">[Journal]</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <div class="research-spacer"></div>
 
     </div>
-
     <br>
 
     <footer class="footer">
