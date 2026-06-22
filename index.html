@@ -114,6 +114,7 @@
     <div class="home-layout">
         <div class="whats-new-spacer hide-on-mobile">
         </div>
+
         <div class="home-center-column">
             <div class="home-container">
                 <div class="about-card">
@@ -427,45 +428,52 @@
 
     </div>
 
-
-
-
-
     <div class="old-school">
         <div style="display: inline;">
             <div class="badges">
                 <img src="img/bschelsk.gif">
                 <img src="img/best viewed.jpg">
-                <img src="img/email-icon.gif">
+                <img src="img/ilovemicrofluidics.gif">
+                <a href="mailto:ben@benschelske.com"><img src="img/email-icon.gif"></a>
+                <a href="https://www.blender.org/" target="_blank" rel="noopener">
+                    <img src="img/blender.png" alt="Blender">
+                </a>
+                <img src="img/neovim.gif">
+                <img src="img/isu.png">
+
             </div>
 
         </div>
 
         <!--Update visitor count here!-->
-        <div id="hitCounter" style="text-align:center;">You are visitor: <span style="color:#ffcc00;">0000683</span>
+        <div id="hitCounter">You are visitor:
+            <span class="digits">
+                <span class="leading-zero">0000</span><span class="ticker">683</span>
+            </span>
         </div>
+
         <script>
             function padWithZeros(number, width) {
                 number = number.toString();
                 return number.length >= width ? number : new Array(width - number.length + 1).join('0') + number;
             }
-
             if (localStorage.pagecount) {
                 localStorage.pagecount = Number(localStorage.pagecount) + 1;
             } else {
-                localStorage.pagecount = 683;  // UPDATE HERE TOO VISITOR NUMBER!!!!!!!!!!!!!!!!!!
-            } // VISITOR COUNTER IS UPDATED MANUALLY!!! HAHAHAHA!
-
+                localStorage.pagecount = 683;
+            }
             const paddedCount = padWithZeros(localStorage.pagecount, 7);
-
             const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
             const actualCount = paddedCount.slice(leadingZeros.length);
-
             document.getElementById("hitCounter").innerHTML = `You are visitor:
-                ${leadingZeros}<span class="ticker">${actualCount}</span>`;
+		<span class="digits">
+			<span class="leading-zero">${leadingZeros}</span><span class="ticker">${actualCount}</span>
+		</span>`;
         </script>
+
+
         <div style="text-align: center">
-            <em>counting since September 17th, 2024!</em>
+            counting since <strong>September 17th, 2024!</strong>
         </div>
 
     </div>
