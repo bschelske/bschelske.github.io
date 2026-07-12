@@ -896,20 +896,14 @@ img {
 
 .socials a {
 	font-size: 24px;
-	/* Adjust icon size */
 	color: #121113;
-	/* Default icon color */
 	text-decoration: none;
-	/* Remove underline from links */
 	transition: color 0.3s ease, transform 0.3s ease;
-	/* Smooth hover effects */
 }
 
 .socials a:hover {
 	color: #ffcc00;
-	/* Change color on hover */
 	transform: scale(1.2);
-	/* Slight zoom effect on hover */
 }
 
 .ufo-header {
@@ -1473,5 +1467,12 @@ article {
 		width: 100%;
 		max-width: 300px;
 		height: auto;
+	}
+
+	.img-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
 	}
 }
