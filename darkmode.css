@@ -794,10 +794,6 @@ h3 {
         display: none;
     }
 
-    .mobile-spacer {
-        margin-top: 70px;
-    }
-
     .container {
         max-width: 800px;
         margin: 0 auto;
