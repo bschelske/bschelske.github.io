@@ -1272,16 +1272,19 @@ article {
 
 	.dropdown-menu {
 		list-style: none;
-		padding: 0;
+		padding: 1rem 0;
 		margin: 0;
 		display: none;
 		background-color: rgba(46, 117, 79, 1);
-		top: 7.125rem;
+
+		position: fixed;
+		top: 6.875rem;
 		left: 0;
 		width: 100%;
+		height: calc(100vh - 6.875rem);
 		z-index: 999;
 		font-size: 1.5rem;
-		height: 100vh;
+		overflow-y: auto;
 	}
 
 	.dropdown-menu a {

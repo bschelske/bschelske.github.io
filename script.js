@@ -1,6 +1,14 @@
 function toggleMenu() {
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    const menu = document.querySelector('.dropdown-menu');
+    const body = document.body;
+
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        body.style.overflow = ''; // Restores background scrolling
+    } else {
+        menu.style.display = 'block';
+        body.style.overflow = 'hidden'; // Locks background scrolling
+    }
 }
 
 function filterProjects(category) {
