@@ -505,7 +505,7 @@
         <!--Update visitor count here!-->
         <div id="hitCounter">You are visitor:
             <span class="digits">
-                <span class="leading-zero">0000</span><span class="ticker">737</span>
+                <span class="leading-zero">0000</span><span class="ticker">761</span>
             </span>
         </div>
 
@@ -517,7 +517,7 @@
             if (localStorage.pagecount) {
                 localStorage.pagecount = Number(localStorage.pagecount) + 1;
             } else {
-                localStorage.pagecount = 737;
+                localStorage.pagecount = 761;
             }
             const paddedCount = padWithZeros(localStorage.pagecount, 7);
             const leadingZeros = paddedCount.match(/^0+/) ? paddedCount.match(/^0+/)[0] : '';
