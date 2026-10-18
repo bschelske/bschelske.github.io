@@ -1,3 +1,41 @@
+/* ===== Day mode design tokens =====
+   Named values used throughout this file. Change a color here and
+   every rule that uses it follows. */
+:root {
+	/* page */
+	--page: #f7f7f5;
+	/* background under the dither pattern */
+	--panel: #f7f7f2;
+	/* card background */
+	--text: #000000;
+	--muted: #555;
+	--muted-2: #777;
+
+	/* brand colors */
+	--accent: #0a570f;
+	/* green headings, highlights */
+	--header: #276845;
+	/* desktop header bar */
+	--header-alt: #2e754f;
+	/* mobile header + hovers */
+	--amber: #ffcc00;
+	/* featured work, hover, status */
+	--link: #1400ff;
+
+	/* cards: thin ink outline + hard offset shadow */
+	--ink: #1a1a1a;
+	--panel-border: 1.5px solid var(--ink);
+	--panel-shadow: 4px 4px 0 var(--ink);
+	--inner-border: 1px dashed rgba(26, 26, 26, 0.35);
+
+	/* these names were already used below but never defined */
+	--text-color: var(--text);
+	--border-color: rgba(26, 26, 26, 0.35);
+	--shadow-color: rgba(26, 26, 26, 0.25);
+	--accent-color: var(--text);
+	--transition-time: 0.2s;
+}
+
 *,
 *::before,
 *::after {
@@ -15,7 +53,7 @@ html {
 
 
 body {
-	background-color: #f7f7f5;
+	background-color: var(--page);
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='1' height='1' fill='%23e8e8e6'/%3E%3Crect x='2' width='1' height='1' fill='%23e8e8e6'/%3E%3Crect y='2' width='1' height='1' fill='%23e8e8e6'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23e8e8e6'/%3E%3C/svg%3E");
 	background-size: 8px 8px;
 	background-repeat: repeat;
@@ -24,14 +62,14 @@ body {
 
 	margin: 0;
 	padding: 0;
-	color: #000000;
-	text-align: justify;
+	color: var(--text);
+	text-align: left;
 	overflow-x: hidden;
 	box-sizing: border-box;
 }
 
 span {
-	color: #0a570f;
+	color: var(--accent);
 }
 
 section,
@@ -46,13 +84,13 @@ h3,
 	margin: 0 auto;
 	padding: 20px 20px 10px 20px;
 	margin-top: 2rem;
-	text-align: justify;
+	text-align: left;
 	position: relative;
 	z-index: 1;
-	border: 5px solid #fff;
-	border-radius: 8px;
-	background-color: #f7f7f2;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	border: var(--panel-border);
+	border-radius: 0;
+	background-color: var(--panel);
+	box-shadow: var(--panel-shadow);
 }
 
 
@@ -71,10 +109,10 @@ h3,
 	max-width: 50rem;
 	padding: 2rem;
 	margin-bottom: 1rem;
-	background-color: #f7f7f2;
-	border: 5px solid #fff;
-	border-radius: 8px;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	background-color: var(--panel);
+	border: var(--panel-border);
+	border-radius: 0;
+	box-shadow: var(--panel-shadow);
 }
 
 .research-layout {
@@ -122,10 +160,10 @@ h3,
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 0;
-	border: 5px solid #fff;
-	border-radius: 8px;
-	background-color: #f7f7f2;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	border: var(--panel-border);
+	border-radius: 0;
+	background-color: var(--panel);
+	box-shadow: var(--panel-shadow);
 }
 
 .buttons-container {
@@ -141,7 +179,7 @@ h3,
 	padding: 10px 20px;
 	margin: 5px;
 	cursor: pointer;
-	border: 2px solid #ffcc00;
+	border: 2px solid var(--amber);
 	background: transparent;
 	font-weight: bold;
 	transition: 0.3s;
@@ -149,7 +187,7 @@ h3,
 
 .filter-btn.active,
 .filter-btn:hover {
-	background-color: #ffcc00;
+	background-color: var(--amber);
 	color: #000;
 }
 
@@ -175,10 +213,10 @@ h3,
 	flex-direction: column;
 	overflow-wrap: break-word;
 	padding: 1rem;
-	border: 5px solid #fff;
-	background-color: #f7f7f2;
-	border-radius: 8px;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	border: var(--panel-border);
+	background-color: var(--panel);
+	border-radius: 0;
+	box-shadow: var(--panel-shadow);
 }
 
 #hitCounter {
@@ -197,7 +235,7 @@ h3,
 	box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf;
 	font-family: 'MS Sans Serif', Tahoma, Monaco, monospace;
 	font-size: 1rem;
-	color: #000000;
+	color: var(--text);
 }
 
 #hitCounter .digits {
@@ -231,7 +269,7 @@ h3,
 .ticker {
 	display: inline-block;
 	animation: ticker 1.2s ease-in-out;
-	color: #000000;
+	color: var(--text);
 	text-shadow: none;
 	font-weight: bold;
 }
@@ -252,7 +290,7 @@ h3,
 	width: 100%;
 	height: 9rem;
 	max-width: 1920px;
-	background-color: rgb(39, 104, 69);
+	background-color: var(--header);
 	margin: auto;
 	color: white;
 	justify-content: space-between;
@@ -324,7 +362,7 @@ h3,
 .nav a.active {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #ffcc00;
+	color: var(--amber);
 	transform: scale(1.1);
 	text-decoration: underline;
 }
@@ -345,10 +383,10 @@ h3,
 	position: sticky;
 	width: 250px;
 	padding: 1rem;
-	border: 5px solid #fff;
-	border-radius: 8px;
-	background-color: #f7f7f2;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	border: var(--panel-border);
+	border-radius: 0;
+	background-color: var(--panel);
+	box-shadow: var(--panel-shadow);
 	text-align: left;
 
 	max-height: 420px;
@@ -385,7 +423,7 @@ h3,
 
 .whats-new p {
 	text-wrap: wrap;
-	text-align: justify;
+	text-align: left;
 }
 
 
@@ -434,11 +472,10 @@ h3,
 	max-width: 50rem;
 	padding: 2rem;
 	padding-top: 1rem;
-	background-color: #f7f7f2;
-	border: 5px solid #fff;
-	border-radius: 8px;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05),
-		0 5px 20px rgba(166, 173, 201, .2);
+	background-color: var(--panel);
+	border: var(--panel-border);
+	border-radius: 0;
+	box-shadow: var(--panel-shadow);
 
 	margin: 0 auto;
 	margin-top: 0rem;
@@ -465,19 +502,19 @@ h3,
 	align-items: start;
 	padding-left: 0;
 	text-indent: 0;
-	color: #000000;
+	color: var(--text);
 }
 
 .news-date {
 	font-weight: 700;
 	white-space: nowrap;
-	color: #000000;
+	color: var(--text);
 
 }
 
 .news-text {
 	min-width: 0;
-	color: #000000;
+	color: var(--text);
 
 }
 
@@ -490,28 +527,44 @@ h3,
 .skill-item {
 	background: rgba(0, 0, 0, 0.02);
 	padding: 1rem;
-	border-radius: 6px;
-	border: 1px solid #eee;
+	border-radius: 0;
+	border: var(--inner-border);
 }
 
 .pub-thumbnail {
 	width: 170px;
 	height: 125px;
 	flex-shrink: 0;
-	border: 1px solid var(--border-color);
-	overflow: hidden;
-	cursor: pointer;
-	position: relative;
-	border-radius: 6px;
-	box-shadow: 0 2px 8px var(--shadow-color);
+	align-self: flex-start;
+	/* don't stretch to the text's height */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.02)
+		/* ...the rest of the rule as before */
+}
+
+/* every thumbnail fills the same frame, whole image visible, centered */
+.pub-thumbnail img,
+.item .pub-thumbnail img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	display: block;
 }
 
 .publication-item {
 	margin-bottom: 1.5rem;
 	padding: 0.75rem 0;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: var(--inner-border);
 	display: flex;
 	gap: 1.25rem;
+}
+
+.publication-item:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
 }
 
 .pub-title {
@@ -523,18 +576,18 @@ h3,
 
 .pub-authors {
 	font-size: 0.9rem;
-	color: #555;
+	color: var(--muted);
 	margin-bottom: 0.5rem;
 }
 
 .pub-journal {
 	font-size: 0.9rem;
-	color: #777;
+	color: var(--muted-2);
 	margin-bottom: 0.5rem;
 }
 
 .pub-highlight {
-	color: #0a570f;
+	color: var(--accent);
 	font-weight: bold;
 }
 
@@ -554,7 +607,7 @@ h3,
 }
 
 .pub-links a:hover {
-	background-color: #2e754f;
+	background-color: var(--header-alt);
 }
 
 .pub-content {
@@ -572,10 +625,10 @@ h3,
 	height: fit-content;
 	width: 250px;
 	padding: 8px;
-	border: 5px solid #fff;
-	border-radius: 8px;
-	background-color: #f7f7f2;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	border: var(--panel-border);
+	border-radius: 0;
+	background-color: var(--panel);
+	box-shadow: var(--panel-shadow);
 	text-align: left;
 }
 
@@ -592,7 +645,7 @@ h3,
 .sidebar a.active {
 	font-size: 1.7rem;
 	font-weight: bold;
-	color: #0a570f;
+	color: var(--accent);
 	transform: scale(1.1);
 	text-decoration: underline;
 }
@@ -602,7 +655,7 @@ h3,
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	color: #0a570f;
+	color: var(--accent);
 	margin-top: 1rem;
 	margin-bottom: 0.25rem;
 	padding-bottom: 0.25rem;
@@ -636,7 +689,7 @@ h3,
 .fun-nav a.active {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #0a570f;
+	color: var(--accent);
 	transform: scale(1.1);
 	text-decoration: underline;
 }
@@ -649,16 +702,16 @@ h3,
 }
 
 .book-item {
-	border: 5px solid #fff;
+	border: var(--inner-border);
 	padding: 1rem;
-	border-radius: 8px;
+	border-radius: 0;
 	background: linear-gradient(135deg, #fff8e1, hsl(0, 0%, 100%));
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	box-shadow: none;
 }
 
 .book-list summary {
 	cursor: pointer;
-	color: #0a570f;
+	color: var(--accent);
 	font-size: 1.17em;
 	font-weight: bold;
 	margin: 0.5rem 0;
@@ -829,7 +882,7 @@ img {
 	position: relative;
 	background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.25) 90%);
 	padding: 3rem 1rem 2rem;
-	color: #000000;
+	color: var(--text);
 	text-align: center;
 	font-size: 0.9rem;
 }
@@ -860,7 +913,7 @@ img {
 }
 
 .footer-socials a:hover {
-	color: #ffcc00;
+	color: var(--amber);
 
 }
 
@@ -877,7 +930,7 @@ img {
 }
 
 .footer-links a:hover {
-	color: #ffcc00;
+	color: var(--amber);
 	;
 }
 
@@ -902,7 +955,7 @@ img {
 }
 
 .socials a:hover {
-	color: #ffcc00;
+	color: var(--amber);
 	transform: scale(1.2);
 }
 
@@ -939,10 +992,10 @@ img {
 	box-sizing: border-box;
 	padding: 1rem;
 	text-align: left;
-	border: 5px solid #fff;
-	border-radius: 8px;
-	background-color: #f7f7f2;
-	box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+	border: var(--panel-border);
+	border-radius: 0;
+	background-color: var(--panel);
+	box-shadow: var(--panel-shadow);
 }
 
 .item h2 {
@@ -951,7 +1004,7 @@ img {
 
 .item .pub-thumbnail {
 	width: 170px;
-	height: 125px;
+	height: auto;
 }
 
 .item .pub-thumbnail img {
@@ -973,7 +1026,7 @@ img {
 
 .item .pub-status {
 	font-size: 0.85rem;
-	color: #555;
+	color: var(--muted);
 	margin-bottom: 0.5rem;
 	font-style: italic;
 }
@@ -990,7 +1043,7 @@ img {
 
 .item .pub-skills {
 	font-size: 0.9rem;
-	color: #555;
+	color: var(--muted);
 	margin-bottom: 0;
 }
 
@@ -1003,7 +1056,8 @@ img {
 }
 
 .publication {
-	border: 5px solid #ffcc00;
+	border: var(--panel-border);
+	border-left: 6px solid var(--amber);
 	background: linear-gradient(135deg, #fff8e1, #fff);
 }
 
@@ -1034,7 +1088,7 @@ h3 {
 
 
 a {
-	color: #1400ff;
+	color: var(--link);
 	text-decoration: none;
 }
 
@@ -1044,7 +1098,7 @@ a:visited {
 }
 
 a:hover {
-	color: #ffcc00;
+	color: var(--amber);
 	background-color: transparent;
 	text-decoration: underline;
 }
@@ -1059,10 +1113,55 @@ a:active {
 	margin-left: 1.25rem;
 }
 
+/* Section headings: classic Mac window title. A short pinstripe,
+   the title, then pinstripes filling the rest of the line. */
 h2 {
-	margin-bottom: .75rem;
-	color: #0a570f;
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin: 0 0 1.1rem;
+	color: var(--ink);
+	font-size: 1.15rem;
 	font-weight: bold;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+h2::before,
+h2::after {
+	content: '';
+	height: 9px;
+	background: repeating-linear-gradient(to bottom, var(--ink) 0 1px, transparent 1px 3px);
+}
+
+h2::before {
+	flex: 0 0 1.25rem;
+}
+
+h2::after {
+	flex: 1 1 auto;
+}
+
+/* project/paper titles on Research are h2s too: keep them as plain titles */
+.item h2.pub-title {
+	display: block;
+	font-size: 1.05rem;
+	text-transform: none;
+	letter-spacing: 0;
+	color: var(--accent);
+	margin: 0 0 0.3rem;
+}
+
+.item h2.pub-title::before,
+.item h2.pub-title::after {
+	content: none;
+}
+
+/* the updates box is narrow: smaller title so it stays on one line */
+.whats-new h2 {
+	font-size: 0.95rem;
+	white-space: nowrap;
 }
 
 h2[id] {
@@ -1070,7 +1169,7 @@ h2[id] {
 }
 
 .date {
-	color: #000000;
+	color: var(--text);
 	font-size: 0.9em;
 	margin-top: 0px;
 }
@@ -1081,21 +1180,21 @@ h2[id] {
 
 .degree-title {
 	font-weight: bold;
-	color: #000000;
+	color: var(--text);
 	font-size: 1.2em;
 	margin-bottom: 5px;
 	margin-top: 0px;
 }
 
 .institution {
-	color: #000000;
+	color: var(--text);
 	font-style: italic;
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
 
 hr {
-	border: 0px solid #f7f7f2;
+	border: 0px solid var(--panel);
 }
 
 .skills ul {
@@ -1110,11 +1209,11 @@ hr {
 	margin-left: 1.25rem;
 	margin-bottom: 1rem;
 	border-radius: 5px;
-	color: #000000;
+	color: var(--text);
 }
 
 .cv-em {
-	color: #000000;
+	color: var(--text);
 	font-weight: bold;
 }
 
@@ -1124,7 +1223,7 @@ hr {
 }
 
 .teaching-table th {
-	color: #000000;
+	color: var(--text);
 	border: none;
 	text-align: left;
 }
@@ -1139,8 +1238,8 @@ hr {
 }
 
 .teaching-table td {
-	background-color: #f7f7f2;
-	color: #000000;
+	background-color: var(--panel);
+	color: var(--text);
 	border: none;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
@@ -1150,7 +1249,7 @@ hr {
 .teaching-table .total {
 	text-align: right;
 	border: none;
-	color: #0a570f;
+	color: var(--accent);
 	font-weight: bold;
 }
 
@@ -1165,7 +1264,7 @@ hr {
 
 em {
 	font-style: italic;
-	color: #0a570f;
+	color: var(--accent);
 }
 
 article {
@@ -1194,7 +1293,7 @@ article {
 	.home-layout {
 		display: flex;
 		flex-direction: column;
-		padding: 0.5rem;
+		padding: 0.5rem 0.75rem 0.5rem 0.5rem;
 	}
 
 	.home-container {
@@ -1206,7 +1305,7 @@ article {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		background-color: rgba(46, 117, 79, 1);
+		background-color: var(--header-alt);
 		color: white;
 		padding: 1.5rem 1rem;
 		height: auto;
@@ -1275,7 +1374,7 @@ article {
 		padding: 1rem 0;
 		margin: 0;
 		display: none;
-		background-color: rgba(46, 117, 79, 1);
+		background-color: var(--header-alt);
 
 		position: fixed;
 		top: 6.875rem;
@@ -1310,7 +1409,7 @@ article {
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.05rem;
 		margin-top: 0px
 	}
 
@@ -1456,13 +1555,12 @@ article {
 
 	.home-pub {
 		padding: 1rem;
-		border-width: 3px;
 	}
 
 	.publication-item {
 		flex-direction: column;
-		align-items: center;
-		text-align: center;
+		align-items: flex-start;
+		text-align: left;
 		gap: 0.75rem;
 	}
 
@@ -1482,7 +1580,8 @@ article {
 	.research-layout {
 		display: block !important;
 		width: 100%;
-		padding: 0;
+		/* gutter so card outlines + shadows aren't clipped at the screen edge */
+		padding: 0.5rem 0.75rem 0.5rem 0.5rem;
 		box-sizing: border-box;
 	}
 
@@ -1495,8 +1594,8 @@ article {
 	.item.publication,
 	.item {
 		flex-direction: column;
-		align-items: center;
-		text-align: center;
+		align-items: stretch;
+		text-align: left;
 		gap: 0.75rem;
 	}
 
