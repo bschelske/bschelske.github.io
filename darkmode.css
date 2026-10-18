@@ -8,7 +8,7 @@ html {
 body {
     background: url('img/pattern2.gif') repeat;
     background-color: #1e004b;
-    font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard', 'Comic Neue';
+    font-family: 'IBM Plex Sans', 'IBM Plex Mono', monospace;
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -167,7 +167,7 @@ h3,
     padding: 1rem;
     border-radius: 8px;
     background: linear-gradient(135deg, #8c02b3, #1e004b);
-    box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+    box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 4px 4px 0 #000;
 }
 
 .book-list summary {
@@ -1479,7 +1479,7 @@ a:active {
     border: 5px ridge #00ff00;
     border-radius: 0px;
     background-color: #1e004b;
-    box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
+    box-shadow: 0 5px 5px rgba(154, 160, 185, .05), 4px 4px 0 #000;
 }
 
 .item h2 {
