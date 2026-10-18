@@ -1336,6 +1336,37 @@ article {
 	text-align: left;
 }
 
+.cv-download {
+	text-align: center;
+	margin: 0.75rem 0 0;
+}
+
+.cv-download a,
+.cv-download a:link,
+.cv-download a:visited {
+	display: inline-block;
+	padding: 0.35rem 0.9rem;
+	font-weight: bold;
+	color: var(--text);
+	text-decoration: none;
+	background: #fff;
+	border: 2px solid var(--ink);
+	box-shadow: 3px 3px 0 var(--ink);
+	transition: background-color var(--transition-time);
+}
+
+.cv-download a:hover {
+	color: var(--text);
+	background-color: var(--amber);
+	text-decoration: none;
+}
+
+/* pressed look on click */
+.cv-download a:active {
+	transform: translate(2px, 2px);
+	box-shadow: 1px 1px 0 var(--ink);
+}
+
 @media only screen and (max-width: 600px) {
 	.show-on-mobile {
 		display: block;
@@ -1721,7 +1752,8 @@ article {
 	.whats-new,
 	.toggle-container,
 	.show-on-mobile,
-	.hide-on-day {
+	.hide-on-day,
+	.cv-download {
 		display: none !important;
 	}
 
