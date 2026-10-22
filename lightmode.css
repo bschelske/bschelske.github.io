@@ -22,10 +22,11 @@
 	/* featured work, hover, status */
 	--link: #1400ff;
 
-	/* cards: thin ink outline + hard offset shadow */
+	/* cards: white rounded outline + soft shadow */
 	--ink: #1a1a1a;
-	--panel-border: 1.5px solid var(--ink);
-	--panel-shadow: 4px 4px 0 var(--ink);
+	--panel-border: 5px solid #fff;
+	--panel-radius: 8px;
+	--panel-shadow: 0 5px 5px rgba(154, 160, 185, .05), 0 5px 20px rgba(166, 173, 201, .2);
 	--inner-border: 1px dashed rgba(26, 26, 26, 0.35);
 
 	/* these names were already used below but never defined */
@@ -88,7 +89,7 @@ h3,
 	position: relative;
 	z-index: 1;
 	border: var(--panel-border);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	background-color: var(--panel);
 	box-shadow: var(--panel-shadow);
 }
@@ -111,7 +112,7 @@ h3,
 	margin-bottom: 1rem;
 	background-color: var(--panel);
 	border: var(--panel-border);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	box-shadow: var(--panel-shadow);
 }
 
@@ -161,7 +162,7 @@ h3,
 	align-items: center;
 	margin-bottom: 0;
 	border: var(--panel-border);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	background-color: var(--panel);
 	box-shadow: var(--panel-shadow);
 }
@@ -215,7 +216,7 @@ h3,
 	padding: 1rem;
 	border: var(--panel-border);
 	background-color: var(--panel);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	box-shadow: var(--panel-shadow);
 }
 
@@ -384,7 +385,7 @@ h3,
 	width: 250px;
 	padding: 1rem;
 	border: var(--panel-border);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	background-color: var(--panel);
 	box-shadow: var(--panel-shadow);
 	text-align: left;
@@ -474,7 +475,7 @@ h3,
 	padding-top: 1rem;
 	background-color: var(--panel);
 	border: var(--panel-border);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	box-shadow: var(--panel-shadow);
 
 	margin: 0 auto;
@@ -527,7 +528,7 @@ h3,
 .skill-item {
 	background: rgba(0, 0, 0, 0.02);
 	padding: 1rem;
-	border-radius: 0;
+	border-radius: 6px;
 	border: var(--inner-border);
 }
 
@@ -620,7 +621,7 @@ h3,
 	width: 250px;
 	padding: 8px;
 	border: var(--panel-border);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	background-color: var(--panel);
 	box-shadow: var(--panel-shadow);
 	text-align: left;
@@ -698,7 +699,7 @@ h3,
 .book-item {
 	border: var(--inner-border);
 	padding: 1rem;
-	border-radius: 0;
+	border-radius: 8px;
 	background: linear-gradient(135deg, #fff8e1, hsl(0, 0%, 100%));
 	box-shadow: none;
 }
@@ -1035,7 +1036,7 @@ img {
 	padding: 1rem;
 	text-align: left;
 	border: var(--panel-border);
-	border-radius: 0;
+	border-radius: var(--panel-radius);
 	background-color: var(--panel);
 	box-shadow: var(--panel-shadow);
 }
@@ -1102,8 +1103,7 @@ img {
 }
 
 .publication {
-	border: var(--panel-border);
-	border-left: 6px solid var(--amber);
+	border: 5px solid var(--amber);
 	background: linear-gradient(135deg, #fff8e1, #fff);
 }
 
