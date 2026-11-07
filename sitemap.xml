@@ -9,42 +9,47 @@
 
 <url>
   <loc>https://benschelske.com/</loc>
-  <lastmod>2026-03-10T17:30:58+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://benschelske.com/projects/</loc>
-  <lastmod>2026-03-10T17:30:58+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/tools/</loc>
-  <lastmod>2026-11-07T02:00:00+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://benschelske.com/DAFT/</loc>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/fun/</loc>
-  <lastmod>2026-03-10T17:30:58+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/cv/</loc>
-  <lastmod>2026-03-10T17:30:58+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/fun_projects/</loc>
-  <lastmod>2026-03-10T17:30:58+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/books/</loc>
-  <lastmod>2026-03-10T17:30:58+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://benschelske.com/index.html</loc>
-  <lastmod>2026-03-10T17:30:58+00:00</lastmod>
+  <lastmod>2026-11-07T02:20:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
