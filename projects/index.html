@@ -44,6 +44,7 @@
     <ul class="dropdown-menu" id="dropdownMenu">
         <li class="mobile-nav-item"><a href="/">HOME</a></li>
         <li class="mobile-nav-item"><a href="/projects/">RESEARCH</a></li>
+        <li class="mobile-nav-item"><a href="/tools/">TOOLS</a></li>
         <li class="mobile-nav-item"><a href="/fun/">FUN</a></li>
         <li class="mobile-nav-item"><a href="/cv/">CV</a></li>
         <div class="socials">
@@ -67,9 +68,9 @@
                         title="Welcome to BEN SCHELSKE.COM"></a>
                 <nav class="nav">
                     <a href="/projects/" class="active">RESEARCH</a>
+                    <a href="/tools/">TOOLS</a>
                     <a href="/fun/">FUN</a>
                     <a href="/cv/">CV</a>
-                    <a href="https://github.com/bschelske" target="_blank">GITHUB</a>
                 </nav>
             </div>
         </div>
@@ -92,9 +93,9 @@
                 <h1><a href="/"><img class="logo" src="/img/light_logo.gif" alt="Ben Schelske" title="Welcome to BENSCHELSKE.COM"></a></h1>
                 <nav class="nav">
                     <a href="/projects/" class="active">RESEARCH</a>
+                    <a href="/tools/">TOOLS</a>
                     <a href="/fun/">FUN</a>
                     <a href="/cv/">CV</a>
-                    <a href="https://github.com/bschelske" target="_blank">GITHUB</a>
                 </nav>
             </div>
         </div>
@@ -113,18 +114,15 @@
             <h2 style="text-align: center;">Navigation</h2>
 
             <div class="sidebar-heading">Publications</div>
-            <a href="#ML_class" data-category="main">CMC ML (2026)</a>
-            <a href="#mmp9" data-category="main">MMP-9 (2025)</a>
-            <a href="#imagej" data-category="main">β-galactosidase (2023)</a>
+            <a href="#ML_class">CMC ML (2026)</a>
+            <a href="#mmp9">MMP-9 (2025)</a>
+            <a href="#bano">β-galactosidase (2023)</a>
+
+            <div class="sidebar-heading">Presentations</div>
+            <a href="#cottonuphaus">Cotton-Uphaus Competition</a>
 
             <div class="sidebar-heading">Lab Tools</div>
-            <a href="#stage" data-category="side">SlideStride</a>
-            <a href="#credit" data-category="side">CRediT Role Generator</a>
-            <a href="#MLEIS" data-category="side">Machine Learning + Electrochemistry</a>
-            <a href="#pump" data-category="side">Get Pumped!</a>
-            <a href="#count" data-category="side">COUNT</a>
-            <a href="#count" data-category="side">Cotton-Uphaus Competition</a>
-            <a href="#imagej" data-category="side">ImageJ Macros</a>
+            <a href="/tools/">See the Tools page →</a>
         </div>
         <div class="research-center-column">
 
@@ -136,8 +134,9 @@
                 </div>
                 <p>Here are some projects I've worked on in the <a href="https://anand.chem.iastate.edu/"
                         target="_blank">Anand Lab</a>.
-                    Most connect to a publication (emphasized in gold),
-                    but I've included a few side projects / tools I've made. Descriptions here are simplified versions
+                    Most connect to a publication (emphasized in gold).
+                    Looking for the software I've written for the lab? Those now live on the
+                    <a href="/tools/">Tools page</a>. Descriptions here are simplified versions
                     of the published work.</p>
                 <p> If you
                     are
@@ -151,16 +150,9 @@
                 </p>
             </div>
 
-            <div class="buttons-container">
-                <div class="filter-controls" style="text-align: center; margin-bottom: 0px;">
-                    <button class="filter-btn active" onclick="filterProjects('all')">Show All</button>
-                    <button class="filter-btn" onclick="filterProjects('main')">Publications</button>
-                    <button class="filter-btn" onclick="filterProjects('side')">Lab Tools</button>
-                </div>
-            </div>
 
 
-            <div class="item publication" data-category="main">
+            <div class="item publication">
                 <div class="pub-thumbnail">
                     <img src="/img/cmc_ml_toc.png" alt="Page under construction; preprint figures coming soon">
                 </div>
@@ -178,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="item publication" data-category="main">
+            <div class="item publication">
                 <div class="pub-thumbnail">
                     <img src="/img/mmp9.png" alt="Graphical abstract for the MMP9 single-cell protease activity paper">
                 </div>
@@ -199,130 +191,7 @@
                 </div>
             </div>
 
-            <div class="item" data-category="side">
-                <div class="pub-thumbnail">
-                    <img src="/img/credit.png" alt="Screenshot of CRediT role generator">
-                </div>
-                <div class="pub-content">
-                    <h2 id="credit" class="pub-title">CRediT Role Generator</h2>
-                    <div class="pub-status">Generate CRediT contribution statements easily</div>
-                    <p class="pub-desc">
-                        I couldn't find a simple tool to generate CRediT roles for my publications, so I made one!
-                        I think this tool can help other researchers generate CRediT roles for their publications
-                        too.
-                        This is a simple web app that allows you to select roles and generate a formatted list of
-                        authorship contributions. The site went live in Dec 2025 and serves around 50 users per
-                        month.
-                    </p>
-                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
-                    <p class="pub-skills">HTML, CSS, React</p>
-                    <div class="pub-links">
-                        <a href="https://www.credit-role-generator.app/" target="_blank">[Visit Site]</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" data-category="side">
-                <div class="pub-thumbnail">
-                    <img src="/img/stage_movement.png" alt="Screenshot of a terminal showing stage movement program">
-                </div>
-                <div class="pub-content">
-                    <h2 id="stage" class="pub-title">SlideStride</h2>
-                    <div class="pub-status">A tool to generate instructions for automatic microscope stages</div>
-                    <p class="pub-desc">
-                        The purpose of this program is to generate a coordinate list of positions for a microscope
-                        to
-                        visit using an automatic stage. It calculates a linear path between a start and end point
-                        and
-                        formats it into an XML file that Nikon NIS-Elements can read.
-                    </p>
-                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
-                    <p class="pub-skills">Rust, CLI tools, GitHub releases, XML</p>
-                    <div class="pub-links">
-                        <a href="https://github.com/bschelske/stage_movement_xml" target="_blank">[GitHub]</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="item" data-category="side">
-                <div class="pub-thumbnail">
-                    <img src="/img/EIS.png"
-                        alt="Electrochemical impedance spectroscopy plot used for the random forest model">
-                </div>
-                <div class="pub-content">
-                    <h2 id="MLEIS" class="pub-title">Machine Learning + Electrochemistry</h2>
-                    <div class="pub-status">Pursuing my curiosity about machine learning</div>
-                    <p class="pub-desc">
-                        At the time, I had a lot of domain knowledge when it comes to machine learning principles,
-                        but
-                        not very much experience. It was like <em>the difference between being a hardcore sports fan
-                            and
-                            actually playing professional sports.</em> My personal goal for this project was to
-                        bridge
-                        that
-                        gap and get hands-on experience with machine learning. Here I'm using a random forest model
-                        to
-                        help interpret electrochemical impedance spectroscopy (EIS) data. The results help predict
-                        device performance. During this project, I had a need to plot the output of a CH Instruments
-                        CHI650E potentiostat.
-                    </p>
-                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
-                    <p class="pub-skills">Random Forest Models, EIS</p>
-                    <div class="pub-links">
-                        <a href="https://github.com/bschelske/EIS_plotter" target="_blank">[GitHub]</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" data-category="side">
-                <div class="pub-thumbnail">
-                    <img src="/img/pump.png" alt="Image of an automated microfluidic device">
-                </div>
-                <div class="pub-content">
-                    <h2 id="pump" class="pub-title">Get Pumped!</h2>
-                    <div class="pub-status">Enabling ML data collection by automating microfluidic operation</div>
-                    <p class="pub-desc">
-                        This project was the automation of an experiment that involved lots of <em>tedious</em>
-                        pipetting. The control of a few syringe pumps can remove this repetitive task from the
-                        experiment workflow. In this project, I learned about interfacing hardware and software,
-                        utilizing serial connections, and multithreading.
-                    </p>
-                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
-                    <p class="pub-skills">Serial control over USB, interfacing hardware + software, multithreading,
-                        UI
-                        design</p>
-                    <div class="pub-links">
-                        <a href="https://github.com/bschelske/get_pumped" target="_blank">[GitHub]</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" data-category="side">
-                <div class="pub-thumbnail">
-                    <img src="/img/count.png" alt="User interface for COUNT">
-                </div>
-                <div class="pub-content">
-                    <h2 id="count" class="pub-title">COUNT: Count objects until no tomorrow</h2>
-                    <div class="pub-status">Custom object tracking for cancer cells</div>
-                    <p class="pub-desc">
-                        I like to look at cells under a microscope. I would like to count them, but they move, and
-                        there's <em>thousands</em> of them... I wrote some code to track and count cells using
-                        OpenCV.
-                        This project is my first foray into computer vision, and also includes a gui for increased
-                        accessibility. I learned a lot about different image processing techniques and object
-                        detection algorithms. Building this was <em>intense!</em>
-                    </p>
-                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
-                    <p class="pub-skills">Computer vision, Python, UI, Git, OpenCV, APIs, Clean Code</p>
-                    <div class="pub-links">
-                        <a href="https://github.com/bschelske/COUNT" target="_blank">[GitHub]</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" data-category="side">
+            <div class="item">
                 <div class="pub-thumbnail">
                     <img src="/img/cu.png" alt="Example slide from competition">
                 </div>
@@ -341,32 +210,7 @@
                 </div>
             </div>
 
-            <div class="item " data-category="side">
-                <div class="pub-thumbnail">
-                    <img src="/img/circle_pro.png" alt="ImageJ macro output showing detected regions of interest">
-                </div>
-                <div class="pub-content">
-                    <h2 id="imagej" class="pub-title">ImageJ Macros</h2>
-                    <div class="pub-status">Useful tools for image analysis</div>
-                    <p class="pub-desc">
-                        Some of the first code I've ever wrote was in the ImageJ macro language using
-                        <em>notepad</em>.
-                        I was interested in improving the data analysis workflow for making measurements on
-                        fluorescence microscopy images. I wrote a series of macros that automatically place regions
-                        of
-                        interest (ROIs) over regions of interest, identify the presence of cancer cells, and made
-                        data
-                        collection easier. <em>ImageJ is awesome!</em>
-                    </p>
-                    <div class="pub-skills-label"><span class="highlight">Skills Learned:</span></div>
-                    <p class="pub-skills">ImageJ Macro Language, image analysis/processing</p>
-                    <div class="pub-links">
-                        <a href="https://github.com/bschelske/ImageJ-and-MATLAB-Macros" target="_blank">[GitHub]</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item  publication" data-category="main">
+            <div class="item  publication">
                 <div class="pub-thumbnail">
                     <img src="/img/bano.png" alt="TOC abstract">
                 </div>
@@ -409,6 +253,7 @@
             <div class="footer-links">
                 <a href="/">Home</a>
                 <a href="/projects/">Graduate Research</a>
+                <a href="/tools/">Lab Tools</a>
                 <a href="/fun/">Fun</a>
                 <a href="/cv/">CV / Resume</a>
                 <a href="mailto:ben@benschelske.com">Contact</a>
