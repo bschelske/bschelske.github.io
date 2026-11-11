@@ -685,9 +685,11 @@ h3 {
 
 .news-item {
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 5rem 1fr;
+    /* same width on every row */
     column-gap: 1.25rem;
-    align-items: start;
+    align-items: baseline;
+    /* date sits on the text's first line */
     padding-left: 0;
     text-indent: 0;
     color: var(--text);
@@ -696,7 +698,9 @@ h3 {
 .news-date {
     font-weight: 700;
     white-space: nowrap;
-    color: var(--amber);
+    font-variant-numeric: tabular-nums;
+    /* equal-width digits */
+    color: var(--text);
 }
 
 .news-text {
